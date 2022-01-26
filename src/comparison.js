@@ -1,17 +1,17 @@
-function runComparison() {    
+function runComparison() {
     var cal = map.emission;
     console.log("runComparison");
     console.log(cal);
     var coBarThreeEl = document.getElementById("coBarThree");
-    var emissiontonnes = cal/1000
-    setClassValue("co",emissiontonnes.toFixed(2))
+    var emissiontonnes = cal / 1000
+    setClassValue("co", emissiontonnes.toFixed(2))
     coBarThreeEl.style = "height: calc(" + emissiontonnes + "rem * 10)"
 }
 
 function setClassValue(className, value) {
     els = document.getElementsByClassName(className)
 
-    for(i=0; i < els.length; i++) {
+    for (i = 0; i < els.length; i++) {
         els[i].innerText = value
     }
 }
@@ -37,7 +37,7 @@ opt4.addEventListener("change", changeOPT);
 const opt5 = document.getElementById("opt5");
 opt5.addEventListener("change", changeOPT);
 
-//const opt6 = document.getElementById("opt6"); 
+//const opt6 = document.getElementById("opt6");
 //opt6.addEventListener("change", changeOPT);
 
 const opt7 = document.getElementById("opt7")
@@ -45,26 +45,26 @@ opt7.addEventListener("change", changeOPT);
 
 
 function addMetaData(from, to, co, toCity) {
-    const tags = [
-        { 
+    const tags = [{
             name: "description",
             content: from + " â†’ " + to + " = " + co + "tCOâ‚‚e." + "Explore how this trip compares to the efforts you make to reduce your carbon footprint."
-        }, 
-        { 
+        },
+        {
             property: "og:url",
             content: location.href
-        }, 
+        },
         {
             property: "og:title",
             content: from + " â†’ " + to + " = " + co + "tCOâ‚‚e"
-        }, 
+        },
         {
             property: "og:description",
-            content: "Explore how this trip compares to the efforts you make to reduce your carbon footprint." 
-        }]
+            content: "Explore how this trip compares to the efforts you make to reduce your carbon footprint."
+        }
+    ]
 
-    for(i=0; i < tags.length; i++) {
-        var meta=document.createElement('meta');
+    for (i = 0; i < tags.length; i++) {
+        var meta = document.createElement('meta');
         meta.setAttribute('name', tags[i].content);
         meta.setAttribute('property', tags[i].property);
         meta.setAttribute('content', tags[i].content);
