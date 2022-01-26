@@ -2,32 +2,24 @@
 
 //event handlers
 
-document.querySelector("#addbutton").addEventListener("mouseup", handle_click);
-
-
-function handle_click(e) {
-    setTimeout(continue_clicked, 100)
-}
-
-function continue_clicked() {
-
-    hide_trans_summary.play();
-}
+document.querySelector("#addbutton").addEventListener("mouseup", e => {
+    setTimeout(hide_trans_summary.play, 100)
+});
 
 //animation
 var hide_trans_summary = anime({
     opacity: '0',
     easing: 'easeInOutSine',
     duration: 500,
-    begin: function () {},
+    begin: function() {},
     autoplay: false,
-    complete: function () {
+    complete: function() {
         translate_button.play();
     },
 });
 
 
-// only move one thing 
+// only move one thing
 //document.querySelector("#incomplete-tasks").lastElementChild
 
 var translate_button = anime({
@@ -38,13 +30,5 @@ var translate_button = anime({
     duation: 500,
     autoplay: false,
     easing: 'easeOutExpo',
-    complete: function () {}
+    complete: function() {}
 });
-
-
-
-
-
-
-
-
