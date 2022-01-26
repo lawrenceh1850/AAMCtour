@@ -9,7 +9,7 @@
  });
  $('.autocomplete-results')
  .on('keypress', ,(function(e){
- if (e.which == 13){ 
+ if (e.which == 13){
  $("#app").show();
  }
  });
@@ -18,32 +18,33 @@
 map = new Vue({
     el: '#app',
     data: () => ({
-            distance: null,
-            emission: null,
-            airports: [],
-            currentAirport: null,
-            lastAirport: null,
-            markers: [
-//                {
-//                    airport: null,
-//                    x: 200,
-//                    y: 300,
-//                    startX: 0,
-//                    startY: 0,
-//                    fill: '#f47825',
-//                    current: false},
-//
-//                {
-//                    airport: null,
-//                    x: 500,
-//                    y: 100,
-//                    startX: 0,
-//                    startY: 0,
-//                    fill: '#00b26b',
-//                    current: false
-//                }
-            ]
-        }),
+        distance: null,
+        emission: null,
+        airports: [],
+        currentAirport: null,
+        lastAirport: null,
+        markers: [
+            // initial markers commented out
+            //                {
+            //                    airport: null,
+            //                    x: 200,
+            //                    y: 300,
+            //                    startX: 0,
+            //                    startY: 0,
+            //                    fill: '#f47825',
+            //                    current: false},
+            //
+            //                {
+            //                    airport: null,
+            //                    x: 500,
+            //                    y: 100,
+            //                    startX: 0,
+            //                    startY: 0,
+            //                    fill: '#00b26b',
+            //                    current: false
+            //                }
+        ]
+    }),
     filters: {
         numberWithCommas(val) {
             return val && val.toString ? val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") : val;
@@ -62,18 +63,19 @@ map = new Vue({
 
             // Bind the data to the SVG and create one path per GeoJSON feature
             d3.select(this.$refs.provinces).
-                    selectAll("path").
-                    data(provinces.features).
-                    enter().
-                    append("path").
-                    attr("d", path);
+            selectAll("path").
+            data(provinces.features).
+            enter().
+            append("path").
+            attr("d", path);
         });
 
         // Airports
         fetch('data/usaairport.json').then(response => response.json()).then(airports => {
             // Let's only focus on the top 100
             airports = airports.slice(0, 100);
-            var i = airports.length, d, proj;
+            var i = airports.length,
+                d, proj;
 
             while (i--) {
                 d = airports[i];
@@ -127,11 +129,12 @@ map = new Vue({
                 tl.to(this.$refs.airplane, 0.2, {
                     opacity: 0,
                     ease: "Linear.easeNone",
-                    onComplete: function () {
+                    onComplete: function() {
                         if (oldTween) {
                             oldTween.kill();
                         }
-                    }});
+                    }
+                });
 
 
                 this.airplaneFade = tl;
@@ -177,7 +180,7 @@ map = new Vue({
             var pathList = [];
             for (var i = 0; i < this.markers.length - 1; i++) {
                 var m1 = this.markers[i],
-                        m2 = this.markers[(i + 1)];
+                    m2 = this.markers[(i + 1)];
 
                 if (m1.x < m2.x) {
                     m1 = this.markers[i];
@@ -185,8 +188,8 @@ map = new Vue({
                 }
 
                 var dx = m2.x - m1.x,
-                        dy = m2.y - m1.y,
-                        dr = Math.sqrt(dx * dx + dy * dy);
+                    dy = m2.y - m1.y,
+                    dr = Math.sqrt(dx * dx + dy * dy);
 
                 pathList.push("M" + m2.x + "," + m2.y + "A" + dr + "," + dr + " 0 0,1 " + m1.x + "," + m1.y);
             }
@@ -249,14 +252,14 @@ map = new Vue({
         },
         airplaneAnimate() {
             var pathList = this.markerConnect();
-            var newTween = new TimelineMax({repeat: -1, delay: -0.2});
+            var newTween = new TimelineMax({ repeat: -1, delay: -0.2 });
             var duration = Math.min(this.distance / 80, 15);
             var opacityDuration = Math.min(duration * 0.2, 0.3);
 
             if (this.airplaneFade && this.airplaneFade.isActive()) {
                 newTween.pause();
 
-                this.airplaneFade.eventCallback('onComplete', function () {
+                this.airplaneFade.eventCallback('onComplete', function() {
                     newTween.play();
                 });
             } else if (this.airplaneTween) {
@@ -283,7 +286,7 @@ map = new Vue({
                 delay: opacityDuration / 2,
                 ease: "Linear.easeNone"
             }, 0);
-//
+            //
             newTween.to(this.$refs.airplane, opacityDuration, {
                 opacity: 0,
                 ease: 'Linear.easeNone'
@@ -296,7 +299,10 @@ map = new Vue({
             var emission = 0;
             var totalEmission = 0;
             var distance;
-            var marker1 = null, latLng1 = null, marker2 = null, latLng2 = null;
+            var marker1 = null,
+                latLng1 = null,
+                marker2 = null,
+                latLng2 = null;
             for (var i = 0; i < this.markers.length; i++) {
                 if (this.markers[i].flying) {
                     if (!marker1) {
