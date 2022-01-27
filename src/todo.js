@@ -212,7 +212,9 @@ function updateLabelText() {
 
 function animateThankYouMessage() {
     $("#thankyou").show();
-    $("html, body").stop().animate({ scrollTop: $("#thankyou").position().top }, 500);
+    // TODO: decide if we want this scroll
+    // $("html, body").stop().animate({ scrollTop: $("#thankyou").position().top }, 500);
+    return false;
 }
 
 // update comparisons between different lifestyle changes
