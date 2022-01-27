@@ -18,7 +18,7 @@ html,
 body {
     background: #D9DCD6;
     /* text-align: center; */
-    color: #FFF;
+    /* color: #FFF; */
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-smooth: auto;
@@ -151,6 +151,7 @@ li {
 li>label {
     font-size: 18px;
     /*line-height: 20px;*/
+    color: white;
     width: 160px;
     padding: 0;
     text-align: left;
@@ -162,16 +163,6 @@ li>input[type="text"] {
 
 li>.delete:hover {
     color: #CF2323;
-}
-
-.container {
-    /*    display:block;
-        width: 450px;
-        margin: auto;*/
-}
-
-.autocomplete-wrapper {
-    position: absolute;
 }
 
 .autocomplete-wrapper {

@@ -30,6 +30,8 @@
 - Google Form tutorial
   - https://spin.atomicobject.com/2021/05/20/embedding-google-forms/
   - https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9
+- Google Docs tutorial
+  - https://jeffreyeverhart.com/2018/09/17/auto-fill-google-doc-from-google-form-submission/
 - map
     - Vue map here: https://codepen.io/shshaw/pen/vJNMQY
 - itemtype
