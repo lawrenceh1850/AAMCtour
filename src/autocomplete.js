@@ -1,42 +1,45 @@
+// Handles autocomplete for searching airport names bar
+
 var options = {
     shouldSort: true,
     threshold: 0.1,
     maxPatternLength: 32,
     keys: [{
-            name: 'LocationID',
-            weight: 0.5
-        }, {
-            name: 'NAME',
-            weight: 0.3
-        }, {
-            name: 'City',
-            weight: 0.2
-        }]
+        name: 'LocationID',
+        weight: 0.5
+    }, {
+        name: 'NAME',
+        weight: 0.3
+    }, {
+        name: 'City',
+        weight: 0.2
+    }]
 };
 
+// fuzzy search library
 var fuse = new Fuse(airports, options);
 
-
-var ac = $('#autocomplete').on('click', function (e) {
-    e.stopPropagation();
-}).on('focus keyup', search)
-        .on('keyup', onKeyDown);
+var ac = $('#autocomplete').on('click', function(e) {
+        e.stopPropagation();
+    }).on('focus keyup', search)
+    .on('keyup', onKeyDown);
 
 var wrap = $('<div>')
-        .addClass('autocomplete-wrapper')
-        .insertBefore(ac)
-        .append(ac);
+    .addClass('autocomplete-wrapper')
+    .insertBefore(ac)
+    .append(ac);
 
 var list = $('<div>')
-        .addClass('autocomplete-results')
-        .on('click', '.autocomplete-result', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            selectIndex($(this).data('index'));
-        })
-        .appendTo(wrap);
+    .addClass('autocomplete-results')
+    .on('click', '.autocomplete-result', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        selectIndex($(this).data('index'));
+    })
+    .appendTo(wrap);
 
-$(document).on('mouseover', '.autocomplete-result', function (e) {
+// highlight airport search autocomplete
+$(document).on('mouseover', '.autocomplete-result', function(e) {
     var index = parseInt($(this).data('index'), 10);
     if (!isNaN(index)) {
         list.attr('data-highlight', index);
@@ -72,6 +75,7 @@ function findMapAirport(locationID) {
 var results = [];
 var numResults = 0;
 var selectedIndex = -1;
+let numberOfResultsToDisplay = 3;
 
 function search(e) {
     if (e.which === 38 || e.which === 13 || e.which === 40) {
@@ -79,14 +83,14 @@ function search(e) {
     }
 
     if (ac.val().length > 0) {
-        results = _.take(fuse.search(ac.val()), 2);
+        results = _.take(fuse.search(ac.val()), numberOfResultsToDisplay);
         numResults = results.length;
 
-        var divs = results.map(function (r, i) {
+        var divs = results.map(function(r, i) {
 
-            return '<div class="autocomplete-result" data-index="' + i + '">'
-                    + '<b>' + r.LocationID + '</b> - ' + r.City
-                    + '</div>';
+            return '<div class="autocomplete-result" data-index="' + i + '">' +
+                '<b>' + r.LocationID + '</b> - ' + r.City +
+                '</div>';
         });
 
         selectedIndex = -1;

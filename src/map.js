@@ -52,11 +52,13 @@ map = new Vue({
     },
     mounted() {
         // D3 Projection
-        var projection = d3.geoAlbers().parallels([50, 70]).rotate([90, 0, 0]).scale([1500]); // scale things down so see entire US
+        let PROJECTION_SCALE = 1500;
+        let projection = d3.geoAlbersUsa().scale(PROJECTION_SCALE);
         this.projection = projection;
 
         // D3 US States map
-        fetch('data/usa.json').then(response => response.json()).then(provinces => {
+        let US_STATES_MAP_SRC = 'data/usa.json';
+        fetch(US_STATES_MAP_SRC).then(response => response.json()).then(provinces => {
             // Define path generator
             // path generator that will convert GeoJSON to SVG paths
             var path = d3.geoPath().projection(projection); // tell path generator to use albersUsa projection

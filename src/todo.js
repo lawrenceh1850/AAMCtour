@@ -1,38 +1,28 @@
-//Document is the DOM can be accessed in the console with document.window.
-// Tree is from the top, html, body, p etc.
+var taskInput = document.getElementById("autocomplete"); //Add a new task.
+var addButton = document.getElementById("addbutton"); //first button
+var calculateButton = document.getElementById("calculate"); //first button
+var incompleteTaskHolder = document.getElementById("incomplete-tasks"); //ul of #incomplete-tasks
 
-//Problem: User interaction does not provide the correct results.
-//Solution: Add interactivity so the user can manage daily tasks.
-//Break things down into smaller steps and take each step at a time.
+// === Code that handles the list of airports ===
 
-
-//Event handling, uder interaction is what starts the code execution.
-
-var taskInput = document.getElementById("autocomplete");//Add a new task.
-var addButton = document.getElementById("addbutton");//first button
-var calculateButton = document.getElementById("calculate");//first button
-var incompleteTaskHolder = document.getElementById("incomplete-tasks");//ul of #incomplete-tasks
-
-
+// don't select list of airports visited
 $("#incomplete-tasks").disableSelection();
 
-$("#autocomplete").keydown(function (e) {
+// Enter inside the search box adds the name
+$("#autocomplete").keydown(function(e) {
     if (e.keyCode == 13) {
         e.preventDefault();
-        //Click on add when enter pressed inside city input
         if (!$(".autocomplete-results").is(":visible")) {
             addButton.click();
         }
     }
 });
 
-//New task list item
-var createNewTaskElement = function (taskString, flyingStatus) {
+// create new airport item
+function createNewTaskElement(taskString, flyingStatus) {
     var listItem = document.createElement("li");
-    //label
-    var label = document.createElement("label");//label
-    //button.delete
-    var deleteButton = document.createElement("button");//delete button
+    var label = document.createElement("label"); //label
+    var deleteButton = document.createElement("button"); //delete button
     label.className = "mb-0";
     label.innerText = taskString;
     label.id = taskString + flyingStatus;
@@ -48,7 +38,7 @@ var createNewTaskElement = function (taskString, flyingStatus) {
     return listItem;
 };
 
-var addTask = function (flyingStatus) {
+var addTask = function(flyingStatus) {
     console.log("Add Task...");
     //Create a new list item with the text from the #new-task:
     var listItem = createNewTaskElement(taskInput.value, flyingStatus);
@@ -60,7 +50,7 @@ var addTask = function (flyingStatus) {
 };
 
 //Delete task.
-var deleteTask = function (e) {
+var deleteTask = function(e) {
     console.log("Delete Task...");
     var listItem = this.parentNode;
     var ul = listItem.parentNode;
@@ -81,7 +71,7 @@ var deleteTask = function (e) {
 };
 
 //Mark task completed
-var taskCompleted = function () {
+var taskCompleted = function() {
     console.log("Complete Task...");
     //Append the task list item to the #completed-tasks
     var listItem = this.parentNode;
@@ -90,7 +80,7 @@ var taskCompleted = function () {
 };
 
 
-var taskIncomplete = function () {
+var taskIncomplete = function() {
     console.log("Incomplete Task...");
     //Mark task as incomplete.
     //When the checkbox is unchecked
@@ -102,7 +92,7 @@ var taskIncomplete = function () {
 
 
 //Set the click handler to the addTask function.
-addButton.addEventListener("click", function () {
+addButton.addEventListener("click", function() {
     if (taskInput.value != "") {
         var flyingStatus = $("#journeytype [name='journeytype']:checked").val();
         addTask(flyingStatus);
@@ -121,7 +111,7 @@ addButton.addEventListener("click", function () {
  }
  });*/
 
-var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
+var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
     console.log("bind list item events");
     //select ListItems children
     var deleteButton = taskListItem.querySelector("button.delete");
@@ -162,8 +152,8 @@ function addMarker($li) {
     updateLabelText();
 }
 
-//on calculate emission button click
-calculateButton.addEventListener("click", function () {
+// on calculate emission button click
+calculateButton.addEventListener("click", function() {
     updateEmissionData();
     updateFormData();
     $("html, body").stop().animate({
@@ -184,11 +174,14 @@ function updateFormData() {
 
 }
 
+/*
+Updates the emission data in the infographic section
+*/
 function updateEmissionData() {
     $("#distancebetween [data-distance]").text(map.distance);
     map.calculateEmission();
     $("#totalEmission[data-emission]").text(parseInt(map.emission));
-//    document.querySelector("#totalEmission").innerHTML = 0;
+    //    document.querySelector("#totalEmission").innerHTML = 0;
 
     document.querySelector("#totalCities").innerHTML = document.querySelector("#incomplete-tasks").childElementCount;
     $("#emission-data").show();
@@ -219,17 +212,18 @@ function updateLabelText() {
 
 function animateThankYouMessage() {
     $("#thankyou").show();
-    $("html, body").stop().animate({scrollTop: $("#thankyou").position().top}, 500);
+    $("html, body").stop().animate({ scrollTop: $("#thankyou").position().top }, 500);
 }
 
-function updateComparison(){ 
-    document.getElementById("opt1").checked=false; 
-    document.getElementById("opt2").checked=false;
-    //document.getElementById("opt3").checked=false; 
-    document.getElementById("opt4").checked=false; 
-    document.getElementById("opt5").checked=false; 
-    //document.getElementById("opt6").checked=false; 
-    document.getElementById("opt7").checked=false; 
+// update comparisons between different lifestyle changes
+function updateComparison() {
+    document.getElementById("opt1").checked = false;
+    document.getElementById("opt2").checked = false;
+    //document.getElementById("opt3").checked=false;
+    document.getElementById("opt4").checked = false;
+    document.getElementById("opt5").checked = false;
+    //document.getElementById("opt6").checked=false;
+    document.getElementById("opt7").checked = false;
 
     document.getElementById("opt1-bar").classList.remove("on");
     document.getElementById("opt2-bar").classList.remove("on");
@@ -240,10 +234,3 @@ function updateComparison(){
     document.getElementById("opt7-bar").classList.remove("on");
 
 }
-
-
-// Issues with usabiliy don't get seen until they are in front of a human tester.
-
-//prevent creation of empty tasks.
-
-//Shange edit to save when you are in edit mode.

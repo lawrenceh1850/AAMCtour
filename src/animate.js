@@ -1,4 +1,4 @@
-//TODO - cleanup
+// TODO: LH not sure what this does yet, something to do with the add button
 
 //event handlers
 

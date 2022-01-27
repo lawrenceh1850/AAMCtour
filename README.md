@@ -1,16 +1,23 @@
 # AAMCtour
 
 ## Critical TODO
-- [x] Fix Alaska / Hawaii map
+- [x] Make Alaska / Hawaii under US states
 - [ ] redo the form for branching logic
+- [ ] airport deletion doesn't work - just deletes FIFO regardless of which city is deleted
 - [ ] dropdown for which med school people go to
 - [ ] duplicate form submission logic
 - [x] page starts halfway down on load
 
 ## Backlog
+- add vue-cloak
 - clean up code / comment code / document
-- list of airports on the left looks ugly
-- web performance issues
+- make the map not fixed width
+- css of the form is ugly
+- clicking on the destination should just add it right away
+- make the entire initial page fit on the screen
+- start using bootstrap for everything
+- list of airports on the left overlaps with the map when the screen is too narrow
+- web performance issues - might crash if there are too many airports
 - mobile friendly
 - airplane doesn't fully fly between all destinations
     - see bottom of `map.js`
