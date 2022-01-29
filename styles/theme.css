@@ -99,7 +99,7 @@ button {
 }
 
 #addbutton {
-    width: 10vw;
+    min-width: 5vw;
 }
 
 button:hover {
@@ -167,6 +167,7 @@ li>.delete:hover {
 
 .autocomplete-wrapper {
     position: relative;
+    min-width: 30vw;
 }
 
 .autocomplete-results {
@@ -412,27 +413,11 @@ li>.delete:hover {
     box-shadow: none;
 }
 
-#calculate {
-    width: 250px;
-    margin-top: 50px;
-    background: none;
-    border-color: #fff;
-    outline: 0 none;
-}
-
 input::placeholder {
     color: dimgrey;
     font-size: 15px;
     width: 100%;
     text-align: left;
-}
-
-input[type="text"] {
-    font-size: 15px;
-}
-
-#legend-graph>.column {
-    margin-left: 100px;
 }
 
 #circulargraph .graph>.pc1 {

@@ -277,18 +277,6 @@ input#opt7[type=checkbox]:not(old):checked+label>span {
     border-bottom: 1px dashed;
 }
 
-.checkbox {
-    position: relative;
-    display: inline-flex;
-    margin: 1rem 0 0;
-    margin-right: 2vw;
-}
-
-.checkbox label,
-.radio label {
-    text-align: left;
-}
-
 @media screen and (max-width: 760px) {
     .sources {
         margin: 2rem -3vw;

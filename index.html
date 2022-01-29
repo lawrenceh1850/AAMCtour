@@ -26,7 +26,7 @@
 
 <body id="top" itemtype="http://schema.org/WebPage">
     <div class="container-fluid">
-        <div id="introduction" class="container pt-3 text-dark">
+        <div id="introduction" class="row pt-3 text-dark text-center">
             <h1>What is the Environmental Impact of your Residency &#169 Tour?</h1>
         </div>
         <div id="user-input">
@@ -56,38 +56,37 @@
                 </svg>
             </div>
 
-            <form method="post" action="" id="sort-it" onsubmit="return false;">
-                <h3 class="control-label text-dark" for="autocomplete">
-                    I'm starting my Residency Interview Tour from
-                </h3>
-                <div class="form-group">
-                    <input id="autocomplete" class="form-control form-control-lg" type="text" name="dep-city" placeholder="City or Airport Name ..." autocomplete="off" />
-                </div>
-                <div class="form-group" id="journeytype" style="display: none;">
-                    <input type="radio" name="journeytype" value="1" id="flying" checked="" />
-                    <label class="text-dark" for="flying">By Flying</label>
-                    <input type="radio" name="journeytype" value="0" id="other" />
-                    <label class="text-dark" for="other">By Other Means</label>
-                </div>
+            <div class="d-flex justify-content-center">
+                <form method="post" action="" id="sort-it" onsubmit="return false;">
+                    <h3 class="control-label text-dark text-center mb-3" for="autocomplete">
+                        I'm starting my Residency Interview Tour from
+                    </h3>
+                    <div class="input-group">
+                        <input id="autocomplete" class="form-control" type="text" name="dep-city" placeholder="City or Airport Name ..." autocomplete="off" />
+                        <button type="button" class="btn btn-primary" id="addbutton">Add</button>
+                        <button type="button" class="btn btn-secondary" id="calculate" style="display:none;">Calculate My Emissions</button>
+                    </div>
+                    <div style="display: none" class="input-group pt-3 pb-3 justify-content-center" id="journeytype">
+                        <input type="radio" name="journeytype" value="1" id="flying" checked="" />
+                        <label class="text-dark" for="flying">By Flying</label>
+                        <input type="radio" name="journeytype" value="0" id="other" />
+                        <label class="text-dark" for="other">By Other Means</label>
+                    </div>
 
-                <button type="button" class="btn btn-primary btn-sm" id="addbutton">Add</button>
-                <ul id="incomplete-tasks" class="mt-5 d-none"></ul>
-                <div class="clearfix"></div>
-                <div id="calculateButtons">
-                    <button type="button" class="btn btn-secondary mt-4 btn-lg text-dark" id="calculate" style="display:none;">Calculate My Emissions</button>
-                </div>
-            </form>
+
+                    <ul id="incomplete-tasks" class="mt-5 d-none"></ul>
+                    <div class="clearfix"></div>
+
+                </form>
+            </div>
             <div class="clearfix"></div>
         </div>
-    </div>
+        <div class="p-5 row" id="emission-data" style="display:none">
+            <!-- Infographic -->
+            <div class="col col-6 p-5 mx-auto text-white text-center rounded" id="infographic">
 
-    <div id="emission-data" style="display:none">
-
-        <div class="container p-5">
-            <div id="infographic">
-
-                <h4>Total Emission Calculations</h4>
-                <h8 style="font-size:15px">Source: Estimates based on economy class seats </h8>
+                <h1>Total Emission Calculations</h1>
+                <h8>Source: Estimates based on economy class seats </h8>
 
                 <div class="container">
                     <div class="row">
@@ -112,58 +111,57 @@
                 </div>
                 <div id="container">
                     <div class="row" id="circulargraph">
-                        <div class="col-md-5 col-sm-6">
+                        <div class="col-md-12 col-lg-7">
                             <div class="graph">
                                 <div class="percent-circle pc1" data-percent="0">
                                     <svg>
-                                        <use class="percent-circle-inner" xlink:href="#percent-circle-svg"></use>
-                                    </svg>
+                                            <use class="percent-circle-inner" xlink:href="#percent-circle-svg"></use>
+                                        </svg>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-7 col-sm-6">
+                        <div class="col-md-12 col-lg-5">
                             <div class="textStyle textBox textLeft" style="margin-top:75px"> of the <span class="callout">average yearly </span> American Emission per person</div>
                         </div>
                     </div>
                     <svg class="hidden">
-                        <circle id="percent-circle-svg" cx="50%" cy="50%" r="50%" stroke-alignment="inner"></circle>
-                    </svg>
+                            <circle id="percent-circle-svg" cx="50%" cy="50%" r="50%" stroke-alignment="inner"></circle>
+                        </svg>
 
                     <div class="row">
-
-                        <div class="col-12" style="margin: 0 auto; max-width: 30%;">
-                            <h3 style="font-size:30px; ">The <span class="callout"> carbon emissions </span> of your trip compared to emission reduction by lifestyle changes for <span class="callout">1 year </span></h3>
+                        <div class="col-12">
+                            <h5>The <span class="callout"> carbon emissions </span> of your trip compared to emission reduction by lifestyle changes for <span class="callout">1 year </span></h5>
                         </div>
 
                         <section>
-                            <div class="big-graph">
-                                <div class="big-graph-opt" id="legend-graph">
+                            <div class="row">
+                                <div class="col col-4" id="legend-graph">
                                     <div class="column">
-                                        <div class="checkbox">
+                                        <div class="form-group">
                                             <input id="opt1" type="checkbox" value="0.9">
                                             <label for="opt1"><span></span>Go vegetarian</label>
                                         </div>
-                                        <div class="checkbox">
+                                        <div class="form-group">
                                             <input id="opt2" type="checkbox" value="0.21">
                                             <label for="opt2"><span></span>Recycle</label>
                                         </div>
                                         <!--<div class="checkbox">
-                                        <input id="opt3" type="checkbox" value="0.06">
-                                        <label for="opt3"><span></span>Only use LED light bulbs</label>
-                                    </div> -->
-                                        <div class="checkbox zero">
+                                            <input id="opt3" type="checkbox" value="0.06">
+                                            <label for="opt3"><span></span>Only use LED light bulbs</label>
+                                        </div> -->
+                                        <div class="form-group zero">
                                             <input id="opt5" type="checkbox" value="0.37">
                                             <label for="opt5"><span></span>Reduce your food waste to 0</label>
                                         </div>
                                         <!--<div class="checkbox">
-                                        <input id="opt6" type="checkbox" value="0.005">
-                                        <label for="opt6"><span></span>Use a reusable shopping bag</label>
-                                    </div> -->
-                                        <div class="checkbox">
+                                            <input id="opt6" type="checkbox" value="0.005">
+                                            <label for="opt6"><span></span>Use a reusable shopping bag</label>
+                                        </div> -->
+                                        <div class="form-group">
                                             <input id="opt7" type="checkbox" value="0.36">
                                             <label for="opt7"><span></span>Eat local food only</label>
                                         </div>
-                                        <div class="checkbox">
+                                        <div class="form-group">
                                             <input id="opt4" type="checkbox" value="1.33">
                                             <label for="opt4"><span></span>Live car free (30km/day)</label>
                                         </div>
@@ -178,14 +176,14 @@
                                             <div>- 0.21 tCO₂e</div>
                                         </div>
                                         <!--<div class="opt-bar" id="opt3-bar" class="">
-                                        <div>- 0.06</div>
-                                    </div> -->
+                                            <div>- 0.06</div>
+                                        </div> -->
                                         <div class="opt-bar" id="opt5-bar" class="">
                                             <div>- 0.37 tCO₂e</div>
                                         </div>
                                         <!-- <div class="opt-bar" id="opt6-bar" class="">
-                                        <div>-0.005</div>
-                                    </div> -->
+                                            <div>-0.005</div>
+                                        </div> -->
                                         <div class="opt-bar" id="opt7-bar" class="">
                                             <div>- 0.36 tCO₂e</div>
                                         </div>
@@ -198,26 +196,33 @@
                                     </div>
                                 </div>
                             </div>
-
                     </div>
                 </div>
+            </div>
 
-                <div class="container p-1" style="background-color:#D9DCD6">
+            <div class="mt-5 d-flex flex-column align-items-center">
+                <hr>
+                <h3 class="col-7 text-dark text-center">Please help us understand the cost of the entire AAMC tour by filling out this short questionnaire</h3>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/viewform?embedded=true" width="640" height="823" frameborder="0" marginheight="0" marginwidth="0" class="p-3 rounded col-7">Loading…</iframe>
+            </div>
+
+            <!-- Questionnaire Form -->
+            <div class="d-none bg-light p-3">
+                <div class="p-1" style="background-color:#D9DCD6">
                     <!-- TODO: uncomment the real google form response -->
                     <!-- <form class="form mt-5" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSejY5ykx9XWxh_UxnaaAFWOpVQJP2Q2bwVNcnINXDnpMMKXRg/formResponse" target="hidden_iframe" onsubmit="animateThankYouMessage"> -->
                     <form class="form mt-5" action="." onsubmit="return animateThankYouMessage()">
                         <h4 class="text-dark">Please help us understand the cost of the entire AAMC tour</h4>
 
                         <!-- Med School of Origin -->
-                        <div class="input-group">
+                        <div class="form-group mb-3">
                             <label class="text-dark" for="entry.735375071">I study at:</label>
-                            <input class="form-control" id="schooloforigin" name="entry.735375071" size="70" type="text" placeholder="Please enter name of medical school " />
+                            <input class="form-control" id="schooloforigin" name="entry.735375071" size="70" type="text" placeholder="Please enter name of medical school" />
+                            <div class="form-check">
+                                <input class="form-check-input" name="schooloforigin-decline" id="schooloforigin-decline" type="checkbox">
+                                <label class="form-check-label" for="schooloforigin-decline">Decline to Answer</label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" name="schooloforigin-decline" id="schooloforigin-decline" type="checkbox">
-                            <label class="form-check-label" for="schooloforigin-decline">Decline to Answer</label>
-                        </div>
-
 
                         <!-- Specialties -->
                         <label class="text-dark">I am applying to:</label>
@@ -255,12 +260,12 @@
                         <input id="city27" name="entry.330434047" style="display:none" type="text" />
                         <input id="city28" name="entry.518662113" style="display:none" type="text" />
                         <input id="city29" name="entry.324442649" style="display:none" type="text" />
-                        <h6 class="text-dark p-3"> Please note, because the survey is anonymous, once you click the submit button at the end of the survey the researchers will not be able to determine which survey answers belong to you, so your information cannot be withdrawn after
-                            that point. Your information only will only be collected if you selected the “I agree” button at the consent cover letter. </h6>
+                        <h6 class="text-dark p-3"> <strong>Please note</strong>, because the survey is anonymous, once you click the submit button at the end of the survey the researchers will not be able to determine which survey answers belong to you, so your information cannot
+                            be withdrawn after that point. Your information only will only be collected if you selected the “I agree” button at the consent cover letter. </h6>
                         <input class="btn btn-primary" type="submit" value="Submit" />
                     </form>
                 </div>
-                <div id="thankyou" class="container" style="display:none; background-color:green; margin-bottom:10px">
+                <div id="thankyou" style="display:none; background-color:green; margin-bottom:10px">
                     <h1>Thank you!</h1>
                 </div>
             </div>

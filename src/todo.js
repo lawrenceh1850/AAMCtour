@@ -94,6 +94,7 @@ var taskIncomplete = function() {
 //Set the click handler to the addTask function.
 addButton.addEventListener("click", function() {
     if (taskInput.value != "") {
+        // TODO: this is incorrect, there are two checkboxes with name journeytype
         var flyingStatus = $("#journeytype [name='journeytype']:checked").val();
         addTask(flyingStatus);
         $("#incomplete-tasks").removeClass("d-none");
@@ -165,9 +166,8 @@ calculateButton.addEventListener("click", function() {
 });
 
 function updateFormData() {
-    var i = 0;
     var lengthOfResponse = document.querySelector("#incomplete-tasks").childElementCount;
-    for (; i < lengthOfResponse; i++) {
+    for (let i = 0; i < lengthOfResponse; i++) {
         var temp = "#city" + i;
         document.querySelector(temp).value = document.querySelector("#incomplete-tasks").children[i].children[0].id;
     }
