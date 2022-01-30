@@ -5,10 +5,10 @@ var incompleteTaskHolder = document.getElementById("incomplete-tasks"); //ul of 
 
 // === Code that handles the list of airports ===
 
-// don't select list of airports visited
+// don't allow selection of text for airports visited
 $("#incomplete-tasks").disableSelection();
 
-// Enter inside the search box adds the name
+// Enter inside the search box adds the airport
 $("#autocomplete").keydown(function(e) {
     if (e.keyCode == 13) {
         e.preventDefault();
