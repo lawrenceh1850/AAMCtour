@@ -18,12 +18,8 @@ var hide_trans_summary = anime({
     },
 });
 
-
-// only move one thing
-//document.querySelector("#incomplete-tasks").lastElementChild
-
 var translate_button = anime({
-    targets: document.querySelector("#incomplete-tasks"),
+    targets: document.querySelector("#visited-airport-list"),
     translateY: ['0', '0'],
     translateX: ['0', '0'],
     scale: 1.0,

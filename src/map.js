@@ -1,20 +1,3 @@
-//console.clear();
-
-/*$(document).ready(function(){
- $("#app").hide();
- });
- $('.autocomplete-results')
- .on('click', '.autocomplete-result', function(e) {
- $("#app").show();
- });
- $('.autocomplete-results')
- .on('keypress', ,(function(e){
- if (e.which == 13){
- $("#app").show();
- }
- });
- */
-
 map = new Vue({
     el: '#app',
     data: () => ({

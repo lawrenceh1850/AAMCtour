@@ -10,6 +10,7 @@
 - [ ] airport deletion doesn't work - just deletes FIFO regardless of which city is deleted
 - [ ] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
 - [x] page starts halfway down on load
+- [ ] deleting a destination and then recalculating emissions breaks the infographic
 - [ ] take out the flying / other means
 - [ ] basic mobile friendly cleanup - most people using it on desktop
 
@@ -48,3 +49,4 @@
     - Vue map here: https://codepen.io/shshaw/pen/vJNMQY
 - itemtype
     - HTML5 Microdata - https://www.htmlgoodies.com/html/web-developer-tutorial-html5-microdata/#fbid=VCU32R9FqvD
+- font awesome - icons

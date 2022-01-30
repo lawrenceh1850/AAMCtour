@@ -140,19 +140,16 @@ li {
     border: none;
 }
 
-#incomplete-tasks>li {
+#visited-airport-list>li {
     border-bottom: 1px solid #34495d;
 }
 
-#incomplete-tasks>li:last-of-type {
+#visited-airport-list>li:last-of-type {
     border-bottom: 0 none;
 }
 
 li>label {
-    font-size: 18px;
-    /*line-height: 20px;*/
     color: white;
-    width: 160px;
     padding: 0;
     text-align: left;
 }
@@ -176,7 +173,6 @@ li>.delete:hover {
     z-index: 1;
     top: 39px;
     left: 0;
-    font-size: 13px;
     border: solid 1px #ddd;
     border-top-width: 0;
     border-bottom-color: #ccc;
@@ -289,7 +285,6 @@ li>.delete:hover {
     stroke: none;
     fill: #FFF;
     font-family: inherit;
-    font-size: 20px;
     font-weight: 200;
 }
 
@@ -378,7 +373,7 @@ li>.delete:hover {
     opacity: 0;
 }
 
-#incomplete-tasks {
+#visited-airport-list {
     position: absolute;
     left: 25px;
     top: 0;
@@ -392,30 +387,28 @@ li>.delete:hover {
     background: #203446;
 }
 
-#incomplete-tasks .delete {
+#visited-airport-list .delete {
     width: 40px;
     margin: 0;
     background: none;
     border: 0px;
     color: #ff0000a1;
-    font-size: 20px;
     float: right;
     font-family: sans-serif;
     cursor: pointer;
     padding: .200rem .75rem .375rem;
 }
 
-#incomplete-tasks .delete:hover {
+#visited-airport-list .delete:hover {
     color: red;
 }
 
-#incomplete-tasks .delete:focus {
+#visited-airport-list .delete:focus {
     box-shadow: none;
 }
 
 input::placeholder {
     color: dimgrey;
-    font-size: 15px;
     width: 100%;
     text-align: left;
 }

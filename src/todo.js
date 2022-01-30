@@ -1,136 +1,100 @@
-var taskInput = document.getElementById("autocomplete"); //Add a new task.
-var addButton = document.getElementById("addbutton"); //first button
+let airportUserInput = document.getElementById("autocomplete"); //Add a new task.
+let addAirportButton = document.getElementById("addbutton"); //first button
 var calculateButton = document.getElementById("calculate"); //first button
-var incompleteTaskHolder = document.getElementById("incomplete-tasks"); //ul of #incomplete-tasks
+var visitedAirportsHolder = document.getElementById("visited-airport-list"); //ul of #visited-airport-list
 
 // === Code that handles the list of airports ===
 
 // don't allow selection of text for airports visited
-$("#incomplete-tasks").disableSelection();
+$("#visited-airport-list").disableSelection();
 
 // Enter inside the search box adds the airport
 $("#autocomplete").keydown(function(e) {
     if (e.keyCode == 13) {
         e.preventDefault();
         if (!$(".autocomplete-results").is(":visible")) {
-            addButton.click();
+            addAirportButton.click();
         }
     }
 });
 
 // create new airport item
-function createNewTaskElement(taskString, flyingStatus) {
-    var listItem = document.createElement("li");
-    var label = document.createElement("label"); //label
-    var deleteButton = document.createElement("button"); //delete button
-    label.className = "mb-0";
-    label.innerText = taskString;
-    label.id = taskString + flyingStatus;
-    //Each elements, needs appending
-    deleteButton.className = "delete btn";
+function createNewAirportElement(taskString, flyingStatus) {
+    let airportListItem = document.createElement("li");
 
-    var deleteIcon = document.createElement("i");
+    let airportNameLabel = document.createElement("label");
+    airportNameLabel.className = "mb-0";
+    airportNameLabel.innerText = taskString;
+    airportNameLabel.id = taskString + flyingStatus;
+
+    let deleteIcon = document.createElement("i");
     deleteIcon.className = "fa fa-trash";
+
+    let deleteButton = document.createElement("button");
+    deleteButton.className = "delete btn";
     deleteButton.appendChild(deleteIcon);
-    //and appending.
-    listItem.appendChild(label);
-    listItem.appendChild(deleteButton);
-    return listItem;
+
+    airportListItem.appendChild(airportNameLabel);
+    airportListItem.appendChild(deleteButton);
+    return airportListItem;
 };
 
-var addTask = function(flyingStatus) {
-    console.log("Add Task...");
+function addAirport(flyingStatus) {
+    console.log(`Adding airport with flyingStatus ${flyingStatus}`);
     //Create a new list item with the text from the #new-task:
-    var listItem = createNewTaskElement(taskInput.value, flyingStatus);
-    //Append listItem to incompleteTaskHolder
-    incompleteTaskHolder.appendChild(listItem);
-    bindTaskEvents(listItem, taskCompleted);
-    taskInput.value = "";
-    addMarker($(listItem));
+    let airportItem = createNewAirportElement(airportUserInput.value, flyingStatus);
+    visitedAirportsHolder.appendChild(airportItem);
+
+    // bind deletion button
+    bindDeleteAirport(airportItem);
+
+    // clear the user input
+    airportUserInput.value = "";
+    addMarker($(airportItem));
 };
 
-//Delete task.
-var deleteTask = function(e) {
-    console.log("Delete Task...");
-    var listItem = this.parentNode;
-    var ul = listItem.parentNode;
-    //Remove the parent list item from the ul.
-    ul.removeChild(listItem);
-    var index;
-    for (var i in map.markers) {
+function bindDeleteAirport(airportListItem) {
+    //select delete icon associated with airport
+    let deleteButton = airportListItem.querySelector("button.delete");
+    //Bind deleteTask to delete button.
+    deleteButton.onclick = deleteAirport;
+};
+
+function deleteAirport(e) {
+    let listItem = this.parentNode;
+    let visitedAirportList = listItem.parentNode;
+    // Remove airport from visitedAirportList
+    visitedAirportList.removeChild(listItem);
+
+    for (let i in map.markers) {
+        // if found an airport
         if (map.markers[i].airport.LocationID == listItem.getAttribute("data-location")) {
-            index = i;
+            map.markers.splice(i, 1);
+            map.markerDistance();
+            updateLabelText();
+            if ($("#visited-airport-list > li").length == 0) {
+                $("#visited-airport-list").addClass("d-none");
+            }
+            break;
         }
     }
-    map.markers.splice(index, 1);
-    map.markerDistance();
-    updateLabelText();
-    if ($("#incomplete-tasks > li").length == 0) {
-        $("#incomplete-tasks").addClass("d-none");
-    }
 };
 
-//Mark task completed
-var taskCompleted = function() {
-    console.log("Complete Task...");
-    //Append the task list item to the #completed-tasks
-    var listItem = this.parentNode;
-    completedTasksHolder.appendChild(listItem);
-    bindTaskEvents(listItem, taskIncomplete);
-};
-
-
-var taskIncomplete = function() {
-    console.log("Incomplete Task...");
-    //Mark task as incomplete.
-    //When the checkbox is unchecked
-    //Append the task list item to the #incomplete-tasks.
-    var listItem = this.parentNode;
-    incompleteTaskHolder.appendChild(listItem);
-    bindTaskEvents(listItem, taskCompleted);
-};
-
-
-//Set the click handler to the addTask function.
-addButton.addEventListener("click", function() {
-    if (taskInput.value != "") {
-        // TODO: this is incorrect, there are two checkboxes with name journeytype
-        var flyingStatus = $("#journeytype [name='journeytype']:checked").val();
-        addTask(flyingStatus);
-        $("#incomplete-tasks").removeClass("d-none");
-        console.log(flyingStatus);
+//Set the click handler to the addAiport function.
+addAirportButton.addEventListener("click", function() {
+    // TODO: check that the value is one of the ones in the airport list
+    if (airportUserInput.value != "") {
+        // selects which transportation method is checked
+        let flyingStatus = $("#journeytype [name='journeytype']:checked").val();
+        addAirport(flyingStatus);
+        $("#visited-airport-list").removeClass("d-none");
         document.getElementById("autocomplete").focus();
     }
 });
 
-/*addButton.addEventListener("click", function () {
- if (taskInput.value != "") {
- var flyingStatus = document.getElementById("exampleRadios1").checked;
- addTask(flyingStatus);
- console.log(flyingStatus);
- document.getElementById("autocomplete").focus();
- }
- });*/
-
-var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
-    console.log("bind list item events");
-    //select ListItems children
-    var deleteButton = taskListItem.querySelector("button.delete");
-    //Bind deleteTask to delete button.
-    deleteButton.onclick = deleteTask;
-    //Bind taskCompleted to checkBoxEventHandler
-};
-
-//cycle over incompleteTaskHolder ul list items
-//for each list item
-//for (var i = 0; i < incompleteTaskHolder.children.length; i++) {
-//    //bind events to list items chldren(tasksCompleted)
-//    bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted);
-//}
-
 //add marker
 function addMarker($li) {
-    var airport = JSON.parse($('#autocomplete').attr("data-airport")) || {};
+    let airport = JSON.parse($('#autocomplete').attr("data-airport")) || {};
     $('#autocomplete').attr("data-airport", "");
     var marker = {
         airport: airport,
@@ -143,7 +107,7 @@ function addMarker($li) {
         current: true,
         index: map.markers.length
     };
-    $li.attr("data-location", airport.LocationID + map.markers.length);
+    $li.attr("data-location", airport.LocationID);
 
     map.markers.push(marker);
     map.currentAirport = airport;
@@ -166,10 +130,10 @@ calculateButton.addEventListener("click", function() {
 });
 
 function updateFormData() {
-    var lengthOfResponse = document.querySelector("#incomplete-tasks").childElementCount;
+    var lengthOfResponse = document.querySelector("#visited-airport-list").childElementCount;
     for (let i = 0; i < lengthOfResponse; i++) {
         var temp = "#city" + i;
-        document.querySelector(temp).value = document.querySelector("#incomplete-tasks").children[i].children[0].id;
+        document.querySelector(temp).value = document.querySelector("#visited-airport-list").children[i].children[0].id;
     }
 
 }
@@ -183,7 +147,7 @@ function updateEmissionData() {
     $("#totalEmission[data-emission]").text(parseInt(map.emission));
     //    document.querySelector("#totalEmission").innerHTML = 0;
 
-    document.querySelector("#totalCities").innerHTML = document.querySelector("#incomplete-tasks").childElementCount;
+    document.querySelector("#totalCities").innerHTML = document.querySelector("#visited-airport-list").childElementCount;
     $("#emission-data").show();
 }
 
