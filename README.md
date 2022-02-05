@@ -50,3 +50,5 @@
 - itemtype
     - HTML5 Microdata - https://www.htmlgoodies.com/html/web-developer-tutorial-html5-microdata/#fbid=VCU32R9FqvD
 - font awesome - icons
+- Github Pages tutorial for different custom domains on the same GH account
+  - https://deanattali.com/blog/multiple-github-pages-domains/#background
