@@ -210,73 +210,242 @@
                 <h3 class="col-7 text-dark text-center">Please help us understand the cost of the entire AAMC tour by filling out this short questionnaire</h3>
 
                 <!-- TODO: remove, hidden g form -->
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/viewform?embedded=true" width="640" height="823" frameborder="0" marginheight="0" marginwidth="0" class="p-3 rounded col-7">Loading…</iframe>
+                <iframe class="d-none" src="https://docs.google.com/forms/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/viewform?embedded=true" width="640" height="823" frameborder="0" marginheight="0" marginwidth="0" class="p-3 rounded col-7">Loading…</iframe>
+
+                <!-- dummy frame for form to submit without redirect -->
+                <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
                 <!-- Custom styled form -->
-                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/formResponse" method="POST">
-                    <div class="formbuilder-select form-group field-select-1644994922881">
-                        <label for="select-1644994922881" class="formbuilder-select-label">I interviewed during the</label>
-                        <input name="entry.619680505" type="radio" value="2021-2022 application cycle" selected="true" id="select-1644994922881-0">2021-2022 application cycle</input>
-                        <input name="entry.619680505" type="radio" value="2020-2021 application cycle" id="select-1644994922881-1">2020-2021 application cycle</input>
-                        <!-- <select class="form-control" name="entry.619680505" id="select-1644994922881">
-                            <option value="interview-2021-2022" selected="true" id="select-1644994922881-0">2021-2022 application cycle</option>
-                            <option value="interview-2020-2021" id="select-1644994922881-1">2020-2021 application cycle</option>
-                        </select> -->
+                <form class="needs-validation" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/formResponse" method="POST" target="dummyframe">
+                    <div class="mb-3">
+                        <span class="text-danger">* Required Question</span>
                     </div>
-                    <div class="formbuilder-select form-group field-select-1644994963652">
-                        <label for="select-1644994963652" class="formbuilder-select-label">I interviewed for</label>
-                        <input type="radio" name="entry.29944464" value="Medical School" selected="true" id="select-1644994963652-0">Medical School</input>
-                        <input type="radio" name="entry.29944464" value="Residency" id="select-1644994963652-1">Residency</input>
-                        <input type="radio" name="entry.29944464" value="Fellowship" id="select-1644994963652-2">Fellowship</input>
-                        <!-- <select class="form-control" name="entry.29944464" id="select-1644994963652">
-                            <option value="med-school" selected="true" id="select-1644994963652-0">Medical School</option>
-                            <option value="residency" id="select-1644994963652-1">Residency</option>
-                            <option value="fellowship" id="select-1644994963652-2">Fellowship</option>
-                        </select> -->
+
+                    <div class="mb-3">
+                        <!-- Which year they interviewed -->
+                        <h4>I interviewed during the:<span class="text-danger">*</span></h4>
+                        <div class="form-check">
+                            <input class="form-check-input" name="entry.619680505" type="radio" value="2021-2022 application cycle" id="select-1644994922881-0" required>
+                            <label class="form-check-label" for="select-1644994922881-0">
+                                2021-2022 application cycle
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="entry.619680505" type="radio" value="2020-2021 application cycle" id="select-1644994922881-1" required></input>
+                            <label class="form-check-label" for="select-1644994922881-1">
+                                2020-2021 application cycle
+                            </label>
+                        </div>
                     </div>
-                    <div class="formbuilder-select form-group field-select-1644994998869">
-                        <label for="select-1644994998869" class="formbuilder-select-label">If applicable, which residency specialty did you interview for?</label>
-                        <input type="radio" name="entry.842876269" value="Anesthesiology" selected="true" id="select-1644994998869-0">Anesthesiology</input>
-                        <input type="radio" name="entry.842876269" value="option-2" id="select-1644994998869-1">Option 2</input>
-                        <input type="radio" name="entry.842876269" value="option-3" id="select-1644994998869-2">Option 3</input>
-                        <!-- TODO: add in the residency specialties -->
-                        <!-- <select class="form-control" name="entry.842876269" id="select-1644994998869">
-                        <option value="option-1" selected="true" id="select-1644994998869-0">Option 1</option>
-                        <option value="option-2" id="select-1644994998869-1">Option 2</option>
-                        <option value="option-3" id="select-1644994998869-2">Option 3</option>
-                        </select> -->
+
+                    <!-- Med school, residency, or fellowship -->
+                    <div class="mb-3">
+                        <h4>I interviewed for:<span class="text-danger">*</span></h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="entry.29944464" value="Medical School" selected="true" id="select-1644994963652-0" required>
+                            <label class="form-check-label" for="select-1644994963652-0">
+                                Medical School
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="entry.29944464" value="Residency" id="select-1644994963652-1" required></input>
+                            <label class="form-check-label" for="select-1644994963652-1">
+                                Residency
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="entry.29944464" value="Fellowship" id="select-1644994963652-2" required></input>
+                            <label class="form-check-label" for="select-1644994963652-2">
+                                Fellowship
+                            </label>
+                        </div>
                     </div>
-                    <div class="formbuilder-text form-group field-text-1644995051365">
-                        <label for="text-1644995051365" class="formbuilder-text-label"> If applicable, which fellowship specialty did you interview for?</label>
+
+                    <!-- Residency specialties -->
+                    <div class="mb-3">
+                        <h4>If applicable, which residency specialty did you interview for?</h4>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Anesthesiology" selected="true" id="select-1644994998869-0">
+                            <label class="form-check-label" for="select-1644994998869-0">
+                                Anesthesiology
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Dermatology" selected="true" id="select-1644994998869-1">
+                            <label class="form-check-label" for="select-1644994998869-1">
+                                Dermatology
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Diagnostic Radiology" selected="true" id="select-1644994998869-2">
+                            <label class="form-check-label" for="select-1644994998869-2">
+                                Diagnostic Radiology
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Emergency Medicine" selected="true" id="select-1644994998869-3">
+                            <label class="form-check-label" for="select-1644994998869-3">
+                                Emergency Medicine
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Family Medicine" selected="true" id="select-1644994998869-4">
+                            <label class="form-check-label" for="select-1644994998869-4">
+                                Family Medicine
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Internal Medicine" selected="true" id="select-1644994998869-5">
+                            <label class="form-check-label" for="select-1644994998869-5">
+                                Internal Medicine
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Neurology" selected="true" id="select-1644994998869-6">
+                            <label class="form-check-label" for="select-1644994998869-6">
+                                Neurology
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Neurosurgery" selected="true" id="select-1644994998869-7">
+                            <label class="form-check-label" for="select-1644994998869-7">
+                                Neurosurgery
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Obstetrics and Gynecology" selected="true" id="select-1644994998869-8">
+                            <label class="form-check-label" for="select-1644994998869-8">
+                                Obstetrics and Gynecology
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Ophthalmology" selected="true" id="select-1644994998869-9">
+                            <label class="form-check-label" for="select-1644994998869-9">
+                                Ophthalmology
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Orthopedic Surgery" selected="true" id="select-1644994998869-10">
+                            <label class="form-check-label" for="select-1644994998869-10">
+                                Orthopedic Surgery
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Otolaryngology" selected="true" id="select-1644994998869-11">
+                            <label class="form-check-label" for="select-1644994998869-11">
+                                Otolaryngology
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Pathology" selected="true" id="select-1644994998869-12">
+                            <label class="form-check-label" for="select-1644994998869-12">
+                                Pathology
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Pediatrics" selected="true" id="select-1644994998869-13">
+                            <label class="form-check-label" for="select-1644994998869-13">
+                                Pediatrics
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Physical Medicine and Rehabilitation" selected="true" id="select-1644994998869-14">
+                            <label class="form-check-label" for="select-1644994998869-14">
+                                Physical Medicine and Rehabilitation
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Plastic Surgery" selected="true" id="select-1644994998869-15">
+                            <label class="form-check-label" for="select-1644994998869-15">
+                                Plastic Surgery
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Psychiatry" selected="true" id="select-1644994998869-16">
+                            <label class="form-check-label" for="select-1644994998869-16">
+                                Psychiatry
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Radiation Oncology" selected="true" id="select-1644994998869-17">
+                            <label class="form-check-label" for="select-1644994998869-17">
+                                Radiation Oncology
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Surgery" selected="true" id="select-1644994998869-18">
+                            <label class="form-check-label" for="select-1644994998869-18">
+                                Surgery
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Thoracic Surgery" selected="true" id="select-1644994998869-19">
+                            <label class="form-check-label" for="select-1644994998869-19">
+                                Thoracic Surgery
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="entry.842876269" value="Urology" selected="true" id="select-1644994998869-20">
+                            <label class="form-check-label" for="select-1644994998869-20">
+                                Urology
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Fellowship specialties -->
+                    <div class="mb-3">
+                        <label for="entry.675876217" class="form-label h4">If applicable, which fellowship specialty did you interview for?</label>
                         <input type="text" class="form-control" name="entry.675876217" access="false" id="text-1644995051365">
                     </div>
-                    <div class="formbuilder-textarea form-group field-textarea-1644995090519">
-                        <label for="textarea-1644995090519" class="formbuilder-textarea-label">
+
+                    <!-- Institution -->
+                    <div class="mb-3">
+                        <label for="textarea-1644995090519" class="form-label h4">
                             <div>(Optional) At which institution are you currently studying?</div>
                         </label>
                         <input type="text" class="form-control" name="entry.1914427345" access="false" id="textarea-1644995090519"></input>
                     </div>
-                    <div class="formbuilder-select form-group field-select-1644995132081">
-                        <label for="select-1644995132081" class="formbuilder-select-label">
-                            <div>In the future, I prefer interviews to be</div>
-                        </label>
-                        <input type="radio" name="entry.625532030" value="Virtual" selected="true" id="select-1644995132081-0">Virtual</input>
-                        <input type="radio" name="entry.625532030" value="In-person" id="select-1644995132081-1">In-person</input>
-                        <input type="radio" name="entry.625532030" value="Hybrid (virtual interview with in-person second look)" id="select-1644995132081-2">Hybrid (virtual interview with in-person second look)</input>
-                        <input type="radio" name="entry.625532030" value="Unsure" id="select-1644995132081-3">Unsure</input>
-                        <!-- <select class="form-control" name="entry.625532030" id="select-1644995132081">
-                            <option value="virtual" selected="true" id="select-1644995132081-0">Virtual</option>
-                            <option value="in-person" id="select-1644995132081-1">In-person</option>
-                            <option value="hybrid" id="select-1644995132081-2">Hybrid (virtual interview with in-person second look)</option>
-                            <option value="unsure" id="select-1644995132081-3">Unsure</option>
-                        </select> -->
+
+                    <!-- Interview format preference -->
+                    <div class="mb-3">
+                        <h4>In the future, I prefer interviews to be:<span class="text-danger">*</span></h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="entry.625532030" value="Virtual" selected="true" id="select-1644995132081-0" required></input>
+                            <label class="form-check-label" for="select-1644995132081-0">
+                                Virtual
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="entry.625532030" value="In–person" id="select-1644995132081-1" required></input>
+                            <label class="form-check-label" for="select-1644995132081-1">
+                                In–person
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="entry.625532030" value="Hybrid (virtual interview with in-person second look)" id="select-1644995132081-2" required></input>
+                            <label class="form-check-label" for="select-1644995132081-2">
+                                Hybrid (virtual interview with in-person second look)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="entry.625532030" value="Unsure" id="select-1644995132081-3" required></input>
+                            <label class="form-check-label" for="select-1644995132081-3">
+                                Unsure
+                            </label>
+                        </div>
                     </div>
-                    <div class="formbuilder-textarea form-group field-textarea-1644995190804">
-                        <label for="textarea-1644995190804" class="formbuilder-textarea-label">Any comments?</label>
-                        <input type="text" class="form-control" name="entry.909335272" access="false" id="textarea-1644995190804"></input>
+
+                    <!-- Additional comments -->
+                    <div class="mb-3">
+                        <div class="formbuilder-textarea form-group field-textarea-1644995190804">
+                            <label for="textarea-1644995190804" class="form-label h4">Any comments?</label>
+                            <input type="text" class="form-control" name="entry.909335272" access="false" id="textarea-1644995190804"></input>
+                        </div>
                     </div>
+
+                    <!-- Submit btn -->
                     <div class="formbuilder-button form-group field-button-1644997402759">
-                        <button type="submit" class="btn-primary btn" name="button-1644997402759" access="false" style="primary" id="button-1644997402759">Submit</button>
+                        <button type="submit" class="btn-primary btn" name="button-1644997402759" access="false" id="button-1644997402759">Submit</button>
                     </div>
 
                     <!-- hidden fields for cities -->
@@ -314,6 +483,7 @@
             </div>
 
             <!-- Hidden old questionnaire Form -->
+            <!-- TODO: remove -->
             <div class="d-none bg-light p-3">
                 <div class="p-1" style="background-color:#D9DCD6">
                     <!-- TODO: uncomment the real google form response -->
@@ -409,6 +579,8 @@
     <script src="src/infographic.js"></script>
     <script src="src/popup.js"></script>
 
+    <!-- form validation -->
+    <script src="src/formInputValidation.js"></script>
 
 
 </body>

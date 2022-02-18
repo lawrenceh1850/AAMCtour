@@ -8,7 +8,14 @@
   - [x] UI after submitting the form
   - [x] duplicate form submission
 - [x] page starts halfway down on load
-- [ ] airport deletion doesn't work - just deletes FIFO regardless of which city is deleted
+- [x] airport deletion doesn't work - just deletes FIFO regardless of which city is deleted
+
+### Google form to do
+- [ ] make google form questions required
+- [ ] style google form
+- [ ] add in residency specialties
+- [ ] add required warning for certain questions
+
 - [ ] CO2 calculation
 - [ ] import airport list
 - [ ] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
