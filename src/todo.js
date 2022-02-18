@@ -155,11 +155,11 @@ function updateEmissionData() {
 function updateLabelText() {
     $("#journeytype").val("1");
     if (map.markers.length <= 0) {
-        $("#sort-it [for='autocomplete']").text("I'm starting my CaRMS Tour from");
+        $("#sort-it [for='autocomplete']").text("I'm starting my AAMC interview from");
         $("#journeytype").hide();
     } else {
         $("#sort-it [for='autocomplete']").text("I then travelled to");
-        $("#journeytype").show();
+        // $("#journeytype").show();
     }
     if (map.markers.length > 1) {
         $("#calculate").show();
