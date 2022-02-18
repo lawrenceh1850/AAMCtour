@@ -7,9 +7,11 @@
 - [x] redo the form for branching logic
   - [x] UI after submitting the form
   - [x] duplicate form submission
-- [ ] airport deletion doesn't work - just deletes FIFO regardless of which city is deleted
-- [ ] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
 - [x] page starts halfway down on load
+- [ ] airport deletion doesn't work - just deletes FIFO regardless of which city is deleted
+- [ ] CO2 calculation
+- [ ] import airport list
+- [ ] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
 - [ ] deleting a destination and then recalculating emissions breaks the infographic
 - [ ] take out the flying / other means
 - [ ] basic mobile friendly cleanup - most people using it on desktop
@@ -31,6 +33,7 @@
 - airplane doesn't fully fly between all destinations
   - see bottom of `map.js`
 - airport tags hover
+- create custom 404 page - https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site
 
 ## Dependencies
 - display the advocacy page on a separate page - Karly will generate something with the images

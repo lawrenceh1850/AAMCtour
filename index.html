@@ -26,9 +26,12 @@
 
 <body id="top" itemtype="http://schema.org/WebPage">
     <div class="container-fluid">
+        <!-- map of US -->
         <div id="introduction" class="row pt-3 text-dark text-center">
             <h1>What is the Environmental Impact of your Residency &#169 Tour?</h1>
         </div>
+
+        <!-- user enters their airport info -->
         <div id="user-input">
             <div id="app" class="mileage">
                 <svg class="mileage-map p-2" ref="map" width="1200" height="780" viewBox="-120 -100 1200 780">
@@ -80,6 +83,8 @@
             </div>
             <div class="clearfix"></div>
         </div>
+
+        <!-- hidden infographic and form displayed after the user enters their residency info -->
         <div class="p-5 row" id="emission-data" style="display:none">
             <!-- Infographic -->
             <div class="col col-lg-6 p-5 mx-auto text-white text-center rounded" id="infographic">
@@ -114,8 +119,8 @@
                             <div class="graph">
                                 <div class="percent-circle pc1" data-percent="0">
                                     <svg>
-                                            <use class="percent-circle-inner" xlink:href="#percent-circle-svg"></use>
-                                        </svg>
+                                        <use class="percent-circle-inner" xlink:href="#percent-circle-svg"></use>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -124,8 +129,8 @@
                         </div>
                     </div>
                     <svg class="hidden">
-                            <circle id="percent-circle-svg" cx="50%" cy="50%" r="50%" stroke-alignment="inner"></circle>
-                        </svg>
+                        <circle id="percent-circle-svg" cx="50%" cy="50%" r="50%" stroke-alignment="inner"></circle>
+                    </svg>
 
                     <div class="row">
                         <div class="col-12">
@@ -199,13 +204,116 @@
                 </div>
             </div>
 
+            <!-- New response data form -->
             <div class="mt-5 d-flex flex-column align-items-center">
                 <hr>
                 <h3 class="col-7 text-dark text-center">Please help us understand the cost of the entire AAMC tour by filling out this short questionnaire</h3>
+
+                <!-- TODO: remove, hidden g form -->
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/viewform?embedded=true" width="640" height="823" frameborder="0" marginheight="0" marginwidth="0" class="p-3 rounded col-7">Loading…</iframe>
+
+                <!-- Custom styled form -->
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/formResponse" method="POST">
+                    <div class="formbuilder-select form-group field-select-1644994922881">
+                        <label for="select-1644994922881" class="formbuilder-select-label">I interviewed during the</label>
+                        <input name="entry.619680505" type="radio" value="2021-2022 application cycle" selected="true" id="select-1644994922881-0">2021-2022 application cycle</input>
+                        <input name="entry.619680505" type="radio" value="2020-2021 application cycle" id="select-1644994922881-1">2020-2021 application cycle</input>
+                        <!-- <select class="form-control" name="entry.619680505" id="select-1644994922881">
+                            <option value="interview-2021-2022" selected="true" id="select-1644994922881-0">2021-2022 application cycle</option>
+                            <option value="interview-2020-2021" id="select-1644994922881-1">2020-2021 application cycle</option>
+                        </select> -->
+                    </div>
+                    <div class="formbuilder-select form-group field-select-1644994963652">
+                        <label for="select-1644994963652" class="formbuilder-select-label">I interviewed for</label>
+                        <input type="radio" name="entry.29944464" value="Medical School" selected="true" id="select-1644994963652-0">Medical School</input>
+                        <input type="radio" name="entry.29944464" value="Residency" id="select-1644994963652-1">Residency</input>
+                        <input type="radio" name="entry.29944464" value="Fellowship" id="select-1644994963652-2">Fellowship</input>
+                        <!-- <select class="form-control" name="entry.29944464" id="select-1644994963652">
+                            <option value="med-school" selected="true" id="select-1644994963652-0">Medical School</option>
+                            <option value="residency" id="select-1644994963652-1">Residency</option>
+                            <option value="fellowship" id="select-1644994963652-2">Fellowship</option>
+                        </select> -->
+                    </div>
+                    <div class="formbuilder-select form-group field-select-1644994998869">
+                        <label for="select-1644994998869" class="formbuilder-select-label">If applicable, which residency specialty did you interview for?</label>
+                        <input type="radio" name="entry.842876269" value="Anesthesiology" selected="true" id="select-1644994998869-0">Anesthesiology</input>
+                        <input type="radio" name="entry.842876269" value="option-2" id="select-1644994998869-1">Option 2</input>
+                        <input type="radio" name="entry.842876269" value="option-3" id="select-1644994998869-2">Option 3</input>
+                        <!-- TODO: add in the residency specialties -->
+                        <!-- <select class="form-control" name="entry.842876269" id="select-1644994998869">
+                        <option value="option-1" selected="true" id="select-1644994998869-0">Option 1</option>
+                        <option value="option-2" id="select-1644994998869-1">Option 2</option>
+                        <option value="option-3" id="select-1644994998869-2">Option 3</option>
+                        </select> -->
+                    </div>
+                    <div class="formbuilder-text form-group field-text-1644995051365">
+                        <label for="text-1644995051365" class="formbuilder-text-label"> If applicable, which fellowship specialty did you interview for?</label>
+                        <input type="text" class="form-control" name="entry.675876217" access="false" id="text-1644995051365">
+                    </div>
+                    <div class="formbuilder-textarea form-group field-textarea-1644995090519">
+                        <label for="textarea-1644995090519" class="formbuilder-textarea-label">
+                            <div>(Optional) At which institution are you currently studying?</div>
+                        </label>
+                        <input type="text" class="form-control" name="entry.1914427345" access="false" id="textarea-1644995090519"></input>
+                    </div>
+                    <div class="formbuilder-select form-group field-select-1644995132081">
+                        <label for="select-1644995132081" class="formbuilder-select-label">
+                            <div>In the future, I prefer interviews to be</div>
+                        </label>
+                        <input type="radio" name="entry.625532030" value="Virtual" selected="true" id="select-1644995132081-0">Virtual</input>
+                        <input type="radio" name="entry.625532030" value="In-person" id="select-1644995132081-1">In-person</input>
+                        <input type="radio" name="entry.625532030" value="Hybrid (virtual interview with in-person second look)" id="select-1644995132081-2">Hybrid (virtual interview with in-person second look)</input>
+                        <input type="radio" name="entry.625532030" value="Unsure" id="select-1644995132081-3">Unsure</input>
+                        <!-- <select class="form-control" name="entry.625532030" id="select-1644995132081">
+                            <option value="virtual" selected="true" id="select-1644995132081-0">Virtual</option>
+                            <option value="in-person" id="select-1644995132081-1">In-person</option>
+                            <option value="hybrid" id="select-1644995132081-2">Hybrid (virtual interview with in-person second look)</option>
+                            <option value="unsure" id="select-1644995132081-3">Unsure</option>
+                        </select> -->
+                    </div>
+                    <div class="formbuilder-textarea form-group field-textarea-1644995190804">
+                        <label for="textarea-1644995190804" class="formbuilder-textarea-label">Any comments?</label>
+                        <input type="text" class="form-control" name="entry.909335272" access="false" id="textarea-1644995190804"></input>
+                    </div>
+                    <div class="formbuilder-button form-group field-button-1644997402759">
+                        <button type="submit" class="btn-primary btn" name="button-1644997402759" access="false" style="primary" id="button-1644997402759">Submit</button>
+                    </div>
+
+                    <!-- hidden fields for cities -->
+                    <input type="hidden" name="entry.240743650" value="city 12lk4214">
+                    <input type="hidden" name="entry.1080544932" value="2">
+                    <input type="hidden" name="entry.2129984577" value="3">
+                    <input type="hidden" name="entry.852807689" value="4">
+                    <input type="hidden" name="entry.490061391" value="5">
+                    <input type="hidden" name="entry.1391009792" value="6">
+                    <input type="hidden" name="entry.330088883" value="7">
+                    <input type="hidden" name="entry.1689930028" value="8">
+                    <input type="hidden" name="entry.674972753" value="9">
+                    <input type="hidden" name="entry.764509498" value="10">
+                    <input type="hidden" name="entry.192463826" value="11">
+                    <input type="hidden" name="entry.1419527768" value="12">
+                    <input type="hidden" name="entry.1846688567" value="13">
+                    <input type="hidden" name="entry.537106193" value="14">
+                    <input type="hidden" name="entry.1909908486" value="15">
+                    <input type="hidden" name="entry.350534770" value="16">
+                    <input type="hidden" name="entry.976267829" value="17">
+                    <input type="hidden" name="entry.1082496322" value="18">
+                    <input type="hidden" name="entry.753377230" value="19">
+                    <input type="hidden" name="entry.1164989284" value="20">
+                    <input type="hidden" name="entry.874213606" value="21">
+                    <input type="hidden" name="entry.1361638981" value="22">
+                    <input type="hidden" name="entry.1103784937" value="23">
+                    <input type="hidden" name="entry.1513787133" value="24">
+                    <input type="hidden" name="entry.1617584960" value="25">
+                    <input type="hidden" name="entry.1085779929" value="26">
+                    <input type="hidden" name="entry.1803802730" value="27">
+                    <input type="hidden" name="entry.432052311" value="28">
+                    <input type="hidden" name="entry.1877378464" value="29">
+                    <input type="hidden" name="entry.1853404945" value="30">
+                </form>
             </div>
 
-            <!-- Questionnaire Form -->
+            <!-- Hidden old questionnaire Form -->
             <div class="d-none bg-light p-3">
                 <div class="p-1" style="background-color:#D9DCD6">
                     <!-- TODO: uncomment the real google form response -->
