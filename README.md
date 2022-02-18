@@ -11,10 +11,10 @@
 - [x] airport deletion doesn't work - just deletes FIFO regardless of which city is deleted
 
 ### Google form to do
-- [ ] make google form questions required
+- [x] make google form questions required
 - [ ] style google form
 - [ ] add in residency specialties
-- [ ] add required warning for certain questions
+- [ ] add required warning for certain questions not an alert dialog
 
 - [ ] CO2 calculation
 - [ ] import airport list
