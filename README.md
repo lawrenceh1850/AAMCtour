@@ -9,27 +9,28 @@
   - [x] duplicate form submission
 - [x] page starts halfway down on load
 - [x] airport deletion doesn't work - just deletes FIFO regardless of which city is deleted
+- [x] take out the flying / other means
+- [x] import airport list
 
 ### Google form to do
 - [x] make google form questions required
-- [ ] style google form
-- [ ] add in residency specialties
-- [ ] add required warning for certain questions not an alert dialog
+- [x] add in residency specialties
 
+- [ ] airport markers messed up
+- [ ] add in the airports selected to the google form
 - [ ] CO2 calculation
-- [ ] import airport list
-- [ ] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
 - [ ] deleting a destination and then recalculating emissions breaks the infographic
-- [ ] take out the flying / other means
-- [ ] basic mobile friendly cleanup - most people using it on desktop
+- [ ] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
+
 
 ## Backlog
+- [ ] style google form
+- [ ] add required warning for certain questions not an alert dialog
+- [ ] basic mobile friendly cleanup - most people using it on desktop
 - add vue-cloak
-- clean up the thank you animation iframe
 - do we want animation after the form is submitted
 - clean up code / comment code / document
 - make the map not fixed width
-- css of the form is ugly
 - clicking on the destination should just add it right away without you having to click add or hit enter again
 - make the entire initial page fit on the screen
 - start using bootstrap for everything

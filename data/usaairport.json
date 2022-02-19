@@ -1,992 +1,5027 @@
-[
-  {
-    "LocationID": "ATL",
-    "Statename": "Georgia",
-    "CountyState": "GA",
-    "City": "Atlanta",
-    "FacilityName": "Hartsfield - Jackson Atlanta Intl",
-    "Lat": 33.6367,
-    "Lng": -84.4279,
-    "OperationsCommercial": 734632
-  },
-  {
-    "LocationID": "ORD",
-    "Statename": "Illinois",
-    "CountyState": "IL",
-    "City": "Chicago",
-    "FacilityName": "Chicago O'hare Intl",
-    "Lat": 41.9773,
-    "Lng": -87.908,
-    "OperationsCommercial": 621564
-  },
-  {
-    "LocationID": "LAX",
-    "Statename": "California",
-    "CountyState": "CA",
-    "City": "Los Angeles",
-    "FacilityName": "Los Angeles Intl",
-    "Lat": 33.9425,
-    "Lng": -118.4071,
-    "OperationsCommercial": 520437
-  },
-  {
-    "LocationID": "DFW",
-    "Statename": "Texas",
-    "CountyState": "TX",
-    "City": "Dallas-Fort Worth",
-    "FacilityName": "Dallas-Fort Worth Intl",
-    "Lat": 32.8972,
-    "Lng": -97.0377,
-    "OperationsCommercial": 500909
-  },
-  {
-    "LocationID": "DEN",
-    "Statename": "Colorado",
-    "CountyState": "CO",
-    "City": "Denver",
-    "FacilityName": "Denver Intl",
-    "Lat": 39.8617,
-    "Lng": -104.6732,
-    "OperationsCommercial": 424930
-  },
-  {
-    "LocationID": "JFK",
-    "Statename": "New York",
-    "CountyState": "NY",
-    "City": "New York",
-    "FacilityName": "John F Kennedy Intl",
-    "Lat": 40.6399,
-    "Lng": -73.7787,
-    "OperationsCommercial": 401737
-  },
-  {
-    "LocationID": "MSP",
-    "Statename": "Minnesota",
-    "CountyState": "MN",
-    "City": "Minneapolis",
-    "FacilityName": "Minneapolis-St Paul Intl/wold-Chamberlain",
-    "Lat": 44.882,
-    "Lng": -93.2218,
-    "OperationsCommercial": 375153
-  },
-  {
-    "LocationID": "CLT",
-    "Statename": "North Carolina",
-    "CountyState": "NC",
-    "City": "Charlotte",
-    "FacilityName": "Charlotte/douglas Intl",
-    "Lat": 35.2137,
-    "Lng": -80.9491,
-    "OperationsCommercial": 361072
-  },
-  {
-    "LocationID": "PHX",
-    "Statename": "Arizona",
-    "CountyState": "AZ",
-    "City": "Phoenix",
-    "FacilityName": "Phoenix Sky Harbor Intl",
-    "Lat": 33.4343,
-    "Lng": -112.0116,
-    "OperationsCommercial": 354818
-  },
-  {
-    "LocationID": "MIA",
-    "Statename": "Florida",
-    "CountyState": "FL",
-    "City": "Miami",
-    "FacilityName": "Miami Intl",
-    "Lat": 25.7954,
-    "Lng": -80.2901,
-    "OperationsCommercial": 353962
-  },
-  {
-    "LocationID": "LAS",
-    "Statename": "Nevada",
-    "CountyState": "NV",
-    "City": "Las Vegas",
-    "FacilityName": "Mc Carran Intl",
-    "Lat": 36.0801,
-    "Lng": -115.1522,
-    "OperationsCommercial": 349608
-  },
-  {
-    "LocationID": "SFO",
-    "Statename": "California",
-    "CountyState": "CA",
-    "City": "San Francisco",
-    "FacilityName": "San Francisco Intl",
-    "Lat": 37.6188,
-    "Lng": -122.3754,
-    "OperationsCommercial": 335428
-  },
-  {
-    "LocationID": "IAH",
-    "Statename": "Texas",
-    "CountyState": "TX",
-    "City": "Houston",
-    "FacilityName": "George Bush Intercontinental/houston",
-    "Lat": 29.9844,
-    "Lng": -95.3414,
-    "OperationsCommercial": 333090
-  },
-  {
-    "LocationID": "SEA",
-    "Statename": "Washington",
-    "CountyState": "WA",
-    "City": "Seattle",
-    "FacilityName": "Seattle-Tacoma Intl",
-    "Lat": 47.4499,
-    "Lng": -122.3118,
-    "OperationsCommercial": 325425
-  },
-  {
-    "LocationID": "LGA",
-    "Statename": "New York",
-    "CountyState": "NY",
-    "City": "New York",
-    "FacilityName": "Laguardia",
-    "Lat": 40.7773,
-    "Lng": -73.8726,
-    "OperationsCommercial": 314946
-  },
-  {
-    "LocationID": "EWR",
-    "Statename": "New Jersey",
-    "CountyState": "NJ",
-    "City": "Newark",
-    "FacilityName": "Newark Liberty Intl",
-    "Lat": 40.6925,
-    "Lng": -74.1687,
-    "OperationsCommercial": 295852
-  },
-  {
-    "LocationID": "MCO",
-    "Statename": "Florida",
-    "CountyState": "FL",
-    "City": "Orlando",
-    "FacilityName": "Orlando Intl",
-    "Lat": 28.4294,
-    "Lng": -81.309,
-    "OperationsCommercial": 294833
-  },
-  {
-    "LocationID": "DTW",
-    "Statename": "Michigan",
-    "CountyState": "MI",
-    "City": "Detroit",
-    "FacilityName": "Detroit Metropolitan Wayne County",
-    "Lat": 42.2124,
-    "Lng": -83.3534,
-    "OperationsCommercial": 243117
-  },
-  {
-    "LocationID": "PHL",
-    "Statename": "Pennsylvania",
-    "CountyState": "PA",
-    "City": "Philadelphia",
-    "FacilityName": "Philadelphia Intl",
-    "Lat": 39.8722,
-    "Lng": -75.2409,
-    "OperationsCommercial": 239776
-  },
-  {
-    "LocationID": "DCA",
-    "Statename": "Dist. of Columbia",
-    "CountyState": "VA",
-    "City": "Washington",
-    "FacilityName": "Ronald Reagan Washington National",
-    "Lat": 38.8514,
-    "Lng": -77.0377,
-    "OperationsCommercial": 239126
-  },
-  {
-    "LocationID": "BOS",
-    "Statename": "Massachusetts",
-    "CountyState": "MA",
-    "City": "Boston",
-    "FacilityName": "General Edward Lawrence Logan Intl",
-    "Lat": 42.3629,
-    "Lng": -71.0064,
-    "OperationsCommercial": 219230
-  },
-  {
-    "LocationID": "FLL",
-    "Statename": "Florida",
-    "CountyState": "FL",
-    "City": "Fort Lauderdale",
-    "FacilityName": "Fort Lauderdale/hollywood Intl",
-    "Lat": 26.0717,
-    "Lng": -80.1497,
-    "OperationsCommercial": 199676
-  },
-  {
-    "LocationID": "BWI",
-    "Statename": "Maryland",
-    "CountyState": "MD",
-    "City": "Baltimore",
-    "FacilityName": "Baltimore/washington Intl Thurgood Marshal",
-    "Lat": 39.1757,
-    "Lng": -76.669,
-    "OperationsCommercial": 197343
-  },
-  {
-    "LocationID": "MDW",
-    "Statename": "Illinois",
-    "CountyState": "IL",
-    "City": "Chicago",
-    "FacilityName": "Chicago Midway Intl",
-    "Lat": 41.786,
-    "Lng": -87.7524,
-    "OperationsCommercial": 185535
-  },
-  {
-    "LocationID": "SLC",
-    "Statename": "Utah",
-    "CountyState": "UT",
-    "City": "Salt Lake City",
-    "FacilityName": "Salt Lake City Intl",
-    "Lat": 40.7884,
-    "Lng": -111.9778,
-    "OperationsCommercial": 184033
-  },
-  {
-    "LocationID": "MEM",
-    "Statename": "Tennessee",
-    "CountyState": "TN",
-    "City": "Memphis",
-    "FacilityName": "Memphis Intl",
-    "Lat": 35.0424,
-    "Lng": -89.9767,
-    "OperationsCommercial": 162072
-  },
-  {
-    "LocationID": "TPA",
-    "Statename": "Florida",
-    "CountyState": "FL",
-    "City": "Tampa",
-    "FacilityName": "Tampa Intl",
-    "Lat": 27.9755,
-    "Lng": -82.5332,
-    "OperationsCommercial": 157796
-  },
-  {
-    "LocationID": "SAN",
-    "Statename": "California",
-    "CountyState": "CA",
-    "City": "San Diego",
-    "FacilityName": "San Diego Intl",
-    "Lat": 32.7336,
-    "Lng": -117.1897,
-    "OperationsCommercial": 155310
-  },
-  {
-    "LocationID": "HNL",
-    "Statename": "Hawaii",
-    "CountyState": "HI",
-    "City": "Honolulu",
-    "FacilityName": "Honolulu Intl",
-    "Lat": 21.3178,
-    "Lng": -157.9203,
-    "OperationsCommercial": 154727
-  },
-  {
-    "LocationID": "IAD",
-    "Statename": "Dist. of Columbia",
-    "CountyState": "VA",
-    "City": "Washington",
-    "FacilityName": "Washington Dulles Intl",
-    "Lat": 38.9474,
-    "Lng": -77.4599,
-    "OperationsCommercial": 152961
-  },
-  {
-    "LocationID": "PDX",
-    "Statename": "Oregon",
-    "CountyState": "OR",
-    "City": "Portland",
-    "FacilityName": "Portland Intl",
-    "Lat": 45.5887,
-    "Lng": -122.5969,
-    "OperationsCommercial": 152882
-  },
-  {
-    "LocationID": "DAL",
-    "Statename": "Texas",
-    "CountyState": "TX",
-    "City": "Dallas",
-    "FacilityName": "Dallas Love Field",
-    "Lat": 32.8471,
-    "Lng": -96.8518,
-    "OperationsCommercial": 122877
-  },
-  {
-    "LocationID": "STL",
-    "Statename": "Missouri",
-    "CountyState": "MO",
-    "City": "St Louis",
-    "FacilityName": "Lambert-St Louis Intl",
-    "Lat": 38.7487,
-    "Lng": -90.37,
-    "OperationsCommercial": 122858
-  },
-  {
-    "LocationID": "HOU",
-    "Statename": "Texas",
-    "CountyState": "TX",
-    "City": "Houston",
-    "FacilityName": "William P Hobby",
-    "Lat": 29.6454,
-    "Lng": -95.2789,
-    "OperationsCommercial": 114137
-  },
-  {
-    "LocationID": "OAK",
-    "Statename": "California",
-    "CountyState": "CA",
-    "City": "Oakland",
-    "FacilityName": "Metropolitan Oakland Intl",
-    "Lat": 37.7213,
-    "Lng": -122.2211,
-    "OperationsCommercial": 110952
-  },
-  {
-    "LocationID": "AUS",
-    "Statename": "Texas",
-    "CountyState": "TX",
-    "City": "Austin",
-    "FacilityName": "Austin-Bergstrom Intl",
-    "Lat": 30.1945,
-    "Lng": -97.6699,
-    "OperationsCommercial": 105995
-  },
-  {
-    "LocationID": "MSY",
-    "Statename": "Louisiana",
-    "CountyState": "LA",
-    "City": "New Orleans",
-    "FacilityName": "Louis Armstrong New Orleans Intl",
-    "Lat": 29.9933,
-    "Lng": -90.259,
-    "OperationsCommercial": 103494
-  },
-  {
-    "LocationID": "MCI",
-    "Statename": "Missouri",
-    "CountyState": "MO",
-    "City": "Kansas City",
-    "FacilityName": "Kansas City Intl",
-    "Lat": 39.2976,
-    "Lng": -94.7139,
-    "OperationsCommercial": 102138
-  },
-  {
-    "LocationID": "IND",
-    "Statename": "Indiana",
-    "CountyState": "IN",
-    "City": "Indianapolis",
-    "FacilityName": "Indianapolis Intl",
-    "Lat": 39.7173,
-    "Lng": -86.2946,
-    "OperationsCommercial": 102036
-  },
-  {
-    "LocationID": "BNA",
-    "Statename": "Tennessee",
-    "CountyState": "TN",
-    "City": "Nashville",
-    "FacilityName": "Nashville Intl",
-    "Lat": 36.1245,
-    "Lng": -86.6782,
-    "OperationsCommercial": 100750
-  },
-  {
-    "LocationID": "SDF",
-    "Statename": "Kentucky",
-    "CountyState": "KY",
-    "City": "Louisville",
-    "FacilityName": "Louisville Intl-Standiford Field",
-    "Lat": 38.1741,
-    "Lng": -85.7365,
-    "OperationsCommercial": 99720
-  },
-  {
-    "LocationID": "ANC",
-    "Statename": "Alaska",
-    "CountyState": "AK",
-    "City": "Anchorage",
-    "FacilityName": "Ted Stevens Anchorage Intl",
-    "Lat": 61.1742,
-    "Lng": -149.9982,
-    "OperationsCommercial": 98395
-  },
-  {
-    "LocationID": "SAT",
-    "Statename": "Texas",
-    "CountyState": "TX",
-    "City": "San Antonio",
-    "FacilityName": "San Antonio Intl",
-    "Lat": 29.534,
-    "Lng": -98.4691,
-    "OperationsCommercial": 90394
-  },
-  {
-    "LocationID": "SJC",
-    "Statename": "California",
-    "CountyState": "CA",
-    "City": "San Jose",
-    "FacilityName": "Norman Y Mineta San Jose Intl",
-    "Lat": 37.3627,
-    "Lng": -121.9291,
-    "OperationsCommercial": 88189
-  },
-  {
-    "LocationID": "PIT",
-    "Statename": "Pennsylvania",
-    "CountyState": "PA",
-    "City": "Pittsburgh",
-    "FacilityName": "Pittsburgh Intl",
-    "Lat": 40.4914,
-    "Lng": -80.2327,
-    "OperationsCommercial": 87010
-  },
-  {
-    "LocationID": "SNA",
-    "Statename": "California",
-    "CountyState": "CA",
-    "City": "Santa Ana",
-    "FacilityName": "John Wayne Airport-Orange County",
-    "Lat": 33.6757,
-    "Lng": -117.8682,
-    "OperationsCommercial": 84844
-  },
-  {
-    "LocationID": "SMF",
-    "Statename": "California",
-    "CountyState": "CA",
-    "City": "Sacramento",
-    "FacilityName": "Sacramento Intl",
-    "Lat": 38.6954,
-    "Lng": -121.5908,
-    "OperationsCommercial": 80029
-  },
-  {
-    "LocationID": "CLE",
-    "Statename": "Ohio",
-    "CountyState": "OH",
-    "City": "Cleveland",
-    "FacilityName": "Cleveland-Hopkins Intl",
-    "Lat": 41.4094,
-    "Lng": -81.8547,
-    "OperationsCommercial": 71878
-  },
-  {
-    "LocationID": "CVG",
-    "Statename": "Kentucky",
-    "CountyState": "KY",
-    "City": "Covington",
-    "FacilityName": "Cincinnati/northern Kentucky Intl",
-    "Lat": 39.0488,
-    "Lng": -84.6678,
-    "OperationsCommercial": 67993
-  },
-  {
-    "LocationID": "RSW",
-    "Statename": "Florida",
-    "CountyState": "FL",
-    "City": "Fort Myers",
-    "FacilityName": "Southwest Florida Intl",
-    "Lat": 26.5362,
-    "Lng": -81.7552,
-    "OperationsCommercial": 65607
-  },
-  {
-    "LocationID": "SJU",
-    "Statename": "Puerto Rico",
-    "CountyState": "PR",
-    "City": "San Juan",
-    "FacilityName": "Luis Munoz Marin Intl",
-    "Lat": 18.4394,
-    "Lng": -66.0021,
-    "OperationsCommercial": 65420
-  },
-  {
-    "LocationID": "BUF",
-    "Statename": "New York",
-    "CountyState": "NY",
-    "City": "Buffalo",
-    "FacilityName": "Buffalo Niagara Intl",
-    "Lat": 42.9404,
-    "Lng": -78.7306,
-    "OperationsCommercial": 61665
-  },
-  {
-    "LocationID": "CMH",
-    "Statename": "Ohio",
-    "CountyState": "OH",
-    "City": "Columbus",
-    "FacilityName": "Port Columbus Intl",
-    "Lat": 39.9969,
-    "Lng": -82.8922,
-    "OperationsCommercial": 59989
-  },
-  {
-    "LocationID": "BDL",
-    "Statename": "Connecticut",
-    "CountyState": "CT",
-    "City": "Windsor Locks",
-    "FacilityName": "Bradley Intl",
-    "Lat": 41.9391,
-    "Lng": -72.6834,
-    "OperationsCommercial": 56969
-  },
-  {
-    "LocationID": "MKE",
-    "Statename": "Wisconsin",
-    "CountyState": "WI",
-    "City": "Milwaukee",
-    "FacilityName": "General Mitchell Intl",
-    "Lat": 42.9469,
-    "Lng": -87.8971,
-    "OperationsCommercial": 55664
-  },
-  {
-    "LocationID": "JAX",
-    "Statename": "Florida",
-    "CountyState": "FL",
-    "City": "Jacksonville",
-    "FacilityName": "Jacksonville Intl",
-    "Lat": 30.4941,
-    "Lng": -81.6878,
-    "OperationsCommercial": 53707
-  },
-  {
-    "LocationID": "ABQ",
-    "Statename": "New Mexico",
-    "CountyState": "NM",
-    "City": "Albuquerque",
-    "FacilityName": "Albuquerque Intl Sunport",
-    "Lat": 35.0389,
-    "Lng": -106.6083,
-    "OperationsCommercial": 51678
-  },
-  {
-    "LocationID": "OGG",
-    "Statename": "Hawaii",
-    "CountyState": "HI",
-    "City": "Kahului",
-    "FacilityName": "Kahului",
-    "Lat": 20.8986,
-    "Lng": -156.4305,
-    "OperationsCommercial": 51293
-  },
-  {
-    "LocationID": "ONT",
-    "Statename": "California",
-    "CountyState": "CA",
-    "City": "Ontario",
-    "FacilityName": "Ontario Intl",
-    "Lat": 34.056,
-    "Lng": -117.6012,
-    "OperationsCommercial": 50783
-  },
-  {
-    "LocationID": "PBI",
-    "Statename": "Florida",
-    "CountyState": "FL",
-    "City": "West Palm Beach",
-    "FacilityName": "Palm Beach Intl",
-    "Lat": 26.6832,
-    "Lng": -80.0956,
-    "OperationsCommercial": 50702
-  },
-  {
-    "LocationID": "RDU",
-    "Statename": "North Carolina",
-    "CountyState": "NC",
-    "City": "Raleigh/durham",
-    "FacilityName": "Raleigh-Durham Intl",
-    "Lat": 35.8776,
-    "Lng": -78.7875,
-    "OperationsCommercial": 46206
-  },
-  {
-    "LocationID": "BUR",
-    "Statename": "California",
-    "CountyState": "CA",
-    "City": "Burbank",
-    "FacilityName": "Bob Hope",
-    "Lat": 34.2007,
-    "Lng": -118.3587,
-    "OperationsCommercial": 46102
-  },
-  {
-    "LocationID": "OKC",
-    "Statename": "Oklahoma",
-    "CountyState": "OK",
-    "City": "Oklahoma City",
-    "FacilityName": "Will Rogers World",
-    "Lat": 35.3931,
-    "Lng": -97.6008,
-    "OperationsCommercial": 42242
-  },
-  {
-    "LocationID": "OMA",
-    "Statename": "Nebraska",
-    "CountyState": "NE",
-    "City": "Omaha",
-    "FacilityName": "Eppley Airfield",
-    "Lat": 41.3032,
-    "Lng": -95.8941,
-    "OperationsCommercial": 41532
-  },
-  {
-    "LocationID": "BOI",
-    "Statename": "Idaho",
-    "CountyState": "ID",
-    "City": "Boise",
-    "FacilityName": "Boise Air Terminal/gowen Fld",
-    "Lat": 43.5644,
-    "Lng": -116.2229,
-    "OperationsCommercial": 40646
-  },
-  {
-    "LocationID": "GEG",
-    "Statename": "Washington",
-    "CountyState": "WA",
-    "City": "Spokane",
-    "FacilityName": "Spokane Intl",
-    "Lat": 47.619,
-    "Lng": -117.5352,
-    "OperationsCommercial": 35752
-  },
-  {
-    "LocationID": "RNO",
-    "Statename": "Nevada",
-    "CountyState": "NV",
-    "City": "Reno",
-    "FacilityName": "Reno/tahoe Intl",
-    "Lat": 39.4991,
-    "Lng": -119.7681,
-    "OperationsCommercial": 34687
-  },
-  {
-    "LocationID": "ELP",
-    "Statename": "Texas",
-    "CountyState": "TX",
-    "City": "El Paso",
-    "FacilityName": "El Paso Intl",
-    "Lat": 31.8073,
-    "Lng": -106.3764,
-    "OperationsCommercial": 34493
-  },
-  {
-    "LocationID": "CHS",
-    "Statename": "South Carolina",
-    "CountyState": "SC",
-    "City": "Charleston",
-    "FacilityName": "Charleston Afb/intl",
-    "Lat": 32.8986,
-    "Lng": -80.0405,
-    "OperationsCommercial": 32896
-  },
-  {
-    "LocationID": "MDT",
-    "Statename": "Pennsylvania",
-    "CountyState": "PA",
-    "City": "Harrisburg",
-    "FacilityName": "Harrisburg Intl",
-    "Lat": 40.1932,
-    "Lng": -76.7626,
-    "OperationsCommercial": 31370
-  },
-  {
-    "LocationID": "PVD",
-    "Statename": "Rhode Island",
-    "CountyState": "RI",
-    "City": "Providence",
-    "FacilityName": "Theodore Francis Green State",
-    "Lat": 41.724,
-    "Lng": -71.4282,
-    "OperationsCommercial": 30951
-  },
-  {
-    "LocationID": "RIC",
-    "Statename": "Virginia",
-    "CountyState": "VA",
-    "City": "Richmond",
-    "FacilityName": "Richmond Intl",
-    "Lat": 37.5052,
-    "Lng": -77.3197,
-    "OperationsCommercial": 30619
-  },
-  {
-    "LocationID": "TUS",
-    "Statename": "Arizona",
-    "CountyState": "AZ",
-    "City": "Tucson",
-    "FacilityName": "Tucson Intl",
-    "Lat": 32.1161,
-    "Lng": -110.941,
-    "OperationsCommercial": 29484
-  },
-  {
-    "LocationID": "DSM",
-    "Statename": "Iowa",
-    "CountyState": "IA",
-    "City": "Des Moines",
-    "FacilityName": "Des Moines Intl",
-    "Lat": 41.534,
-    "Lng": -93.6631,
-    "OperationsCommercial": 28354
-  },
-  {
-    "LocationID": "TUL",
-    "Statename": "Oklahoma",
-    "CountyState": "OK",
-    "City": "Tulsa",
-    "FacilityName": "Tulsa Intl",
-    "Lat": 36.1984,
-    "Lng": -95.8881,
-    "OperationsCommercial": 27772
-  },
-  {
-    "LocationID": "ORF",
-    "Statename": "Virginia",
-    "CountyState": "VA",
-    "City": "Norfolk",
-    "FacilityName": "Norfolk Intl",
-    "Lat": 36.8946,
-    "Lng": -76.2012,
-    "OperationsCommercial": 27295
-  },
-  {
-    "LocationID": "LIH",
-    "Statename": "Hawaii",
-    "CountyState": "HI",
-    "City": "Lihue",
-    "FacilityName": "Lihue",
-    "Lat": 21.976,
-    "Lng": -159.339,
-    "OperationsCommercial": 25908
-  },
-  {
-    "LocationID": "BHM",
-    "Statename": "Alabama",
-    "CountyState": "AL",
-    "City": "Birmingham",
-    "FacilityName": "Birmingham-Shuttlesworth Intl",
-    "Lat": 33.5639,
-    "Lng": -86.7523,
-    "OperationsCommercial": 25292
-  },
-  {
-    "LocationID": "LGB",
-    "Statename": "California",
-    "CountyState": "CA",
-    "City": "Long Beach",
-    "FacilityName": "Long Beach /daugherty Field/",
-    "Lat": 33.8178,
-    "Lng": -118.1517,
-    "OperationsCommercial": 24032
-  },
-  {
-    "LocationID": "ALB",
-    "Statename": "New York",
-    "CountyState": "NY",
-    "City": "Albany",
-    "FacilityName": "Albany Intl",
-    "Lat": 42.7491,
-    "Lng": -73.802,
-    "OperationsCommercial": 23751
-  },
-  {
-    "LocationID": "HOM",
-    "Statename": "Alaska",
-    "CountyState": "AK",
-    "City": "Homer",
-    "FacilityName": "Homer",
-    "Lat": 59.6455,
-    "Lng": -151.4766,
-    "OperationsCommercial": 23006
-  },
-  {
-    "LocationID": "GUM",
-    "Statename": "Guam",
-    "CountyState": "GU",
-    "City": "Guam",
-    "FacilityName": "Guam Intl",
-    "Lat": 13.484,
-    "Lng": 144.7971,
-    "OperationsCommercial": 22639
-  },
-  {
-    "LocationID": "KOA",
-    "Statename": "Hawaii",
-    "CountyState": "HI",
-    "City": "Kailua/kona",
-    "FacilityName": "Kona Intl at Keahole",
-    "Lat": 19.7388,
-    "Lng": -156.0456,
-    "OperationsCommercial": 22382
-  },
-  {
-    "LocationID": "MHT",
-    "Statename": "New Hampshire",
-    "CountyState": "NH",
-    "City": "Manchester",
-    "FacilityName": "Manchester",
-    "Lat": 42.9328,
-    "Lng": -71.4357,
-    "OperationsCommercial": 21699
-  },
-  {
-    "LocationID": "ROC",
-    "Statename": "New York",
-    "CountyState": "NY",
-    "City": "Rochester",
-    "FacilityName": "Greater Rochester Intl",
-    "Lat": 43.1191,
-    "Lng": -77.6719,
-    "OperationsCommercial": 20466
-  },
-  {
-    "LocationID": "LIT",
-    "Statename": "Arkansas",
-    "CountyState": "AR",
-    "City": "Little Rock",
-    "FacilityName": "Bill and Hillary Clinton National/adams Fi",
-    "Lat": 34.7294,
-    "Lng": -92.2248,
-    "OperationsCommercial": 20341
-  },
-  {
-    "LocationID": "SYR",
-    "Statename": "New York",
-    "CountyState": "NY",
-    "City": "Syracuse",
-    "FacilityName": "Syracuse Hancock Intl",
-    "Lat": 43.1112,
-    "Lng": -76.1063,
-    "OperationsCommercial": 20266
-  },
-  {
-    "LocationID": "CAK",
-    "Statename": "Ohio",
-    "CountyState": "OH",
-    "City": "Akron",
-    "FacilityName": "Akron-Canton Rgnl",
-    "Lat": 40.9151,
-    "Lng": -81.4436,
-    "OperationsCommercial": 20174
-  },
-  {
-    "LocationID": "GSO",
-    "Statename": "North Carolina",
-    "CountyState": "NC",
-    "City": "Greensboro",
-    "FacilityName": "Piedmont Triad Intl",
-    "Lat": 36.1013,
-    "Lng": -79.9411,
-    "OperationsCommercial": 20156
-  },
-  {
-    "LocationID": "NYL",
-    "Statename": "Arizona",
-    "CountyState": "AZ",
-    "City": "Yuma",
-    "FacilityName": "Yuma Mcas/yuma Intl",
-    "Lat": 32.6566,
-    "Lng": -114.606,
-    "OperationsCommercial": 18814
-  },
-  {
-    "LocationID": "GRR",
-    "Statename": "Michigan",
-    "CountyState": "MI",
-    "City": "Grand Rapids",
-    "FacilityName": "Gerald R Ford Intl",
-    "Lat": 42.8808,
-    "Lng": -85.5228,
-    "OperationsCommercial": 18502
-  },
-  {
-    "LocationID": "PWM",
-    "Statename": "Maine",
-    "CountyState": "ME",
-    "City": "Portland",
-    "FacilityName": "Portland Intl Jetport",
-    "Lat": 43.6456,
-    "Lng": -70.3086,
-    "OperationsCommercial": 18178
-  },
-  {
-    "LocationID": "SFB",
-    "Statename": "Florida",
-    "CountyState": "FL",
-    "City": "Orlando",
-    "FacilityName": "Orlando Sanford Intl",
-    "Lat": 28.777,
-    "Lng": -81.2349,
-    "OperationsCommercial": 17283
-  },
-  {
-    "LocationID": "SAV",
-    "Statename": "Georgia",
-    "CountyState": "GA",
-    "City": "Savannah",
-    "FacilityName": "Savannah/hilton Head Intl",
-    "Lat": 32.1276,
-    "Lng": -81.2021,
-    "OperationsCommercial": 16590
-  },
-  {
-    "LocationID": "MYR",
-    "Statename": "South Carolina",
-    "CountyState": "SC",
-    "City": "Myrtle Beach",
-    "FacilityName": "Myrtle Beach Intl",
-    "Lat": 33.6798,
-    "Lng": -78.9283,
-    "OperationsCommercial": 16073
-  },
-  {
-    "LocationID": "SCC",
-    "Statename": "Alaska",
-    "CountyState": "AK",
-    "City": "Deadhorse",
-    "FacilityName": "Deadhorse",
-    "Lat": 70.1955,
-    "Lng": -148.4658,
-    "OperationsCommercial": 16060
-  },
-  {
-    "LocationID": "ICT",
-    "Statename": "Kansas",
-    "CountyState": "KS",
-    "City": "Wichita",
-    "FacilityName": "Wichita Dwight D Eisenhower National",
-    "Lat": 37.6499,
-    "Lng": -97.4331,
-    "OperationsCommercial": 15707
-  },
-  {
-    "LocationID": "ITO",
-    "Statename": "Hawaii",
-    "CountyState": "HI",
-    "City": "Hilo",
-    "FacilityName": "Hilo Intl",
-    "Lat": 19.7203,
-    "Lng": -155.0485,
-    "OperationsCommercial": 15561
-  },
-  {
-    "LocationID": "DAY",
-    "Statename": "Ohio",
-    "CountyState": "OH",
-    "City": "Dayton",
-    "FacilityName": "James M Cox Dayton Intl",
-    "Lat": 39.9022,
-    "Lng": -84.2194,
-    "OperationsCommercial": 15496
-  }
+[{
+        "LocationID": "LAX",
+        "City": "Los Angeles",
+        "FacilityName": "Los Angeles International Airport",
+        "Lat": 33.942501,
+        "Lng": -118.407997
+    },
+    {
+        "LocationID": "ORD",
+        "City": "Chicago",
+        "FacilityName": "Chicago O'Hare International Airport",
+        "Lat": 41.9786,
+        "Lng": -87.9048
+    },
+    {
+        "LocationID": "JFK",
+        "City": "New York",
+        "FacilityName": "John F Kennedy International Airport",
+        "Lat": 40.639801,
+        "Lng": -73.7789
+    },
+    {
+        "LocationID": "ATL",
+        "City": "Atlanta",
+        "FacilityName": "Hartsfield Jackson Atlanta International Airport",
+        "Lat": 33.6367,
+        "Lng": -84.428101
+    },
+    {
+        "LocationID": "SFO",
+        "City": "San Francisco",
+        "FacilityName": "San Francisco International Airport",
+        "Lat": 37.61899948,
+        "Lng": -122.375
+    },
+    {
+        "LocationID": "EWR",
+        "City": "New York",
+        "FacilityName": "Newark Liberty International Airport",
+        "Lat": 40.692501,
+        "Lng": -74.168701
+    },
+    {
+        "LocationID": "DFW",
+        "City": "Dallas-Fort Worth",
+        "FacilityName": "Dallas Fort Worth International Airport",
+        "Lat": 32.896801,
+        "Lng": -97.038002
+    },
+    {
+        "LocationID": "LAS",
+        "City": "Las Vegas",
+        "FacilityName": "McCarran International Airport",
+        "Lat": 36.08010101,
+        "Lng": -115.1520004
+    },
+    {
+        "LocationID": "MCO",
+        "City": "Orlando",
+        "FacilityName": "Orlando International Airport",
+        "Lat": 28.42939949,
+        "Lng": -81.30899811
+    },
+    {
+        "LocationID": "DEN",
+        "City": "Denver",
+        "FacilityName": "Denver International Airport",
+        "Lat": 39.86169815,
+        "Lng": -104.6729965
+    },
+    {
+        "LocationID": "LGA",
+        "City": "New York",
+        "FacilityName": "La Guardia Airport",
+        "Lat": 40.777199,
+        "Lng": -73.872597
+    },
+    {
+        "LocationID": "MIA",
+        "City": "Miami",
+        "FacilityName": "Miami International Airport",
+        "Lat": 25.79319954,
+        "Lng": -80.29060364
+    },
+    {
+        "LocationID": "IAD",
+        "City": "Washington",
+        "FacilityName": "Washington Dulles International Airport",
+        "Lat": 38.9445,
+        "Lng": -77.455803
+    },
+    {
+        "LocationID": "BOS",
+        "City": "Boston",
+        "FacilityName": "Logan International Airport",
+        "Lat": 42.3643,
+        "Lng": -71.005203
+    },
+    {
+        "LocationID": "PHX",
+        "City": "Phoenix",
+        "FacilityName": "Phoenix Sky Harbor International Airport",
+        "Lat": 33.435302,
+        "Lng": -112.005905
+    },
+    {
+        "LocationID": "SEA",
+        "City": "Seattle",
+        "FacilityName": "Seattle Tacoma International Airport",
+        "Lat": 47.449001,
+        "Lng": -122.308998
+    },
+    {
+        "LocationID": "PHL",
+        "City": "Philadelphia",
+        "FacilityName": "Philadelphia International Airport",
+        "Lat": 39.87189865,
+        "Lng": -75.2410965
+    },
+    {
+        "LocationID": "CLT",
+        "City": "Charlotte",
+        "FacilityName": "Charlotte Douglas International Airport",
+        "Lat": 35.2140007,
+        "Lng": -80.94309998
+    },
+    {
+        "LocationID": "IAH",
+        "City": "Houston",
+        "FacilityName": "George Bush Intercontinental Houston Airport",
+        "Lat": 29.9843998,
+        "Lng": -95.34140015
+    },
+    {
+        "LocationID": "DTW",
+        "City": "Detroit",
+        "FacilityName": "Detroit Metropolitan Wayne County Airport",
+        "Lat": 42.21239853,
+        "Lng": -83.35340118
+    },
+    {
+        "LocationID": "DCA",
+        "City": "Washington",
+        "FacilityName": "Ronald Reagan Washington National Airport",
+        "Lat": 38.8521,
+        "Lng": -77.037697
+    },
+    {
+        "LocationID": "MSP",
+        "City": "Minneapolis",
+        "FacilityName": "Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field",
+        "Lat": 44.882,
+        "Lng": -93.221802
+    },
+    {
+        "LocationID": "SLC",
+        "City": "Salt Lake City",
+        "FacilityName": "Salt Lake City International Airport",
+        "Lat": 40.785749,
+        "Lng": -111.979746
+    },
+    {
+        "LocationID": "MDW",
+        "City": "Chicago",
+        "FacilityName": "Chicago Midway International Airport",
+        "Lat": 41.785999,
+        "Lng": -87.752403
+    },
+    {
+        "LocationID": "SAN",
+        "City": "San Diego",
+        "FacilityName": "San Diego International Airport",
+        "Lat": 32.73360062,
+        "Lng": -117.1900024
+    },
+    {
+        "LocationID": "FLL",
+        "City": "Fort Lauderdale",
+        "FacilityName": "Fort Lauderdale Hollywood International Airport",
+        "Lat": 26.072599,
+        "Lng": -80.152702
+    },
+    {
+        "LocationID": "BWI",
+        "City": "Baltimore",
+        "FacilityName": "Baltimore/Washington International Thurgood Marshall Airport",
+        "Lat": 39.1754,
+        "Lng": -76.668297
+    },
+    {
+        "LocationID": "STL",
+        "City": "St Louis",
+        "FacilityName": "St Louis Lambert International Airport",
+        "Lat": 38.748697,
+        "Lng": -90.370003
+    },
+    {
+        "LocationID": "HNL",
+        "City": "Honolulu",
+        "FacilityName": "Daniel K Inouye International Airport",
+        "Lat": 21.32062,
+        "Lng": -157.924228
+    },
+    {
+        "LocationID": "PDX",
+        "City": "Portland",
+        "FacilityName": "Portland International Airport",
+        "Lat": 45.58869934,
+        "Lng": -122.5979996
+    },
+    {
+        "LocationID": "MSY",
+        "City": "New Orleans",
+        "FacilityName": "Louis Armstrong New Orleans International Airport",
+        "Lat": 29.99340057,
+        "Lng": -90.25800323
+    },
+    {
+        "LocationID": "CVG",
+        "City": "Cincinnati / Covington",
+        "FacilityName": "Cincinnati Northern Kentucky International Airport",
+        "Lat": 39.048801,
+        "Lng": -84.667801
+    },
+    {
+        "LocationID": "TPA",
+        "City": "Tampa",
+        "FacilityName": "Tampa International Airport",
+        "Lat": 27.97550011,
+        "Lng": -82.53320313
+    },
+    {
+        "LocationID": "BNA",
+        "City": "Nashville",
+        "FacilityName": "Nashville International Airport",
+        "Lat": 36.12450027,
+        "Lng": -86.67819977
+    },
+    {
+        "LocationID": "PIT",
+        "City": "Pittsburgh",
+        "FacilityName": "Pittsburgh International Airport",
+        "Lat": 40.49150085,
+        "Lng": -80.23290253
+    },
+    {
+        "LocationID": "AUS",
+        "City": "Austin",
+        "FacilityName": "Austin Bergstrom International Airport",
+        "Lat": 30.197535,
+        "Lng": -97.662015
+    },
+    {
+        "LocationID": "SJC",
+        "City": "San Jose",
+        "FacilityName": "Norman Y. Mineta San Jose International Airport",
+        "Lat": 37.362598,
+        "Lng": -121.929001
+    },
+    {
+        "LocationID": "OAK",
+        "City": "Oakland",
+        "FacilityName": "Metropolitan Oakland International Airport",
+        "Lat": 37.721298,
+        "Lng": -122.221001
+    },
+    {
+        "LocationID": "RDU",
+        "City": "Raleigh/Durham",
+        "FacilityName": "Raleigh Durham International Airport",
+        "Lat": 35.87760162,
+        "Lng": -78.78749847
+    },
+    {
+        "LocationID": "MCI",
+        "City": "Kansas City",
+        "FacilityName": "Kansas City International Airport",
+        "Lat": 39.2976,
+        "Lng": -94.713898
+    },
+    {
+        "LocationID": "MEM",
+        "City": "Memphis",
+        "FacilityName": "Memphis International Airport",
+        "Lat": 35.04240036,
+        "Lng": -89.97669983
+    },
+    {
+        "LocationID": "SAT",
+        "City": "San Antonio",
+        "FacilityName": "San Antonio International Airport",
+        "Lat": 29.533701,
+        "Lng": -98.469803
+    },
+    {
+        "LocationID": "CLE",
+        "City": "Cleveland",
+        "FacilityName": "Cleveland Hopkins International Airport",
+        "Lat": 41.4117012,
+        "Lng": -81.84980011
+    },
+    {
+        "LocationID": "IND",
+        "City": "Indianapolis",
+        "FacilityName": "Indianapolis International Airport",
+        "Lat": 39.7173,
+        "Lng": -86.294403
+    },
+    {
+        "LocationID": "MKE",
+        "City": "Milwaukee",
+        "FacilityName": "General Mitchell International Airport",
+        "Lat": 42.94720078,
+        "Lng": -87.89659882
+    },
+    {
+        "LocationID": "CMH",
+        "City": "Columbus",
+        "FacilityName": "John Glenn Columbus International Airport",
+        "Lat": 39.998001,
+        "Lng": -82.891899
+    },
+    {
+        "LocationID": "JAX",
+        "City": "Jacksonville",
+        "FacilityName": "Jacksonville International Airport",
+        "Lat": 30.49410057,
+        "Lng": -81.68789673
+    },
+    {
+        "LocationID": "BUF",
+        "City": "Buffalo",
+        "FacilityName": "Buffalo Niagara International Airport",
+        "Lat": 42.94049835,
+        "Lng": -78.73220062
+    },
+    {
+        "LocationID": "ANC",
+        "City": "Anchorage",
+        "FacilityName": "Ted Stevens Anchorage International Airport",
+        "Lat": 61.1744,
+        "Lng": -149.996002
+    },
+    {
+        "LocationID": "SMF",
+        "City": "Sacramento",
+        "FacilityName": "Sacramento International Airport",
+        "Lat": 38.69540024,
+        "Lng": -121.5910034
+    },
+    {
+        "LocationID": "PBI",
+        "City": "West Palm Beach",
+        "FacilityName": "Palm Beach International Airport",
+        "Lat": 26.68320084,
+        "Lng": -80.09559631
+    },
+    {
+        "LocationID": "PVD",
+        "City": "Providence",
+        "FacilityName": "Theodore Francis Green State Airport",
+        "Lat": 41.725038,
+        "Lng": -71.425668
+    },
+    {
+        "LocationID": "RNO",
+        "City": "Reno",
+        "FacilityName": "Reno Tahoe International Airport",
+        "Lat": 39.49909973,
+        "Lng": -119.7679977
+    },
+    {
+        "LocationID": "SDF",
+        "City": "Louisville",
+        "FacilityName": "Louisville Muhammad Ali International Airport",
+        "Lat": 38.1744,
+        "Lng": -85.736
+    },
+    {
+        "LocationID": "SAV",
+        "City": "Savannah",
+        "FacilityName": "Savannah Hilton Head International Airport",
+        "Lat": 32.12760162,
+        "Lng": -81.20210266
+    },
+    {
+        "LocationID": "RIC",
+        "City": "Richmond",
+        "FacilityName": "Richmond International Airport",
+        "Lat": 37.50519943,
+        "Lng": -77.31970215
+    },
+    {
+        "LocationID": "ONT",
+        "City": "Ontario",
+        "FacilityName": "Ontario International Airport",
+        "Lat": 34.05599976,
+        "Lng": -117.6009979
+    },
+    {
+        "LocationID": "SYR",
+        "City": "Syracuse",
+        "FacilityName": "Syracuse Hancock International Airport",
+        "Lat": 43.11119843,
+        "Lng": -76.10630035
+    },
+    {
+        "LocationID": "TUL",
+        "City": "Tulsa",
+        "FacilityName": "Tulsa International Airport",
+        "Lat": 36.19839859,
+        "Lng": -95.88809967
+    },
+    {
+        "LocationID": "RSW",
+        "City": "Fort Myers",
+        "FacilityName": "Southwest Florida International Airport",
+        "Lat": 26.53619957,
+        "Lng": -81.75520325
+    },
+    {
+        "LocationID": "PWM",
+        "City": "Portland",
+        "FacilityName": "Portland International Jetport",
+        "Lat": 43.646198,
+        "Lng": -70.309303
+    },
+    {
+        "LocationID": "SFB",
+        "City": "Orlando",
+        "FacilityName": "Orlando Sanford International Airport",
+        "Lat": 28.77759933,
+        "Lng": -81.23750305
+    },
+    {
+        "LocationID": "CMA",
+        "City": "Camarillo",
+        "FacilityName": "Camarillo International Airport",
+        "Lat": 34.213699,
+        "Lng": -119.094002
+    },
+    {
+        "LocationID": "FAI",
+        "City": "Fairbanks",
+        "FacilityName": "Fairbanks International Airport",
+        "Lat": 64.81510162,
+        "Lng": -147.8560028
+    },
+    {
+        "LocationID": "SNA",
+        "City": "Santa Ana",
+        "FacilityName": "John Wayne Airport-Orange County Airport",
+        "Lat": 33.675701,
+        "Lng": -117.867996
+    },
+    {
+        "LocationID": "HOU",
+        "City": "Houston",
+        "FacilityName": "William P Hobby Airport",
+        "Lat": 29.645399,
+        "Lng": -95.2789
+    },
+    {
+        "LocationID": "DAL",
+        "City": "Dallas",
+        "FacilityName": "Dallas Love Field",
+        "Lat": 32.847099,
+        "Lng": -96.851799
+    },
+    {
+        "LocationID": "ABQ",
+        "City": "Albuquerque",
+        "FacilityName": "Albuquerque International Sunport",
+        "Lat": 35.040199,
+        "Lng": -106.609001
+    },
+    {
+        "LocationID": "TUS",
+        "City": "Tucson",
+        "FacilityName": "Tucson International Airport / Morris Air National Guard Base",
+        "Lat": 32.115004,
+        "Lng": -110.938053
+    },
+    {
+        "LocationID": "BDL",
+        "City": "Hartford",
+        "FacilityName": "Bradley International Airport",
+        "Lat": 41.93851,
+        "Lng": -72.688066
+    },
+    {
+        "LocationID": "OKC",
+        "City": "Oklahoma City",
+        "FacilityName": "Will Rogers World Airport",
+        "Lat": 35.393101,
+        "Lng": -97.6007
+    },
+    {
+        "LocationID": "ELP",
+        "City": "El Paso",
+        "FacilityName": "El Paso International Airport",
+        "Lat": 31.80719948,
+        "Lng": -106.3779984
+    },
+    {
+        "LocationID": "OGG",
+        "City": "Kahului",
+        "FacilityName": "Kahului Airport",
+        "Lat": 20.8986,
+        "Lng": -156.429993
+    },
+    {
+        "LocationID": "OMA",
+        "City": "Omaha",
+        "FacilityName": "Eppley Airfield",
+        "Lat": 41.3032,
+        "Lng": -95.894096
+    },
+    {
+        "LocationID": "BUR",
+        "City": "Burbank",
+        "FacilityName": "Bob Hope Airport",
+        "Lat": 34.197703,
+        "Lng": -118.356378
+    },
+    {
+        "LocationID": "ORF",
+        "City": "Norfolk",
+        "FacilityName": "Norfolk International Airport",
+        "Lat": 36.8946,
+        "Lng": -76.201202
+    },
+    {
+        "LocationID": "CHS",
+        "City": "Charleston",
+        "FacilityName": "Charleston International Airport",
+        "Lat": 32.898602,
+        "Lng": -80.040497
+    },
+    {
+        "LocationID": "LGB",
+        "City": "Long Beach",
+        "FacilityName": "Long Beach Airport (Daugherty Field)",
+        "Lat": 33.817699,
+        "Lng": -118.152
+    },
+    {
+        "LocationID": "BHM",
+        "City": "Birmingham",
+        "FacilityName": "Birmingham-Shuttlesworth International Airport",
+        "Lat": 33.562901,
+        "Lng": -86.753502
+    },
+    {
+        "LocationID": "BOI",
+        "City": "Boise",
+        "FacilityName": "Boise Air Terminal/Gowen Field",
+        "Lat": 43.5644,
+        "Lng": -116.223
+    },
+    {
+        "LocationID": "ALB",
+        "City": "Albany",
+        "FacilityName": "Albany International Airport",
+        "Lat": 42.74829865,
+        "Lng": -73.80169678
+    },
+    {
+        "LocationID": "HPN",
+        "City": "White Plains",
+        "FacilityName": "Westchester County Airport",
+        "Lat": 41.06700134,
+        "Lng": -73.70760345
+    },
+    {
+        "LocationID": "OSH",
+        "City": "Oshkosh",
+        "FacilityName": "Wittman Regional Airport",
+        "Lat": 43.9844017,
+        "Lng": -88.55699921
+    },
+    {
+        "LocationID": "GEG",
+        "City": "Spokane",
+        "FacilityName": "Spokane International Airport",
+        "Lat": 47.6199,
+        "Lng": -117.533997
+    },
+    {
+        "LocationID": "KOA",
+        "City": "Kailua-Kona",
+        "FacilityName": "Ellison Onizuka Kona International Airport at Keahole",
+        "Lat": 19.738783,
+        "Lng": -156.045603
+    },
+    {
+        "LocationID": "ICT",
+        "City": "Wichita",
+        "FacilityName": "Wichita Eisenhower National Airport",
+        "Lat": 37.649899,
+        "Lng": -97.433098
+    },
+    {
+        "LocationID": "DSM",
+        "City": "Des Moines",
+        "FacilityName": "Des Moines International Airport",
+        "Lat": 41.534,
+        "Lng": -93.663101
+    },
+    {
+        "LocationID": "GRR",
+        "City": "Grand Rapids",
+        "FacilityName": "Gerald R. Ford International Airport",
+        "Lat": 42.88079834,
+        "Lng": -85.52279663
+    },
+    {
+        "LocationID": "DAY",
+        "City": "Dayton",
+        "FacilityName": "James M Cox Dayton International Airport",
+        "Lat": 39.902401,
+        "Lng": -84.219398
+    },
+    {
+        "LocationID": "ROC",
+        "City": "Rochester",
+        "FacilityName": "Greater Rochester International Airport",
+        "Lat": 43.1189,
+        "Lng": -77.672401
+    },
+    {
+        "LocationID": "LIT",
+        "City": "Little Rock",
+        "FacilityName": "Bill & Hillary Clinton National Airport/Adams Field",
+        "Lat": 34.729582,
+        "Lng": -92.223728
+    },
+    {
+        "LocationID": "MSN",
+        "City": "Madison",
+        "FacilityName": "Dane County Regional Truax Field",
+        "Lat": 43.1399,
+        "Lng": -89.337502
+    },
+    {
+        "LocationID": "COS",
+        "City": "Colorado Springs",
+        "FacilityName": "City of Colorado Springs Municipal Airport",
+        "Lat": 38.805801,
+        "Lng": -104.700996
+    },
+    {
+        "LocationID": "MHT",
+        "City": "Manchester",
+        "FacilityName": "Manchester-Boston Regional Airport",
+        "Lat": 42.932598,
+        "Lng": -71.435699
+    },
+    {
+        "LocationID": "PSP",
+        "City": "Palm Springs",
+        "FacilityName": "Palm Springs International Airport",
+        "Lat": 33.8297,
+        "Lng": -116.507004
+    },
+    {
+        "LocationID": "TYS",
+        "City": "Knoxville",
+        "FacilityName": "McGhee Tyson Airport",
+        "Lat": 35.811001,
+        "Lng": -83.994003
+    },
+    {
+        "LocationID": "PNS",
+        "City": "Pensacola",
+        "FacilityName": "Pensacola International Airport",
+        "Lat": 30.4734,
+        "Lng": -87.1866
+    },
+    {
+        "LocationID": "SBA",
+        "City": "Santa Barbara",
+        "FacilityName": "Santa Barbara Municipal Airport",
+        "Lat": 34.42620087,
+        "Lng": -119.8399963
+    },
+    {
+        "LocationID": "TLH",
+        "City": "Tallahassee",
+        "FacilityName": "Tallahassee Regional Airport",
+        "Lat": 30.3965,
+        "Lng": -84.350304
+    },
+    {
+        "LocationID": "BTV",
+        "City": "Burlington",
+        "FacilityName": "Burlington International Airport",
+        "Lat": 44.47190094,
+        "Lng": -73.15329742
+    },
+    {
+        "LocationID": "BFI",
+        "City": "Seattle",
+        "FacilityName": "Boeing Field King County International Airport",
+        "Lat": 47.529999,
+        "Lng": -122.302002
+    },
+    {
+        "LocationID": "EYW",
+        "City": "Key West",
+        "FacilityName": "Key West International Airport",
+        "Lat": 24.556101,
+        "Lng": -81.759598
+    },
+    {
+        "LocationID": "LEX",
+        "City": "Lexington",
+        "FacilityName": "Blue Grass Airport",
+        "Lat": 38.036499,
+        "Lng": -84.605904
+    },
+    {
+        "LocationID": "MRY",
+        "City": "Monterey",
+        "FacilityName": "Monterey Peninsula Airport",
+        "Lat": 36.5870018,
+        "Lng": -121.8430023
+    },
+    {
+        "LocationID": "GSO",
+        "City": "Greensboro",
+        "FacilityName": "Piedmont Triad International Airport",
+        "Lat": 36.097801,
+        "Lng": -79.937302
+    },
+    {
+        "LocationID": "TEB",
+        "City": "Teterboro",
+        "FacilityName": "Teterboro Airport",
+        "Lat": 40.85010147,
+        "Lng": -74.06079865
+    },
+    {
+        "LocationID": "VGT",
+        "City": "Las Vegas",
+        "FacilityName": "North Las Vegas Metropolitan International Airport",
+        "Lat": 36.210701,
+        "Lng": -115.194
+    },
+    {
+        "LocationID": "GSP",
+        "City": "Greer",
+        "FacilityName": "Greenville Spartanburg International Airport",
+        "Lat": 34.895699,
+        "Lng": -82.218903
+    },
+    {
+        "LocationID": "LBB",
+        "City": "Lubbock",
+        "FacilityName": "Lubbock Preston Smith International Airport",
+        "Lat": 33.663601,
+        "Lng": -101.822998
+    },
+    {
+        "LocationID": "DAB",
+        "City": "Daytona Beach",
+        "FacilityName": "Daytona Beach International Airport",
+        "Lat": 29.179899,
+        "Lng": -81.058098
+    },
+    {
+        "LocationID": "RAP",
+        "City": "Rapid City",
+        "FacilityName": "Rapid City Regional Airport",
+        "Lat": 44.04529953,
+        "Lng": -103.0569992
+    },
+    {
+        "LocationID": "CAK",
+        "City": "Akron",
+        "FacilityName": "Akron Canton Regional Airport",
+        "Lat": 40.91609955,
+        "Lng": -81.44219971
+    },
+    {
+        "LocationID": "SRQ",
+        "City": "Sarasota/Bradenton",
+        "FacilityName": "Sarasota Bradenton International Airport",
+        "Lat": 27.395399,
+        "Lng": -82.554398
+    },
+    {
+        "LocationID": "FAT",
+        "City": "Fresno",
+        "FacilityName": "Fresno Yosemite International Airport",
+        "Lat": 36.776199,
+        "Lng": -119.718002
+    },
+    {
+        "LocationID": "LIH",
+        "City": "Lihue",
+        "FacilityName": "Lihue Airport",
+        "Lat": 21.97599983,
+        "Lng": -159.3390045
+    },
+    {
+        "LocationID": "BGR",
+        "City": "Bangor",
+        "FacilityName": "Bangor International Airport",
+        "Lat": 44.8074,
+        "Lng": -68.828102
+    },
+    {
+        "LocationID": "MDT",
+        "City": "Harrisburg",
+        "FacilityName": "Harrisburg International Airport",
+        "Lat": 40.19350052,
+        "Lng": -76.76339722
+    },
+    {
+        "LocationID": "PIE",
+        "City": "St Petersburg-Clearwater",
+        "FacilityName": "St Petersburg Clearwater International Airport",
+        "Lat": 27.91020012,
+        "Lng": -82.68740082
+    },
+    {
+        "LocationID": "CHA",
+        "City": "Chattanooga",
+        "FacilityName": "Chattanooga Metropolitan Airport (Lovell Field)",
+        "Lat": 35.035301,
+        "Lng": -85.203796
+    },
+    {
+        "LocationID": "SMO",
+        "City": "Santa Monica",
+        "FacilityName": "Santa Monica Municipal Airport",
+        "Lat": 34.0158,
+        "Lng": -118.450996
+    },
+    {
+        "LocationID": "AVL",
+        "City": "Asheville",
+        "FacilityName": "Asheville Regional Airport",
+        "Lat": 35.436199,
+        "Lng": -82.541801
+    },
+    {
+        "LocationID": "SAF",
+        "City": "Santa Fe",
+        "FacilityName": "Santa Fe Municipal Airport",
+        "Lat": 35.61709976,
+        "Lng": -106.0889969
+    },
+    {
+        "LocationID": "VNY",
+        "City": "Van Nuys",
+        "FacilityName": "Van Nuys Airport",
+        "Lat": 34.20980072,
+        "Lng": -118.4899979
+    },
+    {
+        "LocationID": "CAE",
+        "City": "Columbia",
+        "FacilityName": "Columbia Metropolitan Airport",
+        "Lat": 33.938801,
+        "Lng": -81.119499
+    },
+    {
+        "LocationID": "AMA",
+        "City": "Amarillo",
+        "FacilityName": "Rick Husband Amarillo International Airport",
+        "Lat": 35.219398,
+        "Lng": -101.706001
+    },
+    {
+        "LocationID": "NEW",
+        "City": "New Orleans",
+        "FacilityName": "Lakefront Airport",
+        "Lat": 30.04240036,
+        "Lng": -90.02829742
+    },
+    {
+        "LocationID": "GRB",
+        "City": "Green Bay",
+        "FacilityName": "Austin Straubel International Airport",
+        "Lat": 44.4851,
+        "Lng": -88.129601
+    },
+    {
+        "LocationID": "CHO",
+        "City": "Charlottesville",
+        "FacilityName": "Charlottesville Albemarle Airport",
+        "Lat": 38.1385994,
+        "Lng": -78.45290375
+    },
+    {
+        "LocationID": "SGF",
+        "City": "Springfield",
+        "FacilityName": "Springfield Branson National Airport",
+        "Lat": 37.245701,
+        "Lng": -93.388603
+    },
+    {
+        "LocationID": "HSV",
+        "City": "Huntsville",
+        "FacilityName": "Huntsville International Carl T Jones Field",
+        "Lat": 34.637199,
+        "Lng": -86.775101
+    },
+    {
+        "LocationID": "JAC",
+        "City": "Jackson",
+        "FacilityName": "Jackson Hole Airport",
+        "Lat": 43.6072998,
+        "Lng": -110.737999
+    },
+    {
+        "LocationID": "ISM",
+        "City": "Orlando",
+        "FacilityName": "Kissimmee Gateway Airport",
+        "Lat": 28.28980064,
+        "Lng": -81.43710327
+    },
+    {
+        "LocationID": "SBN",
+        "City": "South Bend",
+        "FacilityName": "South Bend Regional Airport",
+        "Lat": 41.708698,
+        "Lng": -86.317299
+    },
+    {
+        "LocationID": "BLI",
+        "City": "Bellingham",
+        "FacilityName": "Bellingham International Airport",
+        "Lat": 48.7928009,
+        "Lng": -122.538002
+    },
+    {
+        "LocationID": "MYR",
+        "City": "Myrtle Beach",
+        "FacilityName": "Myrtle Beach International Airport",
+        "Lat": 33.67969894,
+        "Lng": -78.92829895
+    },
+    {
+        "LocationID": "GNV",
+        "City": "Gainesville",
+        "FacilityName": "Gainesville Regional Airport",
+        "Lat": 29.69009972,
+        "Lng": -82.27179718
+    },
+    {
+        "LocationID": "SBP",
+        "City": "San Luis Obispo",
+        "FacilityName": "San Luis County Regional Airport",
+        "Lat": 35.23680115,
+        "Lng": -120.6419983
+    },
+    {
+        "LocationID": "ITO",
+        "City": "Hilo",
+        "FacilityName": "Hilo International Airport",
+        "Lat": 19.72139931,
+        "Lng": -155.0480042
+    },
+    {
+        "LocationID": "BIL",
+        "City": "Billings",
+        "FacilityName": "Billings Logan International Airport",
+        "Lat": 45.807701,
+        "Lng": -108.542999
+    },
+    {
+        "LocationID": "CID",
+        "City": "Cedar Rapids",
+        "FacilityName": "The Eastern Iowa Airport",
+        "Lat": 41.884701,
+        "Lng": -91.7108
+    },
+    {
+        "LocationID": "FWA",
+        "City": "Fort Wayne",
+        "FacilityName": "Fort Wayne International Airport",
+        "Lat": 40.9785,
+        "Lng": -85.195099
+    },
+    {
+        "LocationID": "ISP",
+        "City": "Islip",
+        "FacilityName": "Long Island Mac Arthur Airport",
+        "Lat": 40.79520035,
+        "Lng": -73.10019684
+    },
+    {
+        "LocationID": "SWF",
+        "City": "Newburgh",
+        "FacilityName": "New York Stewart International Airport",
+        "Lat": 41.504101,
+        "Lng": -74.104797
+    },
+    {
+        "LocationID": "LAL",
+        "City": "Lakeland",
+        "FacilityName": "Lakeland Linder International Airport",
+        "Lat": 27.988899,
+        "Lng": -82.018602
+    },
+    {
+        "LocationID": "EUG",
+        "City": "Eugene",
+        "FacilityName": "Mahlon Sweet Field",
+        "Lat": 44.12459946,
+        "Lng": -123.211998
+    },
+    {
+        "LocationID": "STS",
+        "City": "Santa Rosa",
+        "FacilityName": "Charles M. Schulz Sonoma County Airport",
+        "Lat": 38.50899887,
+        "Lng": -122.8130035
+    },
+    {
+        "LocationID": "DLH",
+        "City": "Duluth",
+        "FacilityName": "Duluth International Airport",
+        "Lat": 46.842098,
+        "Lng": -92.193604
+    },
+    {
+        "LocationID": "MOB",
+        "City": "Mobile",
+        "FacilityName": "Mobile Regional Airport",
+        "Lat": 30.6912,
+        "Lng": -88.242798
+    },
+    {
+        "LocationID": "FAR",
+        "City": "Fargo",
+        "FacilityName": "Hector International Airport",
+        "Lat": 46.92070007,
+        "Lng": -96.81580353
+    },
+    {
+        "LocationID": "PRC",
+        "City": "Prescott",
+        "FacilityName": "Prescott International Airport - Ernest A. Love Field",
+        "Lat": 34.654499,
+        "Lng": -112.419998
+    },
+    {
+        "LocationID": "AVP",
+        "City": "Wilkes-Barre/Scranton",
+        "FacilityName": "Wilkes Barre Scranton International Airport",
+        "Lat": 41.33850098,
+        "Lng": -75.7233963
+    },
+    {
+        "LocationID": "APF",
+        "City": "Naples",
+        "FacilityName": "Naples Municipal Airport",
+        "Lat": 26.15259933,
+        "Lng": -81.77529907
+    },
+    {
+        "LocationID": "BTR",
+        "City": "Baton Rouge",
+        "FacilityName": "Baton Rouge Metropolitan Airport",
+        "Lat": 30.533199,
+        "Lng": -91.149597
+    },
+    {
+        "LocationID": "LNK",
+        "City": "Lincoln",
+        "FacilityName": "Lincoln Airport",
+        "Lat": 40.85100174,
+        "Lng": -96.75920105
+    },
+    {
+        "LocationID": "MAF",
+        "City": "Midland",
+        "FacilityName": "Midland International Airport",
+        "Lat": 31.94249916,
+        "Lng": -102.2020035
+    },
+    {
+        "LocationID": "BED",
+        "City": "Bedford",
+        "FacilityName": "Laurence G Hanscom Field",
+        "Lat": 42.47000122,
+        "Lng": -71.28900146
+    },
+    {
+        "LocationID": "ABE",
+        "City": "Allentown",
+        "FacilityName": "Lehigh Valley International Airport",
+        "Lat": 40.651773,
+        "Lng": -75.442797
+    },
+    {
+        "LocationID": "SGJ",
+        "City": "St Augustine",
+        "FacilityName": "Northeast Florida Regional Airport",
+        "Lat": 29.9592,
+        "Lng": -81.339798
+    },
+    {
+        "LocationID": "CRP",
+        "City": "Corpus Christi",
+        "FacilityName": "Corpus Christi International Airport",
+        "Lat": 27.770399,
+        "Lng": -97.501198
+    },
+    {
+        "LocationID": "JAN",
+        "City": "Jackson",
+        "FacilityName": "Jackson-Medgar Wiley Evers International Airport",
+        "Lat": 32.311199,
+        "Lng": -90.075897
+    },
+    {
+        "LocationID": "ROA",
+        "City": "Roanoke",
+        "FacilityName": "Roanoke–Blacksburg Regional Airport",
+        "Lat": 37.3255,
+        "Lng": -79.975403
+    },
+    {
+        "LocationID": "MLB",
+        "City": "Melbourne",
+        "FacilityName": "Melbourne Orlando International Airport",
+        "Lat": 28.1028,
+        "Lng": -80.645302
+    },
+    {
+        "LocationID": "FSD",
+        "City": "Sioux Falls",
+        "FacilityName": "Sioux Falls Regional Airport / Joe Foss Field",
+        "Lat": 43.585463,
+        "Lng": -96.741152
+    },
+    {
+        "LocationID": "ILM",
+        "City": "Wilmington",
+        "FacilityName": "Wilmington International Airport",
+        "Lat": 34.27059937,
+        "Lng": -77.90260315
+    },
+    {
+        "LocationID": "ASE",
+        "City": "Aspen",
+        "FacilityName": "Aspen-Pitkin Co/Sardy Field",
+        "Lat": 39.22320175,
+        "Lng": -106.8690033
+    },
+    {
+        "LocationID": "RST",
+        "City": "Rochester",
+        "FacilityName": "Rochester International Airport",
+        "Lat": 43.908298,
+        "Lng": -92.5
+    },
+    {
+        "LocationID": "CRW",
+        "City": "Charleston",
+        "FacilityName": "Yeager Airport",
+        "Lat": 38.3731,
+        "Lng": -81.593201
+    },
+    {
+        "LocationID": "FLG",
+        "City": "Flagstaff",
+        "FacilityName": "Flagstaff Pulliam International Airport",
+        "Lat": 35.1385,
+        "Lng": -111.670998
+    },
+    {
+        "LocationID": "MKC",
+        "City": "Kansas City",
+        "FacilityName": "Charles B. Wheeler Downtown Airport",
+        "Lat": 39.12319946,
+        "Lng": -94.59279633
+    },
+    {
+        "LocationID": "PAE",
+        "City": "Everett",
+        "FacilityName": "Snohomish County (Paine Field) Airport",
+        "Lat": 47.9063,
+        "Lng": -122.281998
+    },
+    {
+        "LocationID": "PRB",
+        "City": "Paso Robles",
+        "FacilityName": "Paso Robles Municipal Airport",
+        "Lat": 35.67290115,
+        "Lng": -120.6269989
+    },
+    {
+        "LocationID": "LAN",
+        "City": "Lansing",
+        "FacilityName": "Capital City Airport",
+        "Lat": 42.77870178,
+        "Lng": -84.58740234
+    },
+    {
+        "LocationID": "LUK",
+        "City": "Cincinnati",
+        "FacilityName": "Cincinnati Municipal Airport Lunken Field",
+        "Lat": 39.10329819,
+        "Lng": -84.41860199
+    },
+    {
+        "LocationID": "XNA",
+        "City": "Fayetteville/Springdale/Rogers",
+        "FacilityName": "Northwest Arkansas Regional Airport",
+        "Lat": 36.281898,
+        "Lng": -94.306801
+    },
+    {
+        "LocationID": "MSO",
+        "City": "Missoula",
+        "FacilityName": "Missoula International Airport",
+        "Lat": 46.91630173,
+        "Lng": -114.0910034
+    },
+    {
+        "LocationID": "NYL",
+        "City": "Yuma",
+        "FacilityName": "Yuma International Airport / Marine Corps Air Station Yuma",
+        "Lat": 32.656601,
+        "Lng": -114.606003
+    },
+    {
+        "LocationID": "GCN",
+        "City": "Grand Canyon - Tusayan",
+        "FacilityName": "Grand Canyon National Park Airport",
+        "Lat": 35.9524,
+        "Lng": -112.147003
+    },
+    {
+        "LocationID": "GJT",
+        "City": "Grand Junction",
+        "FacilityName": "Grand Junction Regional Airport",
+        "Lat": 39.126663,
+        "Lng": -108.529387
+    },
+    {
+        "LocationID": "AZO",
+        "City": "Kalamazoo",
+        "FacilityName": "Kalamazoo Battle Creek International Airport",
+        "Lat": 42.23490143,
+        "Lng": -85.55210114
+    },
+    {
+        "LocationID": "PUB",
+        "City": "Pueblo",
+        "FacilityName": "Pueblo Memorial Airport",
+        "Lat": 38.289101,
+        "Lng": -104.497002
+    },
+    {
+        "LocationID": "TVL",
+        "City": "South Lake Tahoe",
+        "FacilityName": "Lake Tahoe Airport",
+        "Lat": 38.89390182,
+        "Lng": -119.9950027
+    },
+    {
+        "LocationID": "VRB",
+        "City": "Vero Beach",
+        "FacilityName": "Vero Beach Regional Airport",
+        "Lat": 27.6556,
+        "Lng": -80.417901
+    },
+    {
+        "LocationID": "SGU",
+        "City": "St George",
+        "FacilityName": "Saint George-Southwest Utah International Airport",
+        "Lat": 37.036389,
+        "Lng": -113.510306
+    },
+    {
+        "LocationID": "TOL",
+        "City": "Toledo",
+        "FacilityName": "Eugene F. Kranz Toledo Express Airport",
+        "Lat": 41.5868,
+        "Lng": -83.8078
+    },
+    {
+        "LocationID": "GPT",
+        "City": "Gulfport",
+        "FacilityName": "Gulfport Biloxi International Airport",
+        "Lat": 30.407301,
+        "Lng": -89.070099
+    },
+    {
+        "LocationID": "PHF",
+        "City": "Newport News",
+        "FacilityName": "Newport News Williamsburg International Airport",
+        "Lat": 37.131901,
+        "Lng": -76.492996
+    },
+    {
+        "LocationID": "BZN",
+        "City": "Bozeman",
+        "FacilityName": "Gallatin Field",
+        "Lat": 45.77750015,
+        "Lng": -111.1529999
+    },
+    {
+        "LocationID": "IWA",
+        "City": "Mesa",
+        "FacilityName": "Phoenix–Mesa Gateway Airport",
+        "Lat": 33.3078,
+        "Lng": -111.654999
+    },
+    {
+        "LocationID": "SHV",
+        "City": "Shreveport",
+        "FacilityName": "Shreveport Regional Airport",
+        "Lat": 32.446602,
+        "Lng": -93.8256
+    },
+    {
+        "LocationID": "CLL",
+        "City": "College Station",
+        "FacilityName": "Easterwood Field",
+        "Lat": 30.58860016,
+        "Lng": -96.36380005
+    },
+    {
+        "LocationID": "GTF",
+        "City": "Great Falls",
+        "FacilityName": "Great Falls International Airport",
+        "Lat": 47.48199844,
+        "Lng": -111.3710022
+    },
+    {
+        "LocationID": "MFE",
+        "City": "McAllen",
+        "FacilityName": "McAllen Miller International Airport",
+        "Lat": 26.176141,
+        "Lng": -98.237965
+    },
+    {
+        "LocationID": "FRG",
+        "City": "Farmingdale",
+        "FacilityName": "Republic Airport",
+        "Lat": 40.72880173,
+        "Lng": -73.41339874
+    },
+    {
+        "LocationID": "BIS",
+        "City": "Bismarck",
+        "FacilityName": "Bismarck Municipal Airport",
+        "Lat": 46.77270126,
+        "Lng": -100.7460022
+    },
+    {
+        "LocationID": "CMI",
+        "City": "Champaign/Urbana",
+        "FacilityName": "University of Illinois Willard Airport",
+        "Lat": 40.03919983,
+        "Lng": -88.27809906
+    },
+    {
+        "LocationID": "FNT",
+        "City": "Flint",
+        "FacilityName": "Bishop International Airport",
+        "Lat": 42.9654007,
+        "Lng": -83.74359894
+    },
+    {
+        "LocationID": "MFR",
+        "City": "Medford",
+        "FacilityName": "Rogue Valley International Medford Airport",
+        "Lat": 42.37419891,
+        "Lng": -122.8730011
+    },
+    {
+        "LocationID": "PSM",
+        "City": "Portsmouth",
+        "FacilityName": "Portsmouth International at Pease Airport",
+        "Lat": 43.07789993,
+        "Lng": -70.82330322
+    },
+    {
+        "LocationID": "TTN",
+        "City": "Trenton",
+        "FacilityName": "Trenton Mercer Airport",
+        "Lat": 40.27669907,
+        "Lng": -74.81349945
+    },
+    {
+        "LocationID": "ACT",
+        "City": "Waco",
+        "FacilityName": "Waco Regional Airport",
+        "Lat": 31.61129951,
+        "Lng": -97.23049927
+    },
+    {
+        "LocationID": "BFL",
+        "City": "Bakersfield",
+        "FacilityName": "Meadows Field",
+        "Lat": 35.433601,
+        "Lng": -119.056999
+    },
+    {
+        "LocationID": "GON",
+        "City": "Groton (New London)",
+        "FacilityName": "Groton New London Airport",
+        "Lat": 41.33010101,
+        "Lng": -72.04509735
+    },
+    {
+        "LocationID": "PGA",
+        "City": "Page",
+        "FacilityName": "Page Municipal Airport",
+        "Lat": 36.92610168,
+        "Lng": -111.447998
+    },
+    {
+        "LocationID": "EVV",
+        "City": "Evansville",
+        "FacilityName": "Evansville Regional Airport",
+        "Lat": 38.03699875,
+        "Lng": -87.53240204
+    },
+    {
+        "LocationID": "ACK",
+        "City": "Nantucket",
+        "FacilityName": "Nantucket Memorial Airport",
+        "Lat": 41.25310135,
+        "Lng": -70.06020355
+    },
+    {
+        "LocationID": "EGE",
+        "City": "Eagle",
+        "FacilityName": "Eagle County Regional Airport",
+        "Lat": 39.64260101,
+        "Lng": -106.9179993
+    },
+    {
+        "LocationID": "ELM",
+        "City": "Elmira/Corning",
+        "FacilityName": "Elmira Corning Regional Airport",
+        "Lat": 42.15990067,
+        "Lng": -76.89160156
+    },
+    {
+        "LocationID": "SMX",
+        "City": "Santa Maria",
+        "FacilityName": "Santa Maria Public Airport Captain G Allan Hancock Field",
+        "Lat": 34.898899,
+        "Lng": -120.457001
+    },
+    {
+        "LocationID": "GLS",
+        "City": "Galveston",
+        "FacilityName": "Scholes International At Galveston Airport",
+        "Lat": 29.26530075,
+        "Lng": -94.86039734
+    },
+    {
+        "LocationID": "FPR",
+        "City": "Fort Pierce",
+        "FacilityName": "St Lucie County International Airport",
+        "Lat": 27.49510002,
+        "Lng": -80.36830139
+    },
+    {
+        "LocationID": "HIO",
+        "City": "Portland",
+        "FacilityName": "Portland Hillsboro Airport",
+        "Lat": 45.540401,
+        "Lng": -122.949997
+    },
+    {
+        "LocationID": "TRK",
+        "City": "Truckee",
+        "FacilityName": "Truckee Tahoe Airport",
+        "Lat": 39.31999969,
+        "Lng": -120.1399994
+    },
+    {
+        "LocationID": "AGS",
+        "City": "Augusta",
+        "FacilityName": "Augusta Regional At Bush Field",
+        "Lat": 33.3699,
+        "Lng": -81.9645
+    },
+    {
+        "LocationID": "BMI",
+        "City": "Bloomington/Normal",
+        "FacilityName": "Central Illinois Regional Airport at Bloomington-Normal",
+        "Lat": 40.4771,
+        "Lng": -88.915901
+    },
+    {
+        "LocationID": "MLI",
+        "City": "Moline",
+        "FacilityName": "Quad City International Airport",
+        "Lat": 41.448502,
+        "Lng": -90.5075
+    },
+    {
+        "LocationID": "MGM",
+        "City": "Montgomery",
+        "FacilityName": "Montgomery Regional (Dannelly Field) Airport",
+        "Lat": 32.300598,
+        "Lng": -86.393997
+    },
+    {
+        "LocationID": "ACY",
+        "City": "Atlantic City",
+        "FacilityName": "Atlantic City International Airport",
+        "Lat": 39.45759964,
+        "Lng": -74.57720184
+    },
+    {
+        "LocationID": "BDR",
+        "City": "Bridgeport",
+        "FacilityName": "Igor I Sikorsky Memorial Airport",
+        "Lat": 41.16350174,
+        "Lng": -73.12619781
+    },
+    {
+        "LocationID": "RDD",
+        "City": "Redding",
+        "FacilityName": "Redding Municipal Airport",
+        "Lat": 40.50899887,
+        "Lng": -122.2929993
+    },
+    {
+        "LocationID": "TVC",
+        "City": "Traverse City",
+        "FacilityName": "Cherry Capital Airport",
+        "Lat": 44.74140167,
+        "Lng": -85.5821991
+    },
+    {
+        "LocationID": "CYS",
+        "City": "Cheyenne",
+        "FacilityName": "Cheyenne Regional Jerry Olson Field",
+        "Lat": 41.15570068,
+        "Lng": -104.8119965
+    },
+    {
+        "LocationID": "SJT",
+        "City": "San Angelo",
+        "FacilityName": "San Angelo Regional Mathis Field",
+        "Lat": 31.35770035,
+        "Lng": -100.4960022
+    },
+    {
+        "LocationID": "HFD",
+        "City": "Hartford",
+        "FacilityName": "Hartford Brainard Airport",
+        "Lat": 41.73669815,
+        "Lng": -72.6493988
+    },
+    {
+        "LocationID": "ITH",
+        "City": "Ithaca",
+        "FacilityName": "Ithaca Tompkins Regional Airport",
+        "Lat": 42.49100113,
+        "Lng": -76.45839691
+    },
+    {
+        "LocationID": "MTH",
+        "City": "Marathon",
+        "FacilityName": "The Florida Keys Marathon Airport",
+        "Lat": 24.726101,
+        "Lng": -81.051399
+    },
+    {
+        "LocationID": "OXR",
+        "City": "Oxnard",
+        "FacilityName": "Oxnard Airport",
+        "Lat": 34.20080185,
+        "Lng": -119.2070007
+    },
+    {
+        "LocationID": "HII",
+        "City": "Lake Havasu City",
+        "FacilityName": "Lake Havasu City International Airport",
+        "Lat": 34.571098,
+        "Lng": -114.358002
+    },
+    {
+        "LocationID": "PIA",
+        "City": "Peoria",
+        "FacilityName": "General Wayne A. Downing Peoria International Airport",
+        "Lat": 40.6642,
+        "Lng": -89.693298
+    },
+    {
+        "LocationID": "TRI",
+        "City": "Bristol/Johnson/Kingsport",
+        "FacilityName": "Tri-Cities Regional TN/VA Airport",
+        "Lat": 36.475201,
+        "Lng": -82.407401
+    },
+    {
+        "LocationID": "FSM",
+        "City": "Fort Smith",
+        "FacilityName": "Fort Smith Regional Airport",
+        "Lat": 35.336601,
+        "Lng": -94.367401
+    },
+    {
+        "LocationID": "VPS",
+        "City": "Valparaiso",
+        "FacilityName": "Destin-Fort Walton Beach Airport",
+        "Lat": 30.4832,
+        "Lng": -86.525398
+    },
+    {
+        "LocationID": "IFP",
+        "City": "Bullhead City",
+        "FacilityName": "Laughlin Bullhead International Airport",
+        "Lat": 35.157398,
+        "Lng": -114.559998
+    },
+    {
+        "LocationID": "IAG",
+        "City": "Niagara Falls",
+        "FacilityName": "Niagara Falls International Airport",
+        "Lat": 43.1073,
+        "Lng": -78.946198
+    },
+    {
+        "LocationID": "OGD",
+        "City": "Ogden",
+        "FacilityName": "Ogden Hinckley Airport",
+        "Lat": 41.19589996,
+        "Lng": -112.012001
+    },
+    {
+        "LocationID": "CPR",
+        "City": "Casper",
+        "FacilityName": "Casper-Natrona County International Airport",
+        "Lat": 42.908001,
+        "Lng": -106.463997
+    },
+    {
+        "LocationID": "CDC",
+        "City": "Cedar City",
+        "FacilityName": "Cedar City Regional Airport",
+        "Lat": 37.70100021,
+        "Lng": -113.098999
+    },
+    {
+        "LocationID": "HYA",
+        "City": "Hyannis",
+        "FacilityName": "Barnstable Municipal Boardman Polando Field",
+        "Lat": 41.66930008,
+        "Lng": -70.28040314
+    },
+    {
+        "LocationID": "IDA",
+        "City": "Idaho Falls",
+        "FacilityName": "Idaho Falls Regional Airport",
+        "Lat": 43.514599,
+        "Lng": -112.070999
+    },
+    {
+        "LocationID": "MOD",
+        "City": "Modesto",
+        "FacilityName": "Modesto City Co-Harry Sham Field",
+        "Lat": 37.625801,
+        "Lng": -120.954002
+    },
+    {
+        "LocationID": "POU",
+        "City": "Poughkeepsie",
+        "FacilityName": "Dutchess County Airport",
+        "Lat": 41.62659836,
+        "Lng": -73.88420105
+    },
+    {
+        "LocationID": "SDM",
+        "City": "San Diego",
+        "FacilityName": "Brown Field Municipal Airport",
+        "Lat": 32.57229996,
+        "Lng": -116.9800034
+    },
+    {
+        "LocationID": "PGD",
+        "City": "Punta Gorda",
+        "FacilityName": "Charlotte County Airport",
+        "Lat": 26.9202,
+        "Lng": -81.990501
+    },
+    {
+        "LocationID": "AHN",
+        "City": "Athens",
+        "FacilityName": "Athens Ben Epps Airport",
+        "Lat": 33.94860077,
+        "Lng": -83.32630157
+    },
+    {
+        "LocationID": "BRO",
+        "City": "Brownsville",
+        "FacilityName": "Brownsville South Padre Island International Airport",
+        "Lat": 25.90679932,
+        "Lng": -97.42590332
+    },
+    {
+        "LocationID": "LSE",
+        "City": "La Crosse",
+        "FacilityName": "La Crosse Municipal Airport",
+        "Lat": 43.879002,
+        "Lng": -91.256699
+    },
+    {
+        "LocationID": "LNS",
+        "City": "Lancaster",
+        "FacilityName": "Lancaster Airport",
+        "Lat": 40.12170029,
+        "Lng": -76.2960968
+    },
+    {
+        "LocationID": "SSI",
+        "City": "St Simons Island",
+        "FacilityName": "St Simons Island Airport",
+        "Lat": 31.1518,
+        "Lng": -81.391296
+    },
+    {
+        "LocationID": "RFD",
+        "City": "Chicago/Rockford",
+        "FacilityName": "Chicago Rockford International Airport",
+        "Lat": 42.1954,
+        "Lng": -89.097198
+    },
+    {
+        "LocationID": "FAY",
+        "City": "Fayetteville",
+        "FacilityName": "Fayetteville Regional Airport - Grannis Field",
+        "Lat": 34.991199,
+        "Lng": -78.880302
+    },
+    {
+        "LocationID": "JNU",
+        "City": "Juneau",
+        "FacilityName": "Juneau International Airport",
+        "Lat": 58.35499954,
+        "Lng": -134.576004
+    },
+    {
+        "LocationID": "PSC",
+        "City": "Pasco",
+        "FacilityName": "Tri Cities Airport",
+        "Lat": 46.26470184,
+        "Lng": -119.1190033
+    },
+    {
+        "LocationID": "ORH",
+        "City": "Worcester",
+        "FacilityName": "Worcester Regional Airport",
+        "Lat": 42.2673,
+        "Lng": -71.875702
+    },
+    {
+        "LocationID": "ABI",
+        "City": "Abilene",
+        "FacilityName": "Abilene Regional Airport",
+        "Lat": 32.41130066,
+        "Lng": -99.68190002
+    },
+    {
+        "LocationID": "SCK",
+        "City": "Stockton",
+        "FacilityName": "Stockton Metropolitan Airport",
+        "Lat": 37.89419937,
+        "Lng": -121.237999
+    },
+    {
+        "LocationID": "MHR",
+        "City": "Sacramento",
+        "FacilityName": "Sacramento Mather Airport",
+        "Lat": 38.553902,
+        "Lng": -121.297997
+    },
+    {
+        "LocationID": "GFK",
+        "City": "Grand Forks",
+        "FacilityName": "Grand Forks International Airport",
+        "Lat": 47.949299,
+        "Lng": -97.176102
+    },
+    {
+        "LocationID": "HRL",
+        "City": "Harlingen",
+        "FacilityName": "Valley International Airport",
+        "Lat": 26.22850037,
+        "Lng": -97.65440369
+    },
+    {
+        "LocationID": "TYR",
+        "City": "Tyler",
+        "FacilityName": "Tyler Pounds Regional Airport",
+        "Lat": 32.35409927,
+        "Lng": -95.40239716
+    },
+    {
+        "LocationID": "SUS",
+        "City": "St Louis",
+        "FacilityName": "Spirit of St Louis Airport",
+        "Lat": 38.662102,
+        "Lng": -90.652
+    },
+    {
+        "LocationID": "EEN",
+        "City": "Keene",
+        "FacilityName": "Dillant Hopkins Airport",
+        "Lat": 42.898399,
+        "Lng": -72.270798
+    },
+    {
+        "LocationID": "TRM",
+        "City": "Palm Springs",
+        "FacilityName": "Jacqueline Cochran Regional Airport",
+        "Lat": 33.62670135,
+        "Lng": -116.1600037
+    },
+    {
+        "LocationID": "SLN",
+        "City": "Salina",
+        "FacilityName": "Salina Municipal Airport",
+        "Lat": 38.79100037,
+        "Lng": -97.65219879
+    },
+    {
+        "LocationID": "IPT",
+        "City": "Williamsport",
+        "FacilityName": "Williamsport Regional Airport",
+        "Lat": 41.2417984,
+        "Lng": -76.9210968
+    },
+    {
+        "LocationID": "IGM",
+        "City": "Kingman",
+        "FacilityName": "Kingman Airport",
+        "Lat": 35.259499,
+        "Lng": -113.938004
+    },
+    {
+        "LocationID": "GFL",
+        "City": "Glens Falls",
+        "FacilityName": "Floyd Bennett Memorial Airport",
+        "Lat": 43.34120178,
+        "Lng": -73.61029816
+    },
+    {
+        "LocationID": "SNS",
+        "City": "Salinas",
+        "FacilityName": "Salinas Municipal Airport",
+        "Lat": 36.66279984,
+        "Lng": -121.6060028
+    },
+    {
+        "LocationID": "MMU",
+        "City": "Morristown",
+        "FacilityName": "Morristown Municipal Airport",
+        "Lat": 40.79940033,
+        "Lng": -74.41490173
+    },
+    {
+        "LocationID": "RAL",
+        "City": "Riverside",
+        "FacilityName": "Riverside Municipal Airport",
+        "Lat": 33.9519,
+        "Lng": -117.445
+    },
+    {
+        "LocationID": "TIX",
+        "City": "Titusville",
+        "FacilityName": "Space Coast Regional Airport",
+        "Lat": 28.51479912,
+        "Lng": -80.79920197
+    },
+    {
+        "LocationID": "BLH",
+        "City": "Blythe",
+        "FacilityName": "Blythe Airport",
+        "Lat": 33.61920166,
+        "Lng": -114.7170029
+    },
+    {
+        "LocationID": "WJF",
+        "City": "Lancaster",
+        "FacilityName": "General WM J Fox Airfield",
+        "Lat": 34.74110031,
+        "Lng": -118.2190018
+    },
+    {
+        "LocationID": "RBL",
+        "City": "Red Bluff",
+        "FacilityName": "Red Bluff Municipal Airport",
+        "Lat": 40.15069962,
+        "Lng": -122.2519989
+    },
+    {
+        "LocationID": "UNV",
+        "City": "State College",
+        "FacilityName": "University Park Airport",
+        "Lat": 40.84930038,
+        "Lng": -77.84870148
+    },
+    {
+        "LocationID": "COU",
+        "City": "Columbia",
+        "FacilityName": "Columbia Regional Airport",
+        "Lat": 38.8181,
+        "Lng": -92.219597
+    },
+    {
+        "LocationID": "BAF",
+        "City": "Westfield/Springfield",
+        "FacilityName": "Westfield-Barnes Regional Airport",
+        "Lat": 42.157799,
+        "Lng": -72.715599
+    },
+    {
+        "LocationID": "MMV",
+        "City": "Mc Minnville",
+        "FacilityName": "Mc Minnville Municipal Airport",
+        "Lat": 45.19440079,
+        "Lng": -123.1360016
+    },
+    {
+        "LocationID": "PTK",
+        "City": "Pontiac",
+        "FacilityName": "Oakland County International Airport",
+        "Lat": 42.66550064,
+        "Lng": -83.42009735
+    },
+    {
+        "LocationID": "ERI",
+        "City": "Erie",
+        "FacilityName": "Erie International Tom Ridge Field",
+        "Lat": 42.083127,
+        "Lng": -80.173867
+    },
+    {
+        "LocationID": "MLU",
+        "City": "Monroe",
+        "FacilityName": "Monroe Regional Airport",
+        "Lat": 32.510899,
+        "Lng": -92.037697
+    },
+    {
+        "LocationID": "HLN",
+        "City": "Helena",
+        "FacilityName": "Helena Regional Airport",
+        "Lat": 46.6068,
+        "Lng": -111.983002
+    },
+    {
+        "LocationID": "LRD",
+        "City": "Laredo",
+        "FacilityName": "Laredo International Airport",
+        "Lat": 27.54380035,
+        "Lng": -99.46160126
+    },
+    {
+        "LocationID": "MOT",
+        "City": "Minot",
+        "FacilityName": "Minot International Airport",
+        "Lat": 48.25939941,
+        "Lng": -101.2799988
+    },
+    {
+        "LocationID": "HVN",
+        "City": "New Haven",
+        "FacilityName": "Tweed New Haven Airport",
+        "Lat": 41.26369858,
+        "Lng": -72.88680267
+    },
+    {
+        "LocationID": "MER",
+        "City": "Merced",
+        "FacilityName": "Castle Airport",
+        "Lat": 37.38050079,
+        "Lng": -120.5680008
+    },
+    {
+        "LocationID": "HHR",
+        "City": "Hawthorne",
+        "FacilityName": "Jack Northrop Field Hawthorne Municipal Airport",
+        "Lat": 33.922798,
+        "Lng": -118.334999
+    },
+    {
+        "LocationID": "IPL",
+        "City": "Imperial",
+        "FacilityName": "Imperial County Airport",
+        "Lat": 32.83420181,
+        "Lng": -115.5790024
+    },
+    {
+        "LocationID": "TOP",
+        "City": "Topeka",
+        "FacilityName": "Philip Billard Municipal Airport",
+        "Lat": 39.069899,
+        "Lng": -95.622606
+    },
+    {
+        "LocationID": "RVS",
+        "City": "Tulsa",
+        "FacilityName": "Richard Lloyd Jones Jr Airport",
+        "Lat": 36.03960037,
+        "Lng": -95.98459625
+    },
+    {
+        "LocationID": "SPI",
+        "City": "Springfield",
+        "FacilityName": "Abraham Lincoln Capital Airport",
+        "Lat": 39.844101,
+        "Lng": -89.677902
+    },
+    {
+        "LocationID": "EAU",
+        "City": "Eau Claire",
+        "FacilityName": "Chippewa Valley Regional Airport",
+        "Lat": 44.86579895,
+        "Lng": -91.48429871
+    },
+    {
+        "LocationID": "HOT",
+        "City": "Hot Springs",
+        "FacilityName": "Memorial Field",
+        "Lat": 34.47800064,
+        "Lng": -93.09619904
+    },
+    {
+        "LocationID": "GPI",
+        "City": "Kalispell",
+        "FacilityName": "Glacier Park International Airport",
+        "Lat": 48.3105011,
+        "Lng": -114.2559967
+    },
+    {
+        "LocationID": "OWD",
+        "City": "Norwood",
+        "FacilityName": "Norwood Memorial Airport",
+        "Lat": 42.19049835,
+        "Lng": -71.17289734
+    },
+    {
+        "LocationID": "SPS",
+        "City": "Wichita Falls",
+        "FacilityName": "Sheppard Air Force Base-Wichita Falls Municipal Airport",
+        "Lat": 33.9888,
+        "Lng": -98.491898
+    },
+    {
+        "LocationID": "MBS",
+        "City": "Saginaw",
+        "FacilityName": "MBS International Airport",
+        "Lat": 43.532902,
+        "Lng": -84.079597
+    },
+    {
+        "LocationID": "BGM",
+        "City": "Binghamton",
+        "FacilityName": "Greater Binghamton/Edwin A Link field",
+        "Lat": 42.20869827,
+        "Lng": -75.97979736
+    },
+    {
+        "LocationID": "CSG",
+        "City": "Columbus",
+        "FacilityName": "Columbus Metropolitan Airport",
+        "Lat": 32.5163002,
+        "Lng": -84.93890381
+    },
+    {
+        "LocationID": "LEB",
+        "City": "Lebanon",
+        "FacilityName": "Lebanon Municipal Airport",
+        "Lat": 43.62609863,
+        "Lng": -72.30419922
+    },
+    {
+        "LocationID": "LBF",
+        "City": "North Platte",
+        "FacilityName": "North Platte Regional Airport Lee Bird Field",
+        "Lat": 41.12620163,
+        "Lng": -100.6839981
+    },
+    {
+        "LocationID": "EKO",
+        "City": "Elko",
+        "FacilityName": "Elko Regional Airport",
+        "Lat": 40.82490158,
+        "Lng": -115.7919998
+    },
+    {
+        "LocationID": "MCC",
+        "City": "Sacramento",
+        "FacilityName": "Mc Clellan Airfield",
+        "Lat": 38.66759872,
+        "Lng": -121.401001
+    },
+    {
+        "LocationID": "UKI",
+        "City": "Ukiah",
+        "FacilityName": "Ukiah Municipal Airport",
+        "Lat": 39.12599945,
+        "Lng": -123.2009964
+    },
+    {
+        "LocationID": "BHB",
+        "City": "Bar Harbor",
+        "FacilityName": "Hancock County-Bar Harbor Airport",
+        "Lat": 44.45000076,
+        "Lng": -68.3615036
+    },
+    {
+        "LocationID": "LOU",
+        "City": "Louisville",
+        "FacilityName": "Bowman Field",
+        "Lat": 38.22800064,
+        "Lng": -85.66369629
+    },
+    {
+        "LocationID": "CRE",
+        "City": "North Myrtle Beach",
+        "FacilityName": "Grand Strand Airport",
+        "Lat": 33.81169891,
+        "Lng": -78.72389984
+    },
+    {
+        "LocationID": "PNE",
+        "City": "Philadelphia",
+        "FacilityName": "Northeast Philadelphia Airport",
+        "Lat": 40.081902,
+        "Lng": -75.010597
+    },
+    {
+        "LocationID": "PVU",
+        "City": "Provo",
+        "FacilityName": "Provo-Utah Lake International Airport",
+        "Lat": 40.2192,
+        "Lng": -111.723
+    },
+    {
+        "LocationID": "WWD",
+        "City": "Wildwood",
+        "FacilityName": "Cape May County Airport",
+        "Lat": 39.00849915,
+        "Lng": -74.90830231
+    },
+    {
+        "LocationID": "VIS",
+        "City": "Visalia",
+        "FacilityName": "Visalia International Airport",
+        "Lat": 36.318699,
+        "Lng": -119.392998
+    },
+    {
+        "LocationID": "LFT",
+        "City": "Lafayette",
+        "FacilityName": "Lafayette Regional Airport",
+        "Lat": 30.205299,
+        "Lng": -91.987602
+    },
+    {
+        "LocationID": "SUX",
+        "City": "Sioux City",
+        "FacilityName": "Sioux Gateway Airport / Brigadier General Bud Day Field",
+        "Lat": 42.397605,
+        "Lng": -96.382237
+    },
+    {
+        "LocationID": "ACV",
+        "City": "Arcata/Eureka",
+        "FacilityName": "California Redwood Coast-Humboldt County Airport",
+        "Lat": 40.978101,
+        "Lng": -124.109
+    },
+    {
+        "LocationID": "CNM",
+        "City": "Carlsbad",
+        "FacilityName": "Cavern City Air Terminal",
+        "Lat": 32.33750153,
+        "Lng": -104.2630005
+    },
+    {
+        "LocationID": "GGG",
+        "City": "Longview",
+        "FacilityName": "East Texas Regional Airport",
+        "Lat": 32.38399887,
+        "Lng": -94.71150208
+    },
+    {
+        "LocationID": "ROW",
+        "City": "Roswell",
+        "FacilityName": "Roswell Air Center Airport",
+        "Lat": 33.301601,
+        "Lng": -104.530998
+    },
+    {
+        "LocationID": "LCK",
+        "City": "Columbus",
+        "FacilityName": "Rickenbacker International Airport",
+        "Lat": 39.813801,
+        "Lng": -82.927803
+    },
+    {
+        "LocationID": "STP",
+        "City": "St Paul",
+        "FacilityName": "St Paul Downtown Holman Field",
+        "Lat": 44.93450165,
+        "Lng": -93.05999756
+    },
+    {
+        "LocationID": "BRD",
+        "City": "Brainerd",
+        "FacilityName": "Brainerd Lakes Regional Airport",
+        "Lat": 46.39830017,
+        "Lng": -94.13809967
+    },
+    {
+        "LocationID": "BVU",
+        "City": "Boulder City",
+        "FacilityName": "Boulder City-Lake Mead International Airport",
+        "Lat": 35.947498,
+        "Lng": -114.861
+    },
+    {
+        "LocationID": "AEX",
+        "City": "Alexandria",
+        "FacilityName": "Alexandria International Airport",
+        "Lat": 31.3274,
+        "Lng": -92.549797
+    },
+    {
+        "LocationID": "MHK",
+        "City": "Manhattan",
+        "FacilityName": "Manhattan Regional Airport",
+        "Lat": 39.14099884,
+        "Lng": -96.67079926
+    },
+    {
+        "LocationID": "AGC",
+        "City": "Pittsburgh",
+        "FacilityName": "Allegheny County Airport",
+        "Lat": 40.35440063,
+        "Lng": -79.93019867
+    },
+    {
+        "LocationID": "OLM",
+        "City": "Olympia",
+        "FacilityName": "Olympia Regional Airport",
+        "Lat": 46.9693985,
+        "Lng": -122.9029999
+    },
+    {
+        "LocationID": "STJ",
+        "City": "St Joseph",
+        "FacilityName": "Rosecrans Memorial Airport",
+        "Lat": 39.77190018,
+        "Lng": -94.90969849
+    },
+    {
+        "LocationID": "LWM",
+        "City": "Lawrence",
+        "FacilityName": "Lawrence Municipal Airport",
+        "Lat": 42.71720123,
+        "Lng": -71.12339783
+    },
+    {
+        "LocationID": "DAG",
+        "City": "Daggett",
+        "FacilityName": "Barstow Daggett Airport",
+        "Lat": 34.85369873,
+        "Lng": -116.7870026
+    },
+    {
+        "LocationID": "GMU",
+        "City": "Greenville",
+        "FacilityName": "Greenville Downtown Airport",
+        "Lat": 34.84790039,
+        "Lng": -82.34999847
+    },
+    {
+        "LocationID": "SSF",
+        "City": "San Antonio",
+        "FacilityName": "Stinson Municipal Airport",
+        "Lat": 29.33699989,
+        "Lng": -98.47109985
+    },
+    {
+        "LocationID": "DBQ",
+        "City": "Dubuque",
+        "FacilityName": "Dubuque Regional Airport",
+        "Lat": 42.402,
+        "Lng": -90.709503
+    },
+    {
+        "LocationID": "GCK",
+        "City": "Garden City",
+        "FacilityName": "Garden City Regional Airport",
+        "Lat": 37.92750168,
+        "Lng": -100.723999
+    },
+    {
+        "LocationID": "LMT",
+        "City": "Klamath Falls",
+        "FacilityName": "Crater Lake-Klamath Regional Airport",
+        "Lat": 42.156101,
+        "Lng": -121.733002
+    },
+    {
+        "LocationID": "LBE",
+        "City": "Latrobe",
+        "FacilityName": "Arnold Palmer Regional Airport",
+        "Lat": 40.27590179,
+        "Lng": -79.40480042
+    },
+    {
+        "LocationID": "MEI",
+        "City": "Meridian",
+        "FacilityName": "Key Field / Meridian Regional Airport",
+        "Lat": 32.3326,
+        "Lng": -88.7519
+    },
+    {
+        "LocationID": "ILG",
+        "City": "Wilmington",
+        "FacilityName": "New Castle Airport",
+        "Lat": 39.67869949,
+        "Lng": -75.60649872
+    },
+    {
+        "LocationID": "YNG",
+        "City": "Youngstown/Warren",
+        "FacilityName": "Youngstown Warren Regional Airport",
+        "Lat": 41.26070023,
+        "Lng": -80.67910004
+    },
+    {
+        "LocationID": "TCL",
+        "City": "Tuscaloosa",
+        "FacilityName": "Tuscaloosa Regional Airport",
+        "Lat": 33.22060013,
+        "Lng": -87.61139679
+    },
+    {
+        "LocationID": "BWG",
+        "City": "Bowling Green",
+        "FacilityName": "Bowling Green Warren County Regional Airport",
+        "Lat": 36.96450043,
+        "Lng": -86.41970062
+    },
+    {
+        "LocationID": "HUT",
+        "City": "Hutchinson",
+        "FacilityName": "Hutchinson Municipal Airport",
+        "Lat": 38.06549835,
+        "Lng": -97.86060333
+    },
+    {
+        "LocationID": "SAW",
+        "City": "Marquette",
+        "FacilityName": "Sawyer International Airport",
+        "Lat": 46.35359955,
+        "Lng": -87.395401
+    },
+    {
+        "LocationID": "PWT",
+        "City": "Bremerton",
+        "FacilityName": "Bremerton National Airport",
+        "Lat": 47.49020004,
+        "Lng": -122.7649994
+    },
+    {
+        "LocationID": "UAO",
+        "City": "Aurora",
+        "FacilityName": "Aurora State Airport",
+        "Lat": 45.24710083,
+        "Lng": -122.7699966
+    },
+    {
+        "LocationID": "CON",
+        "City": "Concord",
+        "FacilityName": "Concord Municipal Airport",
+        "Lat": 43.20270157,
+        "Lng": -71.50229645
+    },
+    {
+        "LocationID": "SBD",
+        "City": "San Bernardino",
+        "FacilityName": "San Bernardino International Airport",
+        "Lat": 34.095402,
+        "Lng": -117.235001
+    },
+    {
+        "LocationID": "HYI",
+        "City": "San Marcos",
+        "FacilityName": "San Marcos Regional Airport",
+        "Lat": 29.8927,
+        "Lng": -97.862999
+    },
+    {
+        "LocationID": "GRI",
+        "City": "Grand Island",
+        "FacilityName": "Central Nebraska Regional Airport",
+        "Lat": 40.96749878,
+        "Lng": -98.30960083
+    },
+    {
+        "LocationID": "LYH",
+        "City": "Lynchburg",
+        "FacilityName": "Lynchburg Regional Preston Glenn Field",
+        "Lat": 37.3266983,
+        "Lng": -79.20040131
+    },
+    {
+        "LocationID": "RDG",
+        "City": "Reading",
+        "FacilityName": "Reading Regional Airport (Carl A Spaatz Field)",
+        "Lat": 40.378502,
+        "Lng": -75.965202
+    },
+    {
+        "LocationID": "RDM",
+        "City": "Redmond",
+        "FacilityName": "Roberts Field",
+        "Lat": 44.2541008,
+        "Lng": -121.1500015
+    },
+    {
+        "LocationID": "SBY",
+        "City": "Salisbury",
+        "FacilityName": "Salisbury Ocean City Wicomico Regional Airport",
+        "Lat": 38.34049988,
+        "Lng": -75.51029968
+    },
+    {
+        "LocationID": "WYS",
+        "City": "West Yellowstone",
+        "FacilityName": "Yellowstone Airport",
+        "Lat": 44.68840027,
+        "Lng": -111.1179962
+    },
+    {
+        "LocationID": "AST",
+        "City": "Astoria",
+        "FacilityName": "Astoria Regional Airport",
+        "Lat": 46.15800095,
+        "Lng": -123.8789978
+    },
+    {
+        "LocationID": "COE",
+        "City": "Coeur d'Alene",
+        "FacilityName": "Coeur D'Alene - Pappy Boyington Field",
+        "Lat": 47.77429962,
+        "Lng": -116.8199997
+    },
+    {
+        "LocationID": "PUW",
+        "City": "Pullman/Moscow",
+        "FacilityName": "Pullman Moscow Regional Airport",
+        "Lat": 46.7439,
+        "Lng": -117.110001
+    },
+    {
+        "LocationID": "ENV",
+        "City": "Wendover",
+        "FacilityName": "Wendover Airport",
+        "Lat": 40.71870041,
+        "Lng": -114.0309982
+    },
+    {
+        "LocationID": "ECP",
+        "City": "Panama City Beach",
+        "FacilityName": "Northwest Florida Beaches International Airport",
+        "Lat": 30.357106,
+        "Lng": -85.795414
+    },
+    {
+        "LocationID": "BPT",
+        "City": "Beaumont/Port Arthur",
+        "FacilityName": "Jack Brooks Regional Airport",
+        "Lat": 29.9508,
+        "Lng": -94.020699
+    },
+    {
+        "LocationID": "PIR",
+        "City": "Pierre",
+        "FacilityName": "Pierre Regional Airport",
+        "Lat": 44.38270187,
+        "Lng": -100.2860031
+    },
+    {
+        "LocationID": "PIH",
+        "City": "Pocatello",
+        "FacilityName": "Pocatello Regional Airport",
+        "Lat": 42.90980148,
+        "Lng": -112.5960007
+    },
+    {
+        "LocationID": "SWO",
+        "City": "Stillwater",
+        "FacilityName": "Stillwater Regional Airport",
+        "Lat": 36.16120148,
+        "Lng": -97.08570099
+    },
+    {
+        "LocationID": "TIW",
+        "City": "Tacoma",
+        "FacilityName": "Tacoma Narrows Airport",
+        "Lat": 47.26789856,
+        "Lng": -122.5780029
+    },
+    {
+        "LocationID": "BVY",
+        "City": "Beverly / Danvers",
+        "FacilityName": "Beverly Regional Airport",
+        "Lat": 42.584202,
+        "Lng": -70.916496
+    },
+    {
+        "LocationID": "LEE",
+        "City": "Leesburg",
+        "FacilityName": "Leesburg International Airport",
+        "Lat": 28.82309914,
+        "Lng": -81.80870056
+    },
+    {
+        "LocationID": "MCE",
+        "City": "Merced",
+        "FacilityName": "Merced Regional Macready Field",
+        "Lat": 37.28469849,
+        "Lng": -120.5139999
+    },
+    {
+        "LocationID": "DHN",
+        "City": "Dothan",
+        "FacilityName": "Dothan Regional Airport",
+        "Lat": 31.32130051,
+        "Lng": -85.44960022
+    },
+    {
+        "LocationID": "OTH",
+        "City": "North Bend",
+        "FacilityName": "Southwest Oregon Regional Airport",
+        "Lat": 43.417099,
+        "Lng": -124.2460022
+    },
+    {
+        "LocationID": "PAH",
+        "City": "Paducah",
+        "FacilityName": "Barkley Regional Airport",
+        "Lat": 37.06079865,
+        "Lng": -88.77380371
+    },
+    {
+        "LocationID": "ALO",
+        "City": "Waterloo",
+        "FacilityName": "Waterloo Regional Airport",
+        "Lat": 42.55709839,
+        "Lng": -92.40029907
+    },
+    {
+        "LocationID": "EWB",
+        "City": "New Bedford",
+        "FacilityName": "New Bedford Regional Airport",
+        "Lat": 41.67610168,
+        "Lng": -70.95690155
+    },
+    {
+        "LocationID": "RUT",
+        "City": "Rutland",
+        "FacilityName": "Rutland - Southern Vermont Regional Airport",
+        "Lat": 43.52939987,
+        "Lng": -72.94960022
+    },
+    {
+        "LocationID": "GYY",
+        "City": "Gary",
+        "FacilityName": "Gary Chicago International Airport",
+        "Lat": 41.61629868,
+        "Lng": -87.41280365
+    },
+    {
+        "LocationID": "MIE",
+        "City": "Muncie",
+        "FacilityName": "Delaware County Johnson Field",
+        "Lat": 40.24229813,
+        "Lng": -85.39589691
+    },
+    {
+        "LocationID": "FDY",
+        "City": "Findlay",
+        "FacilityName": "Findlay Airport",
+        "Lat": 41.01350021,
+        "Lng": -83.66870117
+    },
+    {
+        "LocationID": "EED",
+        "City": "Needles",
+        "FacilityName": "Needles Airport",
+        "Lat": 34.7663002,
+        "Lng": -114.6230011
+    },
+    {
+        "LocationID": "INW",
+        "City": "Winslow",
+        "FacilityName": "Winslow Lindbergh Regional Airport",
+        "Lat": 35.02190018,
+        "Lng": -110.7229996
+    },
+    {
+        "LocationID": "JQF",
+        "City": "Concord",
+        "FacilityName": "Concord-Padgett Regional Airport",
+        "Lat": 35.387798,
+        "Lng": -80.709099
+    },
+    {
+        "LocationID": "SHD",
+        "City": "Staunton/Waynesboro/Harrisonburg",
+        "FacilityName": "Shenandoah Valley Regional Airport",
+        "Lat": 38.263802,
+        "Lng": -78.8964
+    },
+    {
+        "LocationID": "KTN",
+        "City": "Ketchikan",
+        "FacilityName": "Ketchikan International Airport",
+        "Lat": 55.35559845,
+        "Lng": -131.7140045
+    },
+    {
+        "LocationID": "RKS",
+        "City": "Rock Springs",
+        "FacilityName": "Southwest Wyoming Regional Airport",
+        "Lat": 41.5942,
+        "Lng": -109.065001
+    },
+    {
+        "LocationID": "FOE",
+        "City": "Topeka",
+        "FacilityName": "Topeka Regional Airport",
+        "Lat": 38.950901,
+        "Lng": -95.663597
+    },
+    {
+        "LocationID": "INT",
+        "City": "Winston Salem",
+        "FacilityName": "Smith Reynolds Airport",
+        "Lat": 36.13370132,
+        "Lng": -80.22200012
+    },
+    {
+        "LocationID": "IKK",
+        "City": "Kankakee",
+        "FacilityName": "Greater Kankakee Airport",
+        "Lat": 41.07139969,
+        "Lng": -87.84629822
+    },
+    {
+        "LocationID": "ENW",
+        "City": "Kenosha",
+        "FacilityName": "Kenosha Regional Airport",
+        "Lat": 42.59569931,
+        "Lng": -87.92780304
+    },
+    {
+        "LocationID": "FLO",
+        "City": "Florence",
+        "FacilityName": "Florence Regional Airport",
+        "Lat": 34.1853981,
+        "Lng": -79.72389984
+    },
+    {
+        "LocationID": "TWF",
+        "City": "Twin Falls",
+        "FacilityName": "Joslin Field Magic Valley Regional Airport",
+        "Lat": 42.4818,
+        "Lng": -114.487999
+    },
+    {
+        "LocationID": "BQK",
+        "City": "Brunswick",
+        "FacilityName": "Brunswick Golden Isles Airport",
+        "Lat": 31.25880051,
+        "Lng": -81.46649933
+    },
+    {
+        "LocationID": "SKF",
+        "City": "San Antonio",
+        "FacilityName": "Lackland Air Force Base",
+        "Lat": 29.38419914,
+        "Lng": -98.58110046
+    },
+    {
+        "LocationID": "HKY",
+        "City": "Hickory",
+        "FacilityName": "Hickory Regional Airport",
+        "Lat": 35.74110031,
+        "Lng": -81.38950348
+    },
+    {
+        "LocationID": "MFD",
+        "City": "Mansfield",
+        "FacilityName": "Mansfield Lahm Regional Airport",
+        "Lat": 40.82139969,
+        "Lng": -82.51660156
+    },
+    {
+        "LocationID": "SFF",
+        "City": "Spokane",
+        "FacilityName": "Felts Field",
+        "Lat": 47.68280029,
+        "Lng": -117.322998
+    },
+    {
+        "LocationID": "BCE",
+        "City": "Bryce Canyon",
+        "FacilityName": "Bryce Canyon Airport",
+        "Lat": 37.70640183,
+        "Lng": -112.1449966
+    },
+    {
+        "LocationID": "FMN",
+        "City": "Farmington",
+        "FacilityName": "Four Corners Regional Airport",
+        "Lat": 36.741199,
+        "Lng": -108.230003
+    },
+    {
+        "LocationID": "LWS",
+        "City": "Lewiston",
+        "FacilityName": "Lewiston Nez Perce County Airport",
+        "Lat": 46.37450027,
+        "Lng": -117.0149994
+    },
+    {
+        "LocationID": "CWA",
+        "City": "Mosinee",
+        "FacilityName": "Central Wisconsin Airport",
+        "Lat": 44.77759933,
+        "Lng": -89.66680145
+    },
+    {
+        "LocationID": "PNC",
+        "City": "Ponca City",
+        "FacilityName": "Ponca City Regional Airport",
+        "Lat": 36.73199844,
+        "Lng": -97.09980011
+    },
+    {
+        "LocationID": "TPH",
+        "City": "Tonopah",
+        "FacilityName": "Tonopah Airport",
+        "Lat": 38.06019974,
+        "Lng": -117.086998
+    },
+    {
+        "LocationID": "JLN",
+        "City": "Joplin",
+        "FacilityName": "Joplin Regional Airport",
+        "Lat": 37.151798,
+        "Lng": -94.498299
+    },
+    {
+        "LocationID": "LCH",
+        "City": "Lake Charles",
+        "FacilityName": "Lake Charles Regional Airport",
+        "Lat": 30.12610054,
+        "Lng": -93.22329712
+    },
+    {
+        "LocationID": "PLN",
+        "City": "Pellston",
+        "FacilityName": "Pellston Regional Airport of Emmet County Airport",
+        "Lat": 45.57089996,
+        "Lng": -84.79669952
+    },
+    {
+        "LocationID": "CLM",
+        "City": "Port Angeles",
+        "FacilityName": "William R Fairchild International Airport",
+        "Lat": 48.12020111,
+        "Lng": -123.5
+    },
+    {
+        "LocationID": "STC",
+        "City": "Saint Cloud",
+        "FacilityName": "Saint Cloud Regional Airport",
+        "Lat": 45.5466,
+        "Lng": -94.059898
+    },
+    {
+        "LocationID": "TXK",
+        "City": "Texarkana",
+        "FacilityName": "Texarkana Regional Webb Field",
+        "Lat": 33.45370102,
+        "Lng": -93.99099731
+    },
+    {
+        "LocationID": "LAR",
+        "City": "Laramie",
+        "FacilityName": "Laramie Regional Airport",
+        "Lat": 41.31209946,
+        "Lng": -105.6750031
+    },
+    {
+        "LocationID": "LAF",
+        "City": "West Lafayette",
+        "FacilityName": "Purdue University Airport",
+        "Lat": 40.4123,
+        "Lng": -86.936897
+    },
+    {
+        "LocationID": "CVO",
+        "City": "Corvallis",
+        "FacilityName": "Corvallis Municipal Airport",
+        "Lat": 44.49720001,
+        "Lng": -123.2900009
+    },
+    {
+        "LocationID": "BFM",
+        "City": "Mobile",
+        "FacilityName": "Mobile Downtown Airport",
+        "Lat": 30.62680054,
+        "Lng": -88.06809998
+    },
+    {
+        "LocationID": "ALS",
+        "City": "Alamosa",
+        "FacilityName": "San Luis Valley Regional Airport/Bergman Field",
+        "Lat": 37.434898,
+        "Lng": -105.866997
+    },
+    {
+        "LocationID": "LFK",
+        "City": "Lufkin",
+        "FacilityName": "Angelina County Airport",
+        "Lat": 31.23399925,
+        "Lng": -94.75
+    },
+    {
+        "LocationID": "MCW",
+        "City": "Mason City",
+        "FacilityName": "Mason City Municipal Airport",
+        "Lat": 43.15779877,
+        "Lng": -93.33129883
+    },
+    {
+        "LocationID": "MTJ",
+        "City": "Montrose",
+        "FacilityName": "Montrose Regional Airport",
+        "Lat": 38.50979996,
+        "Lng": -107.8939972
+    },
+    {
+        "LocationID": "EWN",
+        "City": "New Bern",
+        "FacilityName": "Coastal Carolina Regional Airport",
+        "Lat": 35.07300186,
+        "Lng": -77.04290009
+    },
+    {
+        "LocationID": "ART",
+        "City": "Watertown",
+        "FacilityName": "Watertown International Airport",
+        "Lat": 43.9919014,
+        "Lng": -76.021698
+    },
+    {
+        "LocationID": "MKG",
+        "City": "Muskegon",
+        "FacilityName": "Muskegon County Airport",
+        "Lat": 43.169498,
+        "Lng": -86.238197
+    },
+    {
+        "LocationID": "HGR",
+        "City": "Hagerstown",
+        "FacilityName": "Hagerstown Regional Richard A Henson Field",
+        "Lat": 39.707901,
+        "Lng": -77.72949982
+    },
+    {
+        "LocationID": "MQY",
+        "City": "Smyrna",
+        "FacilityName": "Smyrna Airport",
+        "Lat": 36.00899887,
+        "Lng": -86.52010345
+    },
+    {
+        "LocationID": "SGH",
+        "City": "Springfield",
+        "FacilityName": "Springfield-Beckley Municipal Airport",
+        "Lat": 39.84030151,
+        "Lng": -83.84020233
+    },
+    {
+        "LocationID": "GLD",
+        "City": "Goodland",
+        "FacilityName": "Renner Field-Goodland Municipal Airport",
+        "Lat": 39.37060165,
+        "Lng": -101.6989975
+    },
+    {
+        "LocationID": "LWB",
+        "City": "Lewisburg",
+        "FacilityName": "Greenbrier Valley Airport",
+        "Lat": 37.85829926,
+        "Lng": -80.39949799
+    },
+    {
+        "LocationID": "PRX",
+        "City": "Paris",
+        "FacilityName": "Cox Field",
+        "Lat": 33.63660049,
+        "Lng": -95.45079803
+    },
+    {
+        "LocationID": "TTD",
+        "City": "Portland",
+        "FacilityName": "Portland Troutdale Airport",
+        "Lat": 45.54940033,
+        "Lng": -122.401001
+    },
+    {
+        "LocationID": "HTS",
+        "City": "Huntington",
+        "FacilityName": "Tri-State/Milton J. Ferguson Field",
+        "Lat": 38.366699,
+        "Lng": -82.557999
+    },
+    {
+        "LocationID": "ABR",
+        "City": "Aberdeen",
+        "FacilityName": "Aberdeen Regional Airport",
+        "Lat": 45.44910049,
+        "Lng": -98.42179871
+    },
+    {
+        "LocationID": "CGI",
+        "City": "Cape Girardeau",
+        "FacilityName": "Cape Girardeau Regional Airport",
+        "Lat": 37.2253,
+        "Lng": -89.570801
+    },
+    {
+        "LocationID": "DUJ",
+        "City": "Dubois",
+        "FacilityName": "DuBois Regional Airport",
+        "Lat": 41.17829895,
+        "Lng": -78.8986969
+    },
+    {
+        "LocationID": "SHR",
+        "City": "Sheridan",
+        "FacilityName": "Sheridan County Airport",
+        "Lat": 44.76919937,
+        "Lng": -106.9800034
+    },
+    {
+        "LocationID": "TUP",
+        "City": "Tupelo",
+        "FacilityName": "Tupelo Regional Airport",
+        "Lat": 34.26810074,
+        "Lng": -88.76989746
+    },
+    {
+        "LocationID": "YKM",
+        "City": "Yakima",
+        "FacilityName": "Yakima Air Terminal McAllister Field",
+        "Lat": 46.56819916,
+        "Lng": -120.5439987
+    },
+    {
+        "LocationID": "PBG",
+        "City": "Plattsburgh",
+        "FacilityName": "Plattsburgh International Airport",
+        "Lat": 44.65090179,
+        "Lng": -73.4681015
+    },
+    {
+        "LocationID": "IRK",
+        "City": "Kirksville",
+        "FacilityName": "Kirksville Regional Airport",
+        "Lat": 40.09349823,
+        "Lng": -92.54489899
+    },
+    {
+        "LocationID": "BMG",
+        "City": "Bloomington",
+        "FacilityName": "Monroe County Airport",
+        "Lat": 39.14599991,
+        "Lng": -86.61669922
+    },
+    {
+        "LocationID": "HUF",
+        "City": "Terre Haute",
+        "FacilityName": "Terre Haute Regional Airport, Hulman Field",
+        "Lat": 39.4515,
+        "Lng": -87.307602
+    },
+    {
+        "LocationID": "LOZ",
+        "City": "London",
+        "FacilityName": "London-Corbin Airport/Magee Field",
+        "Lat": 37.0821991,
+        "Lng": -84.0848999
+    },
+    {
+        "LocationID": "SLE",
+        "City": "Salem",
+        "FacilityName": "Salem Municipal Airport/McNary Field",
+        "Lat": 44.90950012,
+        "Lng": -123.0029984
+    },
+    {
+        "LocationID": "GUP",
+        "City": "Gallup",
+        "FacilityName": "Gallup Municipal Airport",
+        "Lat": 35.51110077,
+        "Lng": -108.7890015
+    },
+    {
+        "LocationID": "MYV",
+        "City": "Marysville",
+        "FacilityName": "Yuba County Airport",
+        "Lat": 39.09780121,
+        "Lng": -121.5699997
+    },
+    {
+        "LocationID": "VPZ",
+        "City": "Valparaiso",
+        "FacilityName": "Porter County Municipal Airport",
+        "Lat": 41.45399857,
+        "Lng": -87.00710297
+    },
+    {
+        "LocationID": "BIH",
+        "City": "Bishop",
+        "FacilityName": "Eastern Sierra Regional Airport",
+        "Lat": 37.37310028,
+        "Lng": -118.3639984
+    },
+    {
+        "LocationID": "DRT",
+        "City": "Del Rio",
+        "FacilityName": "Del Rio International Airport",
+        "Lat": 29.37420082,
+        "Lng": -100.927002
+    },
+    {
+        "LocationID": "DMN",
+        "City": "Deming",
+        "FacilityName": "Deming Municipal Airport",
+        "Lat": 32.26229858,
+        "Lng": -107.7210007
+    },
+    {
+        "LocationID": "GCC",
+        "City": "Gillette",
+        "FacilityName": "Gillette Campbell County Airport",
+        "Lat": 44.34889984,
+        "Lng": -105.5390015
+    },
+    {
+        "LocationID": "HYS",
+        "City": "Hays",
+        "FacilityName": "Hays Regional Airport",
+        "Lat": 38.84220123,
+        "Lng": -99.27320099
+    },
+    {
+        "LocationID": "HOB",
+        "City": "Hobbs",
+        "FacilityName": "Lea County Regional Airport",
+        "Lat": 32.6875,
+        "Lng": -103.2170029
+    },
+    {
+        "LocationID": "OLS",
+        "City": "Nogales",
+        "FacilityName": "Nogales International Airport",
+        "Lat": 31.4177,
+        "Lng": -110.848
+    },
+    {
+        "LocationID": "RME",
+        "City": "Rome",
+        "FacilityName": "Griffiss International Airport",
+        "Lat": 43.23379898,
+        "Lng": -75.40699768
+    },
+    {
+        "LocationID": "VEL",
+        "City": "Vernal",
+        "FacilityName": "Vernal Regional Airport",
+        "Lat": 40.4408989,
+        "Lng": -109.5100021
+    },
+    {
+        "LocationID": "U42",
+        "City": "Salt Lake City",
+        "FacilityName": "South Valley International Airport",
+        "Lat": 40.619499,
+        "Lng": -111.992996
+    },
+    {
+        "LocationID": "BTM",
+        "City": "Butte",
+        "FacilityName": "Bert Mooney Airport",
+        "Lat": 45.95479965,
+        "Lng": -112.4970016
+    },
+    {
+        "LocationID": "MCN",
+        "City": "Macon",
+        "FacilityName": "Middle Georgia Regional Airport",
+        "Lat": 32.69279861,
+        "Lng": -83.64920044
+    },
+    {
+        "LocationID": "MSS",
+        "City": "Massena",
+        "FacilityName": "Massena International Richards Field",
+        "Lat": 44.93579865,
+        "Lng": -74.84559631
+    },
+    {
+        "LocationID": "MSL",
+        "City": "Muscle Shoals",
+        "FacilityName": "Northwest Alabama Regional Airport",
+        "Lat": 34.74530029,
+        "Lng": -87.61019897
+    },
+    {
+        "LocationID": "PKB",
+        "City": "Parkersburg",
+        "FacilityName": "Mid Ohio Valley Regional Airport",
+        "Lat": 39.3451004,
+        "Lng": -81.43920135
+    },
+    {
+        "LocationID": "VCT",
+        "City": "Victoria",
+        "FacilityName": "Victoria Regional Airport",
+        "Lat": 28.8526001,
+        "Lng": -96.91850281
+    },
+    {
+        "LocationID": "LBL",
+        "City": "Liberal",
+        "FacilityName": "Liberal Mid-America Regional Airport",
+        "Lat": 37.0442009,
+        "Lng": -100.9599991
+    },
+    {
+        "LocationID": "HQM",
+        "City": "Hoquiam",
+        "FacilityName": "Bowerman Airport",
+        "Lat": 46.97119904,
+        "Lng": -123.9369965
+    },
+    {
+        "LocationID": "JXN",
+        "City": "Jackson",
+        "FacilityName": "Jackson County Reynolds Field",
+        "Lat": 42.25979996,
+        "Lng": -84.45939636
+    },
+    {
+        "LocationID": "TPL",
+        "City": "Temple",
+        "FacilityName": "Draughon Miller Central Texas Regional Airport",
+        "Lat": 31.15250015,
+        "Lng": -97.40779877
+    },
+    {
+        "LocationID": "SCH",
+        "City": "Schenectady",
+        "FacilityName": "Schenectady County Airport",
+        "Lat": 42.85250092,
+        "Lng": -73.92890167
+    },
+    {
+        "LocationID": "COD",
+        "City": "Cody",
+        "FacilityName": "Yellowstone Regional Airport",
+        "Lat": 44.52019882,
+        "Lng": -109.0240021
+    },
+    {
+        "LocationID": "SUN",
+        "City": "Hailey",
+        "FacilityName": "Friedman Memorial Airport",
+        "Lat": 43.50439835,
+        "Lng": -114.2959976
+    },
+    {
+        "LocationID": "ONP",
+        "City": "Newport",
+        "FacilityName": "Newport Municipal Airport",
+        "Lat": 44.580399,
+        "Lng": -124.057999
+    },
+    {
+        "LocationID": "CEC",
+        "City": "Crescent City",
+        "FacilityName": "Jack Mc Namara Field Airport",
+        "Lat": 41.78020096,
+        "Lng": -124.2369995
+    },
+    {
+        "LocationID": "DEC",
+        "City": "Decatur",
+        "FacilityName": "Decatur Airport",
+        "Lat": 39.83459854,
+        "Lng": -88.86569977
+    },
+    {
+        "LocationID": "SUU",
+        "City": "Fairfield",
+        "FacilityName": "Travis Air Force Base",
+        "Lat": 38.262699,
+        "Lng": -121.927002
+    },
+    {
+        "LocationID": "EAR",
+        "City": "Kearney",
+        "FacilityName": "Kearney Regional Airport",
+        "Lat": 40.727001,
+        "Lng": -99.006798
+    },
+    {
+        "LocationID": "LSV",
+        "City": "Las Vegas",
+        "FacilityName": "Nellis Air Force Base",
+        "Lat": 36.23619843,
+        "Lng": -115.0339966
+    },
+    {
+        "LocationID": "MIV",
+        "City": "Millville",
+        "FacilityName": "Millville Municipal Airport",
+        "Lat": 39.367802,
+        "Lng": -75.072197
+    },
+    {
+        "LocationID": "ALN",
+        "City": "Alton/St Louis",
+        "FacilityName": "St Louis Regional Airport",
+        "Lat": 38.89030075,
+        "Lng": -90.04599762
+    },
+    {
+        "LocationID": "MLC",
+        "City": "Mc Alester",
+        "FacilityName": "Mc Alester Regional Airport",
+        "Lat": 34.882401,
+        "Lng": -95.783501
+    },
+    {
+        "LocationID": "AND",
+        "City": "Anderson",
+        "FacilityName": "Anderson Regional Airport",
+        "Lat": 34.49459839,
+        "Lng": -82.70939636
+    },
+    {
+        "LocationID": "DLS",
+        "City": "Dallesport / The Dalles",
+        "FacilityName": "Columbia Gorge Regional Airport",
+        "Lat": 45.620979,
+        "Lng": -121.170777
+    },
+    {
+        "LocationID": "FST",
+        "City": "Fort Stockton",
+        "FacilityName": "Fort Stockton Pecos County Airport",
+        "Lat": 30.91570091,
+        "Lng": -102.9160004
+    },
+    {
+        "LocationID": "ISO",
+        "City": "Kinston",
+        "FacilityName": "Kinston Regional Jetport At Stallings Field",
+        "Lat": 35.33140183,
+        "Lng": -77.6088028
+    },
+    {
+        "LocationID": "LGU",
+        "City": "Logan",
+        "FacilityName": "Logan-Cache Airport",
+        "Lat": 41.79119873,
+        "Lng": -111.8519974
+    },
+    {
+        "LocationID": "MYL",
+        "City": "McCall",
+        "FacilityName": "McCall Municipal Airport",
+        "Lat": 44.88970184,
+        "Lng": -116.1009979
+    },
+    {
+        "LocationID": "RMG",
+        "City": "Rome",
+        "FacilityName": "Richard B Russell Airport",
+        "Lat": 34.3506012,
+        "Lng": -85.15799713
+    },
+    {
+        "LocationID": "EAT",
+        "City": "Wenatchee",
+        "FacilityName": "Pangborn Memorial Airport",
+        "Lat": 47.39889908,
+        "Lng": -120.2070007
+    },
+    {
+        "LocationID": "HLG",
+        "City": "Wheeling",
+        "FacilityName": "Wheeling Ohio County Airport",
+        "Lat": 40.17499924,
+        "Lng": -80.64630127
+    },
+    {
+        "LocationID": "WMC",
+        "City": "Winnemucca",
+        "FacilityName": "Winnemucca Municipal Airport",
+        "Lat": 40.89659882,
+        "Lng": -117.8059998
+    },
+    {
+        "LocationID": "KLS",
+        "City": "Kelso",
+        "FacilityName": "Southwest Washington Regional Airport",
+        "Lat": 46.11800003,
+        "Lng": -122.8980026
+    },
+    {
+        "LocationID": "67L",
+        "City": "Mesquite",
+        "FacilityName": "Mesquite International Airport",
+        "Lat": 36.834999,
+        "Lng": -114.055
+    },
+    {
+        "LocationID": "TKA",
+        "City": "Talkeetna",
+        "FacilityName": "Talkeetna Airport",
+        "Lat": 62.32049942,
+        "Lng": -150.0939941
+    },
+    {
+        "LocationID": "HRO",
+        "City": "Harrison",
+        "FacilityName": "Boone County Airport",
+        "Lat": 36.26150131,
+        "Lng": -93.15470123
+    },
+    {
+        "LocationID": "MKL",
+        "City": "Jackson",
+        "FacilityName": "McKellar-Sipes Regional Airport",
+        "Lat": 35.599899,
+        "Lng": -88.915604
+    },
+    {
+        "LocationID": "JBR",
+        "City": "Jonesboro",
+        "FacilityName": "Jonesboro Municipal Airport",
+        "Lat": 35.83169937,
+        "Lng": -90.64640045
+    },
+    {
+        "LocationID": "UIN",
+        "City": "Quincy",
+        "FacilityName": "Quincy Regional Baldwin Field",
+        "Lat": 39.94269943,
+        "Lng": -91.19460297
+    },
+    {
+        "LocationID": "BFF",
+        "City": "Scottsbluff",
+        "FacilityName": "Western Neb. Rgnl/William B. Heilig Airport",
+        "Lat": 41.87400055,
+        "Lng": -103.5960007
+    },
+    {
+        "LocationID": "VLD",
+        "City": "Valdosta",
+        "FacilityName": "Valdosta Regional Airport",
+        "Lat": 30.78249931,
+        "Lng": -83.27670288
+    },
+    {
+        "LocationID": "BLV",
+        "City": "Belleville",
+        "FacilityName": "Scott AFB/Midamerica Airport",
+        "Lat": 38.5452,
+        "Lng": -89.835197
+    },
+    {
+        "LocationID": "OWB",
+        "City": "Owensboro",
+        "FacilityName": "Owensboro Daviess County Airport",
+        "Lat": 37.74010086,
+        "Lng": -87.16680145
+    },
+    {
+        "LocationID": "MKK",
+        "City": "Kaunakakai",
+        "FacilityName": "Molokai Airport",
+        "Lat": 21.1529007,
+        "Lng": -157.095993
+    },
+    {
+        "LocationID": "ANB",
+        "City": "Anniston",
+        "FacilityName": "Anniston Regional Airport",
+        "Lat": 33.5882,
+        "Lng": -85.8581
+    },
+    {
+        "LocationID": "LRU",
+        "City": "Las Cruces",
+        "FacilityName": "Las Cruces International Airport",
+        "Lat": 32.28939819,
+        "Lng": -106.9219971
+    },
+    {
+        "LocationID": "RIV",
+        "City": "Riverside",
+        "FacilityName": "March Air Reserve Base",
+        "Lat": 33.880699,
+        "Lng": -117.259003
+    },
+    {
+        "LocationID": "ZZV",
+        "City": "Zanesville",
+        "FacilityName": "Zanesville Municipal Airport",
+        "Lat": 39.94440079,
+        "Lng": -81.89209747
+    },
+    {
+        "LocationID": "NQA",
+        "City": "Millington",
+        "FacilityName": "Millington-Memphis Airport",
+        "Lat": 35.356701,
+        "Lng": -89.8703
+    },
+    {
+        "LocationID": "EKA",
+        "City": "Eureka",
+        "FacilityName": "Murray Field",
+        "Lat": 40.80339813,
+        "Lng": -124.112999
+    },
+    {
+        "LocationID": "FME",
+        "City": "Fort Meade(Odenton)",
+        "FacilityName": "Tipton Airport",
+        "Lat": 39.08539963,
+        "Lng": -76.75939941
+    },
+    {
+        "LocationID": "LAW",
+        "City": "Lawton",
+        "FacilityName": "Lawton Fort Sill Regional Airport",
+        "Lat": 34.56769943,
+        "Lng": -98.41660309
+    },
+    {
+        "LocationID": "MWH",
+        "City": "Moses Lake",
+        "FacilityName": "Grant County International Airport",
+        "Lat": 47.20769882,
+        "Lng": -119.3199997
+    },
+    {
+        "LocationID": "CKB",
+        "City": "Clarksburg",
+        "FacilityName": "North Central West Virginia Airport",
+        "Lat": 39.29660034,
+        "Lng": -80.22810364
+    },
+    {
+        "LocationID": "SLK",
+        "City": "Saranac Lake",
+        "FacilityName": "Adirondack Regional Airport",
+        "Lat": 44.38529968,
+        "Lng": -74.20619965
+    },
+    {
+        "LocationID": "SIT",
+        "City": "Sitka",
+        "FacilityName": "Sitka Rocky Gutierrez Airport",
+        "Lat": 57.04710007,
+        "Lng": -135.3619995
+    },
+    {
+        "LocationID": "GLH",
+        "City": "Greenville",
+        "FacilityName": "Mid Delta Regional Airport",
+        "Lat": 33.48289871,
+        "Lng": -90.98560333
+    },
+    {
+        "LocationID": "MRB",
+        "City": "Martinsburg",
+        "FacilityName": "Eastern WV Regional Airport/Shepherd Field",
+        "Lat": 39.40190125,
+        "Lng": -77.98459625
+    },
+    {
+        "LocationID": "HOM",
+        "City": "Homer",
+        "FacilityName": "Homer Airport",
+        "Lat": 59.64559937,
+        "Lng": -151.477005
+    },
+    {
+        "LocationID": "LBX",
+        "City": "Angleton",
+        "FacilityName": "Texas Gulf Coast Regional Airport",
+        "Lat": 29.108601,
+        "Lng": -95.462097
+    },
+    {
+        "LocationID": "OAJ",
+        "City": "Richlands",
+        "FacilityName": "Albert J Ellis Airport",
+        "Lat": 34.829201,
+        "Lng": -77.612099
+    },
+    {
+        "LocationID": "NZY",
+        "City": "San Diego",
+        "FacilityName": "North Island Naval Air Station-Halsey Field",
+        "Lat": 32.69919968,
+        "Lng": -117.2149963
+    },
+    {
+        "LocationID": "DDC",
+        "City": "Dodge City",
+        "FacilityName": "Dodge City Regional Airport",
+        "Lat": 37.76340103,
+        "Lng": -99.96559906
+    },
+    {
+        "LocationID": "INL",
+        "City": "International Falls",
+        "FacilityName": "Falls International Airport",
+        "Lat": 48.56620026,
+        "Lng": -93.40309906
+    },
+    {
+        "LocationID": "JMS",
+        "City": "Jamestown",
+        "FacilityName": "Jamestown Regional Airport",
+        "Lat": 46.92969894,
+        "Lng": -98.67819977
+    },
+    {
+        "LocationID": "CEF",
+        "City": "Springfield/Chicopee",
+        "FacilityName": "Westover ARB/Metropolitan Airport",
+        "Lat": 42.19400024,
+        "Lng": -72.53479767
+    },
+    {
+        "LocationID": "ALW",
+        "City": "Walla Walla",
+        "FacilityName": "Walla Walla Regional Airport",
+        "Lat": 46.09489822,
+        "Lng": -118.288002
+    },
+    {
+        "LocationID": "MLS",
+        "City": "Miles City",
+        "FacilityName": "Frank Wiley Field",
+        "Lat": 46.4280014,
+        "Lng": -105.8860016
+    },
+    {
+        "LocationID": "GTR",
+        "City": "Columbus/W Point/Starkville",
+        "FacilityName": "Golden Triangle Regional Airport",
+        "Lat": 33.45029831,
+        "Lng": -88.59140015
+    },
+    {
+        "LocationID": "OQU",
+        "City": "North Kingstown",
+        "FacilityName": "Quonset State Airport",
+        "Lat": 41.5970993,
+        "Lng": -71.41210175
+    },
+    {
+        "LocationID": "BJI",
+        "City": "Bemidji",
+        "FacilityName": "Bemidji Regional Airport",
+        "Lat": 47.50939941,
+        "Lng": -94.93370056
+    },
+    {
+        "LocationID": "EVW",
+        "City": "Evanston",
+        "FacilityName": "Evanston-Uinta County Airport-Burns Field",
+        "Lat": 41.27479935,
+        "Lng": -111.0350037
+    },
+    {
+        "LocationID": "FKL",
+        "City": "Franklin",
+        "FacilityName": "Venango Regional Airport",
+        "Lat": 41.37789917,
+        "Lng": -79.86039734
+    },
+    {
+        "LocationID": "PGV",
+        "City": "Greenville",
+        "FacilityName": "Pitt Greenville Airport",
+        "Lat": 35.6352005,
+        "Lng": -77.38529968
+    },
+    {
+        "LocationID": "MCK",
+        "City": "Mc Cook",
+        "FacilityName": "Mc Cook Ben Nelson Regional Airport",
+        "Lat": 40.20629883,
+        "Lng": -100.5920029
+    },
+    {
+        "LocationID": "APN",
+        "City": "Alpena",
+        "FacilityName": "Alpena County Regional Airport",
+        "Lat": 45.0780983,
+        "Lng": -83.56030273
+    },
+    {
+        "LocationID": "CMX",
+        "City": "Hancock",
+        "FacilityName": "Houghton County Memorial Airport",
+        "Lat": 47.16839981,
+        "Lng": -88.4890976
+    },
+    {
+        "LocationID": "PQI",
+        "City": "Presque Isle",
+        "FacilityName": "Presque Isle International Airport",
+        "Lat": 46.688999,
+        "Lng": -68.0448
+    },
+    {
+        "LocationID": "DMA",
+        "City": "Tucson",
+        "FacilityName": "Davis Monthan Air Force Base",
+        "Lat": 32.16650009,
+        "Lng": -110.8830032
+    },
+    {
+        "LocationID": "MDH",
+        "City": "Carbondale/Murphysboro",
+        "FacilityName": "Southern Illinois Airport",
+        "Lat": 37.77809906,
+        "Lng": -89.2519989
+    },
+    {
+        "LocationID": "PAQ",
+        "City": "Palmer",
+        "FacilityName": "Warren \"Bud\" Woods Palmer Municipal Airport",
+        "Lat": 61.594898,
+        "Lng": -149.08901
+    },
+    {
+        "LocationID": "BYI",
+        "City": "Burley",
+        "FacilityName": "Burley Municipal Airport",
+        "Lat": 42.54259872,
+        "Lng": -113.7720032
+    },
+    {
+        "LocationID": "DHT",
+        "City": "Dalhart",
+        "FacilityName": "Dalhart Municipal Airport",
+        "Lat": 36.02259827,
+        "Lng": -102.5469971
+    },
+    {
+        "LocationID": "DIK",
+        "City": "Dickinson",
+        "FacilityName": "Dickinson Theodore Roosevelt Regional Airport",
+        "Lat": 46.79740143,
+        "Lng": -102.802002
+    },
+    {
+        "LocationID": "ECG",
+        "City": "Elizabeth City",
+        "FacilityName": "Elizabeth City Regional Airport & Coast Guard Air Station",
+        "Lat": 36.260601,
+        "Lng": -76.174599
+    },
+    {
+        "LocationID": "LVS",
+        "City": "Las Vegas",
+        "FacilityName": "Las Vegas Municipal Airport",
+        "Lat": 35.654202,
+        "Lng": -105.141998
+    },
+    {
+        "LocationID": "OFK",
+        "City": "Norfolk",
+        "FacilityName": "Karl Stefan Memorial Airport",
+        "Lat": 41.98550034,
+        "Lng": -97.43509674
+    },
+    {
+        "LocationID": "BKW",
+        "City": "Beckley",
+        "FacilityName": "Raleigh County Memorial Airport",
+        "Lat": 37.78730011,
+        "Lng": -81.12419891
+    },
+    {
+        "LocationID": "ELD",
+        "City": "El Dorado",
+        "FacilityName": "South Arkansas Regional At Goodwin Field",
+        "Lat": 33.22100067,
+        "Lng": -92.81330109
+    },
+    {
+        "LocationID": "HON",
+        "City": "Huron",
+        "FacilityName": "Huron Regional Airport",
+        "Lat": 44.3852005,
+        "Lng": -98.22850037
+    },
+    {
+        "LocationID": "GGW",
+        "City": "Glasgow",
+        "FacilityName": "Wokal Field/Glasgow-Valley County Airport",
+        "Lat": 48.212502,
+        "Lng": -106.614998
+    },
+    {
+        "LocationID": "LNY",
+        "City": "Lanai City",
+        "FacilityName": "Lanai Airport",
+        "Lat": 20.78560066,
+        "Lng": -156.951004
+    },
+    {
+        "LocationID": "DAN",
+        "City": "Danville",
+        "FacilityName": "Danville Regional Airport",
+        "Lat": 36.57289886,
+        "Lng": -79.33609772
+    },
+    {
+        "LocationID": "OTM",
+        "City": "Ottumwa",
+        "FacilityName": "Ottumwa Regional Airport",
+        "Lat": 41.106368,
+        "Lng": -92.449837
+    },
+    {
+        "LocationID": "RWI",
+        "City": "Rocky Mount",
+        "FacilityName": "Rocky Mount Wilson Regional Airport",
+        "Lat": 35.85630035,
+        "Lng": -77.89189911
+    },
+    {
+        "LocationID": "HST",
+        "City": "Homestead",
+        "FacilityName": "Homestead ARB Airport",
+        "Lat": 25.48859978,
+        "Lng": -80.38359833
+    },
+    {
+        "LocationID": "NUQ",
+        "City": "Mountain View",
+        "FacilityName": "Moffett Federal Airfield",
+        "Lat": 37.4161,
+        "Lng": -122.049004
+    },
+    {
+        "LocationID": "NPA",
+        "City": "Pensacola",
+        "FacilityName": "Naval Air Station Pensacola Forrest Sherman Field",
+        "Lat": 30.352699,
+        "Lng": -87.318604
+    },
+    {
+        "LocationID": "JRF",
+        "City": "Kapolei",
+        "FacilityName": "Kalaeloa Airport",
+        "Lat": 21.3074,
+        "Lng": -158.070009
+    },
+    {
+        "LocationID": "ENA",
+        "City": "Kenai",
+        "FacilityName": "Kenai Municipal Airport",
+        "Lat": 60.57310104,
+        "Lng": -151.2449951
+    },
+    {
+        "LocationID": "BVI",
+        "City": "Beaver Falls",
+        "FacilityName": "Beaver County Airport",
+        "Lat": 40.77249908,
+        "Lng": -80.3914032
+    },
+    {
+        "LocationID": "HBG",
+        "City": "Hattiesburg",
+        "FacilityName": "Hattiesburg Bobby L Chain Municipal Airport",
+        "Lat": 31.26479912,
+        "Lng": -89.25279999
+    },
+    {
+        "LocationID": "JCT",
+        "City": "Junction",
+        "FacilityName": "Kimble County Airport",
+        "Lat": 30.51129913,
+        "Lng": -99.7634964
+    },
+    {
+        "LocationID": "BKH",
+        "City": "Kekaha",
+        "FacilityName": "Barking Sands Airport",
+        "Lat": 22.02280045,
+        "Lng": -159.7850037
+    },
+    {
+        "LocationID": "LOL",
+        "City": "Lovelock",
+        "FacilityName": "Derby Field",
+        "Lat": 40.06639862,
+        "Lng": -118.5650024
+    },
+    {
+        "LocationID": "LBT",
+        "City": "Lumberton",
+        "FacilityName": "Lumberton Regional Airport",
+        "Lat": 34.60990143,
+        "Lng": -79.05940247
+    },
+    {
+        "LocationID": "BPK",
+        "City": "Mountain Home",
+        "FacilityName": "Ozark Regional Airport",
+        "Lat": 36.3689003,
+        "Lng": -92.47049713
+    },
+    {
+        "LocationID": "PBF",
+        "City": "Pine Bluff",
+        "FacilityName": "Pine Bluff Regional Airport, Grider Field",
+        "Lat": 34.1731,
+        "Lng": -91.9356
+    },
+    {
+        "LocationID": "TTS",
+        "City": "Titusville",
+        "FacilityName": "NASA Shuttle Landing Facility Airport",
+        "Lat": 28.615,
+        "Lng": -80.694504
+    },
+    {
+        "LocationID": "IYS",
+        "City": "Wasilla",
+        "FacilityName": "Wasilla Airport",
+        "Lat": 61.57170105,
+        "Lng": -149.5399933
+    },
+    {
+        "LocationID": "HIB",
+        "City": "Hibbing",
+        "FacilityName": "Range Regional Airport",
+        "Lat": 47.3866,
+        "Lng": -92.838997
+    },
+    {
+        "LocationID": "AOO",
+        "City": "Altoona",
+        "FacilityName": "Altoona Blair County Airport",
+        "Lat": 40.29639816,
+        "Lng": -78.31999969
+    },
+    {
+        "LocationID": "BFD",
+        "City": "Bradford",
+        "FacilityName": "Bradford Regional Airport",
+        "Lat": 41.80310059,
+        "Lng": -78.64009857
+    },
+    {
+        "LocationID": "FOD",
+        "City": "Fort Dodge",
+        "FacilityName": "Fort Dodge Regional Airport",
+        "Lat": 42.55149841,
+        "Lng": -94.19259644
+    },
+    {
+        "LocationID": "RHI",
+        "City": "Rhinelander",
+        "FacilityName": "Rhinelander Oneida County Airport",
+        "Lat": 45.63119888,
+        "Lng": -89.46749878
+    },
+    {
+        "LocationID": "PIB",
+        "City": "Hattiesburg/Laurel",
+        "FacilityName": "Hattiesburg Laurel Regional Airport",
+        "Lat": 31.46710014,
+        "Lng": -89.33709717
+    },
+    {
+        "LocationID": "CIU",
+        "City": "Sault Ste Marie",
+        "FacilityName": "Chippewa County International Airport",
+        "Lat": 46.25080109,
+        "Lng": -84.47239685
+    },
+    {
+        "LocationID": "LWT",
+        "City": "Lewistown",
+        "FacilityName": "Lewistown Municipal Airport",
+        "Lat": 47.04930115,
+        "Lng": -109.4670029
+    },
+    {
+        "LocationID": "HNM",
+        "City": "Hana",
+        "FacilityName": "Hana Airport",
+        "Lat": 20.79560089,
+        "Lng": -156.0140076
+    },
+    {
+        "LocationID": "ORT",
+        "City": "Northway",
+        "FacilityName": "Northway Airport",
+        "Lat": 62.9612999,
+        "Lng": -141.9290009
+    },
+    {
+        "LocationID": "MPV",
+        "City": "Barre/Montpelier",
+        "FacilityName": "Edward F Knapp State Airport",
+        "Lat": 44.20349884,
+        "Lng": -72.56230164
+    },
+    {
+        "LocationID": "BCV",
+        "City": "Birchwood",
+        "FacilityName": "Birchwood Airport",
+        "Lat": 61.41650009,
+        "Lng": -149.5070038
+    },
+    {
+        "LocationID": "BNO",
+        "City": "Burns",
+        "FacilityName": "Burns Municipal Airport",
+        "Lat": 43.59189987,
+        "Lng": -118.9550018
+    },
+    {
+        "LocationID": "NJK",
+        "City": "El Centro",
+        "FacilityName": "El Centro NAF Airport (Vraciu Field)",
+        "Lat": 32.829201,
+        "Lng": -115.671996
+    },
+    {
+        "LocationID": "HYR",
+        "City": "Hayward",
+        "FacilityName": "Sawyer County Airport",
+        "Lat": 46.02519989,
+        "Lng": -91.44429779
+    },
+    {
+        "LocationID": "LVM",
+        "City": "Livingston",
+        "FacilityName": "Mission Field",
+        "Lat": 45.69940186,
+        "Lng": -110.447998
+    },
+    {
+        "LocationID": "HRT",
+        "City": "Mary Esther",
+        "FacilityName": "Hurlburt Field",
+        "Lat": 30.42779922,
+        "Lng": -86.68930054
+    },
+    {
+        "LocationID": "HDH",
+        "City": "Mokuleia",
+        "FacilityName": "Dillingham Airfield",
+        "Lat": 21.5795002,
+        "Lng": -158.1970062
+    },
+    {
+        "LocationID": "RWL",
+        "City": "Rawlins",
+        "FacilityName": "Rawlins Municipal Airport/Harvey Field",
+        "Lat": 41.80559921,
+        "Lng": -107.1999969
+    },
+    {
+        "LocationID": "RIL",
+        "City": "Rifle",
+        "FacilityName": "Garfield County Regional Airport",
+        "Lat": 39.526299,
+        "Lng": -107.726997
+    },
+    {
+        "LocationID": "RIW",
+        "City": "Riverton",
+        "FacilityName": "Riverton Regional Airport",
+        "Lat": 43.06420136,
+        "Lng": -108.4599991
+    },
+    {
+        "LocationID": "SNY",
+        "City": "Sidney",
+        "FacilityName": "Sidney Municipal-Lloyd W Carr Field",
+        "Lat": 41.10129929,
+        "Lng": -102.9850006
+    },
+    {
+        "LocationID": "JST",
+        "City": "Johnstown",
+        "FacilityName": "John Murtha Johnstown Cambria County Airport",
+        "Lat": 40.31610107,
+        "Lng": -78.83390045
+    },
+    {
+        "LocationID": "PMD",
+        "City": "Palmdale",
+        "FacilityName": "Palmdale Regional Airport / USAF Plant 42 Airport",
+        "Lat": 34.629398,
+        "Lng": -118.084999
+    },
+    {
+        "LocationID": "JHM",
+        "City": "Lahaina",
+        "FacilityName": "Kapalua Airport",
+        "Lat": 20.96290016,
+        "Lng": -156.6730042
+    },
+    {
+        "LocationID": "OME",
+        "City": "Nome",
+        "FacilityName": "Nome Airport",
+        "Lat": 64.5121994,
+        "Lng": -165.4450073
+    },
+    {
+        "LocationID": "GWO",
+        "City": "Greenwood",
+        "FacilityName": "Greenwood–Leflore Airport",
+        "Lat": 33.49430084,
+        "Lng": -90.08470154
+    },
+    {
+        "LocationID": "YKN",
+        "City": "Yankton",
+        "FacilityName": "Chan Gurney Municipal Airport",
+        "Lat": 42.91669846,
+        "Lng": -97.3859024
+    },
+    {
+        "LocationID": "CDR",
+        "City": "Chadron",
+        "FacilityName": "Chadron Municipal Airport",
+        "Lat": 42.83760071,
+        "Lng": -103.0950012
+    },
+    {
+        "LocationID": "CNU",
+        "City": "Chanute",
+        "FacilityName": "Chanute Martin Johnson Airport",
+        "Lat": 37.668173,
+        "Lng": -95.486727
+    },
+    {
+        "LocationID": "JHW",
+        "City": "Jamestown",
+        "FacilityName": "Chautauqua County-Jamestown Airport",
+        "Lat": 42.15340042,
+        "Lng": -79.25800323
+    },
+    {
+        "LocationID": "NQX",
+        "City": "Key West",
+        "FacilityName": "Naval Air Station Key West/Boca Chica Field",
+        "Lat": 24.57579994,
+        "Lng": -81.68890381
+    },
+    {
+        "LocationID": "RNH",
+        "City": "New Richmond",
+        "FacilityName": "New Richmond Regional Airport",
+        "Lat": 45.14830017,
+        "Lng": -92.5381012
+    },
+    {
+        "LocationID": "UOX",
+        "City": "Oxford",
+        "FacilityName": "University Oxford Airport",
+        "Lat": 34.38430023,
+        "Lng": -89.53679657
+    },
+    {
+        "LocationID": "SRR",
+        "City": "Ruidoso",
+        "FacilityName": "Sierra Blanca Regional Airport",
+        "Lat": 33.46279907,
+        "Lng": -105.5350037
+    },
+    {
+        "LocationID": "SME",
+        "City": "Somerset",
+        "FacilityName": "Lake Cumberland Regional Airport",
+        "Lat": 37.05339813,
+        "Lng": -84.61589813
+    },
+    {
+        "LocationID": "INK",
+        "City": "Wink",
+        "FacilityName": "Winkler County Airport",
+        "Lat": 31.77960014,
+        "Lng": -103.2009964
+    },
+    {
+        "LocationID": "TBN",
+        "City": "Fort Leonard Wood",
+        "FacilityName": "Waynesville-St. Robert Regional Forney field",
+        "Lat": 37.74160004,
+        "Lng": -92.14070129
+    },
+    {
+        "LocationID": "GST",
+        "City": "Gustavus",
+        "FacilityName": "Gustavus Airport",
+        "Lat": 58.4253006,
+        "Lng": -135.7070007
+    },
+    {
+        "LocationID": "BRW",
+        "City": "Utqiaġvik",
+        "FacilityName": "Wiley Post Will Rogers Memorial Airport",
+        "Lat": 71.285402,
+        "Lng": -156.766008
+    },
+    {
+        "LocationID": "WRL",
+        "City": "Worland",
+        "FacilityName": "Worland Municipal Airport",
+        "Lat": 43.965698,
+        "Lng": -107.950996
+    },
+    {
+        "LocationID": "NKT",
+        "City": "Cherry Point",
+        "FacilityName": "Cherry Point MCAS /Cunningham Field/",
+        "Lat": 34.90090179,
+        "Lng": -76.88069916
+    },
+    {
+        "LocationID": "ALI",
+        "City": "Alice",
+        "FacilityName": "Alice International Airport",
+        "Lat": 27.7409,
+        "Lng": -98.026901
+    },
+    {
+        "LocationID": "EKN",
+        "City": "Elkins",
+        "FacilityName": "Elkins-Randolph Co-Jennings Randolph Field",
+        "Lat": 38.88940048,
+        "Lng": -79.85710144
+    },
+    {
+        "LocationID": "EET",
+        "City": "Alabaster",
+        "FacilityName": "Shelby County Airport",
+        "Lat": 33.17699814,
+        "Lng": -86.78279877
+    },
+    {
+        "LocationID": "BKE",
+        "City": "Baker City",
+        "FacilityName": "Baker City Municipal Airport",
+        "Lat": 44.83729935,
+        "Lng": -117.8089981
+    },
+    {
+        "LocationID": "DUG",
+        "City": "Douglas Bisbee",
+        "FacilityName": "Bisbee Douglas International Airport",
+        "Lat": 31.46899986,
+        "Lng": -109.6039963
+    },
+    {
+        "LocationID": "ARA",
+        "City": "New Iberia",
+        "FacilityName": "Acadiana Regional Airport",
+        "Lat": 30.0378,
+        "Lng": -91.883904
+    },
+    {
+        "LocationID": "NGU",
+        "City": "Norfolk",
+        "FacilityName": "Norfolk Naval Station (Chambers Field)",
+        "Lat": 36.937599,
+        "Lng": -76.289299
+    },
+    {
+        "LocationID": "PDT",
+        "City": "Pendleton",
+        "FacilityName": "Eastern Oregon Regional At Pendleton Airport",
+        "Lat": 45.69509888,
+        "Lng": -118.8410034
+    },
+    {
+        "LocationID": "RWF",
+        "City": "Redwood Falls",
+        "FacilityName": "Redwood Falls Municipal Airport",
+        "Lat": 44.54719925,
+        "Lng": -95.08229828
+    },
+    {
+        "LocationID": "SDY",
+        "City": "Sidney",
+        "FacilityName": "Sidney - Richland Regional Airport",
+        "Lat": 47.706902,
+        "Lng": -104.193001
+    },
+    {
+        "LocationID": "SXQ",
+        "City": "Soldotna",
+        "FacilityName": "Soldotna Airport",
+        "Lat": 60.474935,
+        "Lng": -151.038471
+    },
+    {
+        "LocationID": "TCC",
+        "City": "Tucumcari",
+        "FacilityName": "Tucumcari Municipal Airport",
+        "Lat": 35.18280029,
+        "Lng": -103.6029968
+    },
+    {
+        "LocationID": "VTN",
+        "City": "Valentine",
+        "FacilityName": "Miller Field",
+        "Lat": 42.85779953,
+        "Lng": -100.5479965
+    },
+    {
+        "LocationID": "AUW",
+        "City": "Wausau",
+        "FacilityName": "Wausau Downtown Airport",
+        "Lat": 44.92620087,
+        "Lng": -89.62660217
+    },
+    {
+        "LocationID": "BET",
+        "City": "Bethel",
+        "FacilityName": "Bethel Airport",
+        "Lat": 60.77980042,
+        "Lng": -161.8379974
+    },
+    {
+        "LocationID": "SCC",
+        "City": "Deadhorse",
+        "FacilityName": "Deadhorse Airport",
+        "Lat": 70.19470215,
+        "Lng": -148.4649963
+    },
+    {
+        "LocationID": "OTZ",
+        "City": "Kotzebue",
+        "FacilityName": "Ralph Wien Memorial Airport",
+        "Lat": 66.88469696,
+        "Lng": -162.598999
+    },
+    {
+        "LocationID": "ALM",
+        "City": "Alamogordo",
+        "FacilityName": "Alamogordo White Sands Regional Airport",
+        "Lat": 32.83990097,
+        "Lng": -105.9909973
+    },
+    {
+        "LocationID": "BLF",
+        "City": "Bluefield",
+        "FacilityName": "Mercer County Airport",
+        "Lat": 37.29579926,
+        "Lng": -81.20770264
+    },
+    {
+        "LocationID": "YAK",
+        "City": "Yakutat",
+        "FacilityName": "Yakutat Airport",
+        "Lat": 59.508717,
+        "Lng": -139.660435
+    },
+    {
+        "LocationID": "BDE",
+        "City": "Baudette",
+        "FacilityName": "Baudette International Airport",
+        "Lat": 48.72840118,
+        "Lng": -94.61219788
+    },
+    {
+        "LocationID": "CDS",
+        "City": "Childress",
+        "FacilityName": "Childress Municipal Airport",
+        "Lat": 34.43379974,
+        "Lng": -100.288002
+    },
+    {
+        "LocationID": "GDV",
+        "City": "Glendive",
+        "FacilityName": "Dawson Community Airport",
+        "Lat": 47.13869858,
+        "Lng": -104.8069992
+    },
+    {
+        "LocationID": "HVR",
+        "City": "Havre",
+        "FacilityName": "Havre City County Airport",
+        "Lat": 48.542999,
+        "Lng": -109.762001
+    },
+    {
+        "LocationID": "HBR",
+        "City": "Hobart",
+        "FacilityName": "Hobart Regional Airport",
+        "Lat": 34.991317,
+        "Lng": -99.051313
+    },
+    {
+        "LocationID": "PNA",
+        "City": "Pinedale",
+        "FacilityName": "Ralph Wenz Field",
+        "Lat": 42.79550171,
+        "Lng": -109.8069992
+    },
+    {
+        "LocationID": "HZY",
+        "City": "Ashtabula",
+        "FacilityName": "Northeast Ohio Regional Airport",
+        "Lat": 41.778,
+        "Lng": -80.695503
+    },
+    {
+        "LocationID": "AKN",
+        "City": "King Salmon",
+        "FacilityName": "King Salmon Airport",
+        "Lat": 58.677845,
+        "Lng": -156.651965
+    },
+    {
+        "LocationID": "ATY",
+        "City": "Watertown",
+        "FacilityName": "Watertown Regional Airport",
+        "Lat": 44.91400146,
+        "Lng": -97.15470123
+    },
+    {
+        "LocationID": "MUE",
+        "City": "Waimea (Kamuela)",
+        "FacilityName": "Waimea Kohala Airport",
+        "Lat": 20.001301,
+        "Lng": -155.667999
+    },
+    {
+        "LocationID": "MTC",
+        "City": "Mount Clemens",
+        "FacilityName": "Selfridge Air National Guard Base Airport",
+        "Lat": 42.613463,
+        "Lng": -82.836919
+    },
+    {
+        "LocationID": "CSV",
+        "City": "Crossville",
+        "FacilityName": "Crossville Memorial Whitson Field",
+        "Lat": 35.95130157,
+        "Lng": -85.08499908
+    },
+    {
+        "LocationID": "BTT",
+        "City": "Bettles",
+        "FacilityName": "Bettles Airport",
+        "Lat": 66.91390228,
+        "Lng": -151.529007
+    },
+    {
+        "LocationID": "GKN",
+        "City": "Gulkana",
+        "FacilityName": "Gulkana Airport",
+        "Lat": 62.1548996,
+        "Lng": -145.4570007
+    },
+    {
+        "LocationID": "VDZ",
+        "City": "Valdez",
+        "FacilityName": "Valdez Pioneer Field",
+        "Lat": 61.1339,
+        "Lng": -146.248001
+    },
+    {
+        "LocationID": "BBD",
+        "City": "Brady",
+        "FacilityName": "Curtis Field",
+        "Lat": 31.17930031,
+        "Lng": -99.32389832
+    },
+    {
+        "LocationID": "CTB",
+        "City": "Cut Bank",
+        "FacilityName": "Cut Bank International Airport",
+        "Lat": 48.608657,
+        "Lng": -112.378183
+    },
+    {
+        "LocationID": "GUY",
+        "City": "Guymon",
+        "FacilityName": "Guymon Municipal Airport",
+        "Lat": 36.68510056,
+        "Lng": -101.5080032
+    },
+    {
+        "LocationID": "OGB",
+        "City": "Orangeburg",
+        "FacilityName": "Orangeburg Municipal Airport",
+        "Lat": 33.45679855,
+        "Lng": -80.85949707
+    },
+    {
+        "LocationID": "RSL",
+        "City": "Russell",
+        "FacilityName": "Russell Municipal Airport",
+        "Lat": 38.87210083,
+        "Lng": -98.8117981
+    },
+    {
+        "LocationID": "SMN",
+        "City": "Salmon",
+        "FacilityName": "Lemhi County Airport",
+        "Lat": 45.12379837,
+        "Lng": -113.8809967
+    },
+    {
+        "LocationID": "SOA",
+        "City": "Sonora",
+        "FacilityName": "Sonora Municipal Airport",
+        "Lat": 30.58569908,
+        "Lng": -100.6490021
+    },
+    {
+        "LocationID": "TOI",
+        "City": "Troy",
+        "FacilityName": "Troy Municipal Airport at N Kenneth Campbell Field",
+        "Lat": 31.860399,
+        "Lng": -86.012101
+    },
+    {
+        "LocationID": "ADQ",
+        "City": "Kodiak",
+        "FacilityName": "Kodiak Airport",
+        "Lat": 57.75,
+        "Lng": -152.4940033
+    },
+    {
+        "LocationID": "AFM",
+        "City": "Ambler",
+        "FacilityName": "Ambler Airport",
+        "Lat": 67.107043,
+        "Lng": -157.854308
+    },
+    {
+        "LocationID": "AKP",
+        "City": "Anaktuvuk Pass",
+        "FacilityName": "Anaktuvuk Pass Airport",
+        "Lat": 68.13359833,
+        "Lng": -151.7429962
+    },
+    {
+        "LocationID": "BPI",
+        "City": "Big Piney",
+        "FacilityName": "Miley Memorial Field",
+        "Lat": 42.58509827,
+        "Lng": -110.1110001
+    },
+    {
+        "LocationID": "HUL",
+        "City": "Houlton",
+        "FacilityName": "Houlton International Airport",
+        "Lat": 46.12310028,
+        "Lng": -67.792099
+    },
+    {
+        "LocationID": "NGF",
+        "City": "Kaneohe",
+        "FacilityName": "Kaneohe Bay MCAS (Marion E. Carl Field) Airport",
+        "Lat": 21.45050049,
+        "Lng": -157.7680054
+    },
+    {
+        "LocationID": "MBG",
+        "City": "Mobridge",
+        "FacilityName": "Mobridge Municipal Airport",
+        "Lat": 45.54650116,
+        "Lng": -100.4079971
+    },
+    {
+        "LocationID": "NUW",
+        "City": "Oak Harbor",
+        "FacilityName": "Whidbey Island Naval Air Station (Ault Field)",
+        "Lat": 48.351799,
+        "Lng": -122.655998
+    },
+    {
+        "LocationID": "TCS",
+        "City": "Truth or Consequences",
+        "FacilityName": "Truth or Consequences Municipal Airport",
+        "Lat": 33.2369,
+        "Lng": -107.272003
+    },
+    {
+        "LocationID": "W63",
+        "City": "Clarksville",
+        "FacilityName": "Lake Country Regional Airport",
+        "Lat": 36.59579849,
+        "Lng": -78.56009674
+    },
+    {
+        "LocationID": "PSG",
+        "City": "Petersburg",
+        "FacilityName": "Petersburg James A Johnson Airport",
+        "Lat": 56.80170059,
+        "Lng": -132.9450073
+    },
+    {
+        "LocationID": "DUT",
+        "City": "Unalaska",
+        "FacilityName": "Tom Madsen (Dutch Harbor) Airport",
+        "Lat": 53.89881,
+        "Lng": -166.544996
+    },
+    {
+        "LocationID": "ADK",
+        "City": "Adak",
+        "FacilityName": "Adak Airport",
+        "Lat": 51.883564,
+        "Lng": -176.642783
+    },
+    {
+        "LocationID": "MCG",
+        "City": "McGrath",
+        "FacilityName": "McGrath Airport",
+        "Lat": 62.95289993,
+        "Lng": -155.6060028
+    },
+    {
+        "LocationID": "NBG",
+        "City": "New Orleans",
+        "FacilityName": "New Orleans NAS JRB/Alvin Callender Field",
+        "Lat": 29.82530022,
+        "Lng": -90.03500366
+    },
+    {
+        "LocationID": "BYH",
+        "City": "Blytheville",
+        "FacilityName": "Arkansas International Airport",
+        "Lat": 35.96429825,
+        "Lng": -89.94400024
+    },
+    {
+        "LocationID": "DRI",
+        "City": "DeRidder",
+        "FacilityName": "Beauregard Regional Airport",
+        "Lat": 30.831699,
+        "Lng": -93.339897
+    },
+    {
+        "LocationID": "UPP",
+        "City": "Hawi",
+        "FacilityName": "Upolu Airport",
+        "Lat": 20.26530075,
+        "Lng": -155.8600006
+    },
+    {
+        "LocationID": "LND",
+        "City": "Lander",
+        "FacilityName": "Hunt Field",
+        "Lat": 42.81520081,
+        "Lng": -108.7300034
+    },
+    {
+        "LocationID": "SWD",
+        "City": "Seward",
+        "FacilityName": "Seward Airport",
+        "Lat": 60.130478,
+        "Lng": -149.418612
+    },
+    {
+        "LocationID": "WWR",
+        "City": "Woodward",
+        "FacilityName": "West Woodward Airport",
+        "Lat": 36.438,
+        "Lng": -99.5226667
+    },
+    {
+        "LocationID": "79J",
+        "City": "Andalusia/Opp",
+        "FacilityName": "South Alabama Regional At Bill Benton Field Airport",
+        "Lat": 31.3088,
+        "Lng": -86.393799
+    },
+    {
+        "LocationID": "DLG",
+        "City": "Dillingham",
+        "FacilityName": "Dillingham Airport",
+        "Lat": 59.04470062,
+        "Lng": -158.5050049
+    },
+    {
+        "LocationID": "GSB",
+        "City": "Goldsboro",
+        "FacilityName": "Seymour Johnson Air Force Base",
+        "Lat": 35.339401,
+        "Lng": -77.960602
+    },
+    {
+        "LocationID": "HNS",
+        "City": "Haines",
+        "FacilityName": "Haines Airport",
+        "Lat": 59.24380112,
+        "Lng": -135.5240021
+    },
+    {
+        "LocationID": "ANN",
+        "City": "Metlakatla",
+        "FacilityName": "Annette Island Airport",
+        "Lat": 55.037026,
+        "Lng": -131.572695
+    },
+    {
+        "LocationID": "NCA",
+        "City": "Jacksonville",
+        "FacilityName": "MCAS New River / McCutcheon Field",
+        "Lat": 34.708401,
+        "Lng": -77.439697
+    },
+    {
+        "LocationID": "BTI",
+        "City": "Barter Island",
+        "FacilityName": "Barter Island Long Range Radar Station Airport",
+        "Lat": 70.134003,
+        "Lng": -143.582001
+    },
+    {
+        "LocationID": "LUR",
+        "City": "Cape Lisburne",
+        "FacilityName": "Cape Lisburne LRRS Airport",
+        "Lat": 68.87509918,
+        "Lng": -166.1100006
+    },
+    {
+        "LocationID": "CDB",
+        "City": "Cold Bay",
+        "FacilityName": "Cold Bay Airport",
+        "Lat": 55.20610046,
+        "Lng": -162.7250061
+    },
+    {
+        "LocationID": "AQT",
+        "City": "Nuiqsut",
+        "FacilityName": "Nuiqsut Airport",
+        "Lat": 70.209999,
+        "Lng": -151.005998
+    },
+    {
+        "LocationID": "CAR",
+        "City": "Caribou",
+        "FacilityName": "Caribou Municipal Airport",
+        "Lat": 46.87149811,
+        "Lng": -68.01789856
+    },
+    {
+        "LocationID": "ENM",
+        "City": "Emmonak",
+        "FacilityName": "Emmonak Airport",
+        "Lat": 62.78609848,
+        "Lng": -164.4909973
+    },
+    {
+        "LocationID": "GAM",
+        "City": "Gambell",
+        "FacilityName": "Gambell Airport",
+        "Lat": 63.76679993,
+        "Lng": -171.7330017
+    },
+    {
+        "LocationID": "HPB",
+        "City": "Hooper Bay",
+        "FacilityName": "Hooper Bay Airport",
+        "Lat": 61.52389908,
+        "Lng": -166.1470032
+    },
+    {
+        "LocationID": "NRB",
+        "City": "Mayport",
+        "FacilityName": "Naval Station Mayport (Admiral David L. Mcdonald Field)",
+        "Lat": 30.39109993,
+        "Lng": -81.42469788
+    },
+    {
+        "LocationID": "NSE",
+        "City": "Milton",
+        "FacilityName": "Whiting Field Naval Air Station - North",
+        "Lat": 30.7241993,
+        "Lng": -87.02189636
+    },
+    {
+        "LocationID": "SCM",
+        "City": "Scammon Bay",
+        "FacilityName": "Scammon Bay Airport",
+        "Lat": 61.84529877,
+        "Lng": -165.5709991
+    },
+    {
+        "LocationID": "KSM",
+        "City": "St Mary's",
+        "FacilityName": "St Mary's Airport",
+        "Lat": 62.0605011,
+        "Lng": -163.302002
+    },
+    {
+        "LocationID": "OLF",
+        "City": "Wolf Point",
+        "FacilityName": "L M Clayton Airport",
+        "Lat": 48.0945015,
+        "Lng": -105.5749969
+    },
+    {
+        "LocationID": "CDV",
+        "City": "Cordova",
+        "FacilityName": "Merle K (Mudhole) Smith Airport",
+        "Lat": 60.491798,
+        "Lng": -145.477997
+    },
+    {
+        "LocationID": "WRG",
+        "City": "Wrangell",
+        "FacilityName": "Wrangell Airport",
+        "Lat": 56.48429871,
+        "Lng": -132.3699951
+    },
+    {
+        "LocationID": "5A8",
+        "City": "Aleknagik",
+        "FacilityName": "Aleknagik / New Airport",
+        "Lat": 59.2826004,
+        "Lng": -158.6179962
+    },
+    {
+        "LocationID": "ANI",
+        "City": "Aniak",
+        "FacilityName": "Aniak Airport",
+        "Lat": 61.58160019,
+        "Lng": -159.5429993
+    },
+    {
+        "LocationID": "MCB",
+        "City": "McComb",
+        "FacilityName": "McComb-Pike County Airport / John E Lewis Field",
+        "Lat": 31.178499,
+        "Lng": -90.471901
+    },
+    {
+        "LocationID": "GAL",
+        "City": "Galena",
+        "FacilityName": "Edward G. Pitka Sr Airport",
+        "Lat": 64.73619843,
+        "Lng": -156.9369965
+    },
+    {
+        "LocationID": "ANV",
+        "City": "Anvik",
+        "FacilityName": "Anvik Airport",
+        "Lat": 62.646702,
+        "Lng": -160.190994
+    },
+    {
+        "LocationID": "ATK",
+        "City": "Atqasuk",
+        "FacilityName": "Atqasuk Edward Burnell Sr Memorial Airport",
+        "Lat": 70.46704,
+        "Lng": -157.436013
+    },
+    {
+        "LocationID": "SUZ",
+        "City": "Benton",
+        "FacilityName": "Saline County Regional Airport",
+        "Lat": 34.590599,
+        "Lng": -92.479401
+    },
+    {
+        "LocationID": "FYU",
+        "City": "Fort Yukon",
+        "FacilityName": "Fort Yukon Airport",
+        "Lat": 66.57150269,
+        "Lng": -145.25
+    },
+    {
+        "LocationID": "JKL",
+        "City": "Jackson",
+        "FacilityName": "Julian Carroll Airport",
+        "Lat": 37.59389877,
+        "Lng": -83.31729889
+    },
+    {
+        "LocationID": "AFE",
+        "City": "Kake",
+        "FacilityName": "Kake Airport",
+        "Lat": 56.96139908,
+        "Lng": -133.9100037
+    },
+    {
+        "LocationID": "IAN",
+        "City": "Kiana",
+        "FacilityName": "Bob Baker Memorial Airport",
+        "Lat": 66.97599792,
+        "Lng": -160.4369965
+    },
+    {
+        "LocationID": "AKW",
+        "City": "Klawock",
+        "FacilityName": "Klawock Airport",
+        "Lat": 55.57920074,
+        "Lng": -133.076004
+    },
+    {
+        "LocationID": "NEL",
+        "City": "Lakehurst",
+        "FacilityName": "Lakehurst Maxfield Field Airport",
+        "Lat": 40.03329849,
+        "Lng": -74.353302
+    },
+    {
+        "LocationID": "NV65",
+        "City": "Mercury",
+        "FacilityName": "Desert Rock Airport",
+        "Lat": 36.6194,
+        "Lng": -116.032997
+    },
+    {
+        "LocationID": "ENN",
+        "City": "Nenana",
+        "FacilityName": "Nenana Municipal Airport",
+        "Lat": 64.54730225,
+        "Lng": -149.0740051
+    },
+    {
+        "LocationID": "WTK",
+        "City": "Noatak",
+        "FacilityName": "Noatak Airport",
+        "Lat": 67.56610107,
+        "Lng": -162.9750061
+    },
+    {
+        "LocationID": "PTU",
+        "City": "Platinum",
+        "FacilityName": "Platinum Airport",
+        "Lat": 59.01139832,
+        "Lng": -161.8200073
+    },
+    {
+        "LocationID": "PIZ",
+        "City": "Point Lay",
+        "FacilityName": "Point Lay LRRS Airport",
+        "Lat": 69.73290253,
+        "Lng": -163.0050049
+    },
+    {
+        "LocationID": "PTH",
+        "City": "Port Heiden",
+        "FacilityName": "Port Heiden Airport",
+        "Lat": 56.959359,
+        "Lng": -158.62106
+    },
+    {
+        "LocationID": "SVA",
+        "City": "Savoonga",
+        "FacilityName": "Savoonga Airport",
+        "Lat": 63.68640137,
+        "Lng": -170.4929962
+    },
+    {
+        "LocationID": "WLK",
+        "City": "Selawik",
+        "FacilityName": "Selawik Airport",
+        "Lat": 66.60009766,
+        "Lng": -159.9859924
+    },
+    {
+        "LocationID": "SHH",
+        "City": "Shishmaref",
+        "FacilityName": "Shishmaref Airport",
+        "Lat": 66.249604,
+        "Lng": -166.089112
+    },
+    {
+        "LocationID": "AWI",
+        "City": "Wainwright",
+        "FacilityName": "Wainwright Airport",
+        "Lat": 70.63800049,
+        "Lng": -159.9949951
+    },
+    {
+        "LocationID": "ILN",
+        "City": "Wilmington",
+        "FacilityName": "Wilmington Airpark",
+        "Lat": 39.42789841,
+        "Lng": -83.792099
+    },
+    {
+        "LocationID": "CCY",
+        "City": "Charles City",
+        "FacilityName": "Northeast Iowa Regional Airport",
+        "Lat": 43.07260132,
+        "Lng": -92.6108017
+    },
+    {
+        "LocationID": "HLA",
+        "City": "Huslia",
+        "FacilityName": "Huslia Airport",
+        "Lat": 65.69789886,
+        "Lng": -156.3509979
+    },
+    {
+        "LocationID": "ILI",
+        "City": "Iliamna",
+        "FacilityName": "Iliamna Airport",
+        "Lat": 59.75439835,
+        "Lng": -154.9109955
+    },
+    {
+        "LocationID": "SNP",
+        "City": "St Paul Island",
+        "FacilityName": "St Paul Island Airport",
+        "Lat": 57.166311,
+        "Lng": -170.222555
+    },
+    {
+        "LocationID": "BVK",
+        "City": "Buckland",
+        "FacilityName": "Buckland Airport",
+        "Lat": 65.981598,
+        "Lng": -161.149002
+    },
+    {
+        "LocationID": "DEE",
+        "City": "Deering",
+        "FacilityName": "Deering Airport",
+        "Lat": 66.069603,
+        "Lng": -162.766006
+    },
+    {
+        "LocationID": "KVL",
+        "City": "Kivalina",
+        "FacilityName": "Kivalina Airport",
+        "Lat": 67.73619843,
+        "Lng": -164.5630035
+    },
+    {
+        "LocationID": "MYU",
+        "City": "Mekoryuk",
+        "FacilityName": "Mekoryuk Airport",
+        "Lat": 60.37139893,
+        "Lng": -166.2709961
+    },
+    {
+        "LocationID": "RBY",
+        "City": "Ruby",
+        "FacilityName": "Ruby Airport",
+        "Lat": 64.72720337,
+        "Lng": -155.4700012
+    },
+    {
+        "LocationID": "SDP",
+        "City": "Sand Point",
+        "FacilityName": "Sand Point Airport",
+        "Lat": 55.31499863,
+        "Lng": -160.522995
+    },
+    {
+        "LocationID": "TOG",
+        "City": "Togiak Village",
+        "FacilityName": "Togiak Airport",
+        "Lat": 59.05279922,
+        "Lng": -160.3970032
+    },
+    {
+        "LocationID": "XWA",
+        "City": "Williston",
+        "FacilityName": "Williston Basin International Airport",
+        "Lat": 48.258387,
+        "Lng": -103.748797
+    }
 ]
