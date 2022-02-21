@@ -18,11 +18,16 @@
 - [x] make google form questions required
 - [x] add in residency specialties
 
-- [ ] you have to click calculate emissions for it to register under the list of airports
+- [x] consent popup
+- [ ] header with different sections
 - [ ] CO2 calculation
+- [ ] individualized carbon emissions display
+- [ ] references
 - [ ] deleting a destination and then recalculating emissions breaks the infographic
 - [ ] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
-
+- [ ] fix github pages build
+- [ ] you have to click calculate emissions again for the google form to include the newly included airports
+- [ ] *Website adapted from mycarmsfooptrint.com* footer
 
 ## Backlog
 - [ ] style google form

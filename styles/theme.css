@@ -17,10 +17,7 @@ li {
 html,
 body {
     background: #D9DCD6;
-    /* text-align: center; */
-    /* color: #FFF; */
     font-family: 'Oswald', sans-serif;
-    font-weight: 300;
     font-smooth: auto;
     -webkit-font-smoothing: antialiased;
 }
