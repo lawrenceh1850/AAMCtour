@@ -55,10 +55,8 @@ map = new Vue({
             attr("d", path);
         });
 
-        // Airports
+        // Fetch Airports and bind them to Vue root
         fetch('data/usaairport.json').then(response => response.json()).then(airports => {
-            // Let's only focus on the top 100
-            airports = airports.slice(0, 100);
             var i = airports.length,
                 d, proj;
 
