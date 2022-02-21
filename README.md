@@ -11,13 +11,14 @@
 - [x] airport deletion doesn't work - just deletes FIFO regardless of which city is deleted
 - [x] take out the flying / other means
 - [x] import airport list
+- [x] airport markers messed up
+- [x] add in the airports selected to the google form
 
 ### Google form to do
 - [x] make google form questions required
 - [x] add in residency specialties
 
-- [ ] airport markers messed up
-- [ ] add in the airports selected to the google form
+- [ ] you have to click calculate emissions for it to register under the list of airports
 - [ ] CO2 calculation
 - [ ] deleting a destination and then recalculating emissions breaks the infographic
 - [ ] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
@@ -25,7 +26,7 @@
 
 ## Backlog
 - [ ] style google form
-- [ ] add required warning for certain questions not an alert dialog
+- [ ] add required warning for certain questions not an alert dialog - https://getbootstrap.com/docs/5.0/forms/validation/
 - [ ] basic mobile friendly cleanup - most people using it on desktop
 - add vue-cloak
 - do we want animation after the form is submitted

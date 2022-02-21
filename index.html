@@ -210,7 +210,7 @@
                 <h3 class="col-7 text-dark text-center">Please help us understand the cost of the entire AAMC tour by filling out this short questionnaire</h3>
 
                 <!-- TODO: remove, hidden g form -->
-                <iframe class="d-none" src="https://docs.google.com/forms/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/viewform?embedded=true" width="640" height="823" frameborder="0" marginheight="0" marginwidth="0" class="p-3 rounded col-7">Loading…</iframe>
+                <!-- <iframe class="d-none" src="https://docs.google.com/forms/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/viewform?embedded=true" width="640" height="823" frameborder="0" marginheight="0" marginwidth="0" class="p-3 rounded col-7">Loading…</iframe> -->
 
                 <!-- dummy frame for form to submit without redirect -->
                 <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
@@ -449,36 +449,36 @@
                     </div>
 
                     <!-- hidden fields for cities -->
-                    <input type="hidden" name="entry.240743650" value="city 12lk4214">
-                    <input type="hidden" name="entry.1080544932" value="2">
-                    <input type="hidden" name="entry.2129984577" value="3">
-                    <input type="hidden" name="entry.852807689" value="4">
-                    <input type="hidden" name="entry.490061391" value="5">
-                    <input type="hidden" name="entry.1391009792" value="6">
-                    <input type="hidden" name="entry.330088883" value="7">
-                    <input type="hidden" name="entry.1689930028" value="8">
-                    <input type="hidden" name="entry.674972753" value="9">
-                    <input type="hidden" name="entry.764509498" value="10">
-                    <input type="hidden" name="entry.192463826" value="11">
-                    <input type="hidden" name="entry.1419527768" value="12">
-                    <input type="hidden" name="entry.1846688567" value="13">
-                    <input type="hidden" name="entry.537106193" value="14">
-                    <input type="hidden" name="entry.1909908486" value="15">
-                    <input type="hidden" name="entry.350534770" value="16">
-                    <input type="hidden" name="entry.976267829" value="17">
-                    <input type="hidden" name="entry.1082496322" value="18">
-                    <input type="hidden" name="entry.753377230" value="19">
-                    <input type="hidden" name="entry.1164989284" value="20">
-                    <input type="hidden" name="entry.874213606" value="21">
-                    <input type="hidden" name="entry.1361638981" value="22">
-                    <input type="hidden" name="entry.1103784937" value="23">
-                    <input type="hidden" name="entry.1513787133" value="24">
-                    <input type="hidden" name="entry.1617584960" value="25">
-                    <input type="hidden" name="entry.1085779929" value="26">
-                    <input type="hidden" name="entry.1803802730" value="27">
-                    <input type="hidden" name="entry.432052311" value="28">
-                    <input type="hidden" name="entry.1877378464" value="29">
-                    <input type="hidden" name="entry.1853404945" value="30">
+                    <input id="city0" type="hidden" name="entry.240743650">
+                    <input id="city1" type="hidden" name="entry.1080544932">
+                    <input id="city2" type="hidden" name="entry.2129984577">
+                    <input id="city3" type="hidden" name="entry.852807689">
+                    <input id="city4" type="hidden" name="entry.490061391">
+                    <input id="city5" type="hidden" name="entry.1391009792">
+                    <input id="city6" type="hidden" name="entry.330088883">
+                    <input id="city7" type="hidden" name="entry.1689930028">
+                    <input id="city8" type="hidden" name="entry.674972753">
+                    <input id="city9" type="hidden" name="entry.764509498">
+                    <input id="city10" type="hidden" name="entry.192463826">
+                    <input id="city11" type="hidden" name="entry.1419527768">
+                    <input id="city12" type="hidden" name="entry.1846688567">
+                    <input id="city13" type="hidden" name="entry.537106193">
+                    <input id="city14" type="hidden" name="entry.1909908486">
+                    <input id="city15" type="hidden" name="entry.350534770">
+                    <input id="city16" type="hidden" name="entry.976267829">
+                    <input id="city17" type="hidden" name="entry.1082496322">
+                    <input id="city18" type="hidden" name="entry.753377230">
+                    <input id="city19" type="hidden" name="entry.1164989284">
+                    <input id="city20" type="hidden" name="entry.874213606">
+                    <input id="city21" type="hidden" name="entry.1361638981">
+                    <input id="city22" type="hidden" name="entry.1103784937">
+                    <input id="city23" type="hidden" name="entry.1513787133">
+                    <input id="city24" type="hidden" name="entry.1617584960">
+                    <input id="city25" type="hidden" name="entry.1085779929">
+                    <input id="city26" type="hidden" name="entry.1803802730">
+                    <input id="city27" type="hidden" name="entry.432052311">
+                    <input id="city28" type="hidden" name="entry.1877378464">
+                    <input id="city29" type="hidden" name="entry.1853404945">
                 </form>
             </div>
 
@@ -507,7 +507,7 @@
                         <input class="text-dark" name="specialties-decline" type="checkbox">
                         <label class="text-dark" for="specialties-decline">Decline to Answer</label>
 
-                        <input id="city0" name="entry.599602472" style="display:none" type="text" />
+                        <!-- <input id="city0" name="entry.599602472" style="display:none" type="text" />
                         <input id="city1" name="entry.589350821" style="display:none" type="text" />
                         <input id="city2" name="entry.1150841774" style="display:none" type="text" />
                         <input id="city3" name="entry.1124877950" style="display:none" type="text" />
@@ -536,7 +536,7 @@
                         <input id="city26" name="entry.1305126104" style="display:none" type="text" />
                         <input id="city27" name="entry.330434047" style="display:none" type="text" />
                         <input id="city28" name="entry.518662113" style="display:none" type="text" />
-                        <input id="city29" name="entry.324442649" style="display:none" type="text" />
+                        <input id="city29" name="entry.324442649" style="display:none" type="text" /> -->
                         <h6 class="text-dark p-3"> <strong>Please note</strong>, because the survey is anonymous, once you click the submit button at the end of the survey the researchers will not be able to determine which survey answers belong to you, so your information cannot
                             be withdrawn after that point. Your information only will only be collected if you selected the “I agree” button at the consent cover letter. </h6>
                         <input class="btn btn-primary" type="submit" value="Submit" />

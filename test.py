@@ -729,3 +729,40 @@ with open("airportsAAMC.json", "w") as fp:
     "Lng": {z[4]}
 }},''', file=fp)
     print("]", file=fp)
+
+
+z = '''<input id="city" type="hidden" name="entry.240743650">
+<input id="city" type="hidden" name="entry.1080544932">
+<input id="city" type="hidden" name="entry.2129984577">
+<input id="city" type="hidden" name="entry.852807689" >
+<input id="city" type="hidden" name="entry.490061391" >
+<input id="city" type="hidden" name="entry.1391009792">
+<input id="city" type="hidden" name="entry.330088883" >
+<input id="city" type="hidden" name="entry.1689930028">
+<input id="city" type="hidden" name="entry.674972753" >
+<input id="city" type="hidden" name="entry.764509498" >
+<input id="city" type="hidden" name="entry.192463826" >
+<input id="city" type="hidden" name="entry.1419527768">
+<input id="city" type="hidden" name="entry.1846688567">
+<input id="city" type="hidden" name="entry.537106193" >
+<input id="city" type="hidden" name="entry.1909908486">
+<input id="city" type="hidden" name="entry.350534770" >
+<input id="city" type="hidden" name="entry.976267829" >
+<input id="city" type="hidden" name="entry.1082496322">
+<input id="city" type="hidden" name="entry.753377230" >
+<input id="city" type="hidden" name="entry.1164989284">
+<input id="city" type="hidden" name="entry.874213606" >
+<input id="city" type="hidden" name="entry.1361638981">
+<input id="city" type="hidden" name="entry.1103784937">
+<input id="city" type="hidden" name="entry.1513787133">
+<input id="city" type="hidden" name="entry.1617584960">
+<input id="city" type="hidden" name="entry.1085779929">
+<input id="city" type="hidden" name="entry.1803802730">
+<input id="city" type="hidden" name="entry.432052311" >
+<input id="city" type="hidden" name="entry.1877378464">
+<input id="city" type="hidden" name="entry.1853404945">'''
+
+for i in range(30):
+    z = z.replace("\"city\"", f"\"city{i}\"", 1)
+z=z.replace(r'value="[\d]+"', "")
+print(z)
