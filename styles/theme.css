@@ -122,10 +122,6 @@ input#new-task {
     width: 400px;
 }
 
-li * {
-    float: left;
-}
-
 li {
     overflow: hidden;
     padding: 20px 0;
@@ -234,7 +230,7 @@ li>.delete:hover {
 }
 
 .mileage__calculations {
-    color: #ffa93a;
+    color: #E0FBFC;
 }
 
 .mileage-map {
