@@ -14,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="styles/theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/results.css">
-    <link rel="stylesheet" type="text/css" href="styles/popup.css">
     <link rel="stylesheet" type="text/css" href="styles/comparison.css">
     <link rel="stylesheet" type="text/css" href="styles/circlegraph.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -36,8 +35,7 @@
                     <p>We are asking you to take part in a research study being done by researchers at the University of California, San Francisco. Being in this study is optional.
                     </p>
                     <p>
-                        If you choose to be in the study, you will complete a survey. This survey will help us learn more about the environmental impact of medical school, residency, and fellowship interviews. The survey will take about 5 minutes to complete. <strong>If you do not want
-                        to be in the study, you can still calculate your real or mitigated emissions using our interactive map; as long as you do not “submit”, your responses will not be recorded.</strong>
+                        If you choose to be in the study, you will complete a survey. This survey will help us learn more about the environmental impact of medical school, residency, and fellowship interviews. The survey will take about 5 minutes to complete. <strong>If you do not want to be in the study, you can still calculate your real or mitigated emissions using our interactive map; as long as you do not “submit”, your responses will not be recorded.</strong>
                     </p>
                     <p>
                         You can skip questions that you do not want to answer or stop the survey at any time. The survey is anonymous, and no one will be able to link your answers back to you. Please do not include your name or other information that could be used to identify
@@ -55,69 +53,90 @@
         </div>
     </div>
 
+    <!-- load navbar -->
+    <div id="nav-placeholder"></div>
+    <script>
+        let title = "What were the emissions savings of completing your interviews virtually?"
+        $.get("templates/navigation.html", function(data) {
+            $("#nav-placeholder").replaceWith(data);
+            $("#navbarTitle").text(title);
+        });
+        document.title = title;
+    </script>
+
     <div class="container-fluid">
-        <!-- map of US -->
-        <div id="introduction" class="row pt-3 text-dark text-center">
-            <h1>What is the Environmental Impact of your Residency Tour?</h1>
-        </div>
-
-        <!-- user enters their airport info -->
-        <div id="user-input">
-            <div id="app" class="mileage">
-                <svg class="mileage-map p-2" ref="map" width="1200" height="780" viewBox="-120 -100 1200 780">
-                    <g class="mileage-map__states" ref="provinces"></g>
-                    <g ref="airports">
-                        <g class="airport" :class="{ 'airport--current' : airport.current }" v-for="airport in airports">
-                            <circle r="3" :cx="airport.x" :cy="airport.y" class="airport__marker" />
-                            <circle r="16" :cx="airport.x" :cy="airport.y" class="airport__range" />
-                            <circle r="16" :cx="airport.x" :cy="airport.y" class="airport__range" @mousemove="airportSnap($event, airport)" @mouseup="airportClick($event, airport)" @mouseleave.self="airportLeave($event, airport)" />
+        <div class="row justify-content-end pt-5">
+            <div class="col-lg-5" id="user-input">
+                <!-- map of US -->
+                <div id="app" class="mileage">
+                    <svg class="mileage-map p-2" ref="map" width="1200" height="780" viewBox="-120 -100 1200 780">
+                        <g class="mileage-map__states" ref="provinces"></g>
+                        <g ref="airports">
+                            <g class="airport" :class="{ 'airport--current' : airport.current }" v-for="airport in airports">
+                                <circle r="3" :cx="airport.x" :cy="airport.y" class="airport__marker" />
+                                <circle r="16" :cx="airport.x" :cy="airport.y" class="airport__range" />
+                                <circle r="16" :cx="airport.x" :cy="airport.y" class="airport__range" @mousemove="airportSnap($event, airport)" @mouseup="airportClick($event, airport)" @mouseleave.self="airportLeave($event, airport)" />
+                            </g>
                         </g>
-                    </g>
 
-                    <path class="marker-connector" :d="markerConnect()"></path>
 
-                    <g class="airplane" ref="airplane">
-                        <path class="airplane__icon" d="M21 15.984l-8.016-2.484v5.484l2.016 1.5v1.5l-3.516-0.984-3.469 0.984v-1.5l1.969-1.5v-5.484l-7.969 2.484v-1.969l7.969-5.016v-5.484c0-0.844 0.656-1.5 1.5-1.5s1.5 0.656 1.5 1.5v5.484l8.016 5.016v1.969z" transform="translate(-8,-15) scale(1.2)"></path>
-                    </g>
+                        <path class="marker-connector" :d="markerConnect()"></path>
 
-                    <g v-for="marker in markers" @mousedown="markerSet($event,marker)" class="marker" :class="{ 'marker--current' : marker.current }" :transform="'translate('+marker.x+','+marker.y+')'">
-                        <path fill="{{marker.fill}}" d="M0 0l28.592-28.592c15.78-15.78 15.908-41.24.128-57.02a40.424 40.424 0 0 0-57.124 57.2z"></path>
-                        <transition name="marker-fade">
-                            <text v-if="marker.airport" x="0" y="-42" text-anchor="middle" v-text="marker.airport.LocationID"></text>
-                        </transition>
-                    </g>
-                </svg>
+                        <g class="airplane" ref="airplane">
+                            <path class="airplane__icon" d="M21 15.984l-8.016-2.484v5.484l2.016 1.5v1.5l-3.516-0.984-3.469 0.984v-1.5l1.969-1.5v-5.484l-7.969 2.484v-1.969l7.969-5.016v-5.484c0-0.844 0.656-1.5 1.5-1.5s1.5 0.656 1.5 1.5v5.484l8.016 5.016v1.969z" transform="translate(-8,-15) scale(1.2)"></path>
+                        </g>
+
+                        <g v-for="marker in markers" @mousedown="markerSet($event,marker)" class="marker" :class="{ 'marker--current' : marker.current }" :transform="'translate('+marker.x+','+marker.y+')'">
+                            <path fill="{{marker.fill}}" d="M0 0l28.592-28.592c15.78-15.78 15.908-41.24.128-57.02a40.424 40.424 0 0 0-57.124 57.2z"></path>
+                            <transition name="marker-fade">
+                                <text v-if="marker.airport" x="0" y="-42" text-anchor="middle" v-text="marker.airport.LocationID"></text>
+                            </transition>
+                        </g>
+                    </svg>
+                </div>
             </div>
+            <div class="col-lg-5 px-0">
+                <p class="mx-auto col-10 text-center pt-3">
+                    Interactive Map: Please enter the estimated flight itinerary of your interview schedule, had interviews been in-person. Remember to include flights back to your home city in-between interviews when applicable. Please do not include places you would have
+                    driven or used public transportation to reach.
+                </p>
+                <!-- user enters their airport info -->
+                <div class="mx-auto d-flex justify-content-center col-10">
+                    <form method="post" action="" id="sort-it" onsubmit="return false;">
+                        <h3 class="control-label text-dark text-center" for="autocomplete">
+                            I'm starting my Residency Interview Tour from
+                        </h3>
+                        <div class="input-group justify-content-center mt-2">
+                            <input id="autocomplete" class="form-control" type="text" name="dep-city" placeholder="City or Airport Name ..." autocomplete="off" />
+                            <div class="mt-2">
+                                <button type="button" class="btn btn-primary" id="addbutton">Add</button>
+                                <button type="button" class="btn btn-secondary" id="calculate" style="display:none;">Calculate My Mitigated Emissions</button>
+                            </div>
+                        </div>
 
-            <div class="d-flex justify-content-center">
-                <form method="post" action="" id="sort-it" onsubmit="return false;">
-                    <h3 class="control-label text-dark text-center mb-3" for="autocomplete">
-                        I'm starting my Residency Interview Tour from
-                    </h3>
-                    <div class="input-group justify-content-center">
-                        <input id="autocomplete" class="form-control" type="text" name="dep-city" placeholder="City or Airport Name ..." autocomplete="off" />
-                        <button type="button" class="btn btn-primary" id="addbutton">Add</button>
-                        <button type="button" class="btn btn-secondary" id="calculate" style="display:none;">Calculate My Emissions</button>
-                    </div>
-                    <div style="display: none" class="input-group pt-3 pb-3 justify-content-center" id="journeytype">
-                        <input type="radio" name="journeytype" value="1" id="flying" checked="" />
-                        <label class="text-dark" for="flying">By Flying</label>
-                        <input type="radio" name="journeytype" value="0" id="other" />
-                        <label class="text-dark" for="other">By Other Means</label>
-                    </div>
+                        <!-- hidden because not used, leaving in just in case we need it later -->
+                        <div style="display: none" class="input-group pt-3 pb-3 justify-content-center" id="journeytype">
+                            <input type="radio" name="journeytype" value="1" id="flying" checked="" />
+                            <label class="text-dark" for="flying">By Flying</label>
+                            <input type="radio" name="journeytype" value="0" id="other" />
+                            <label class="text-dark" for="other">By Other Means</label>
+                        </div>
 
-                    <ul id="visited-airport-list" class="mt-5 d-none"></ul>
-                    <div class="clearfix"></div>
+                        <ul id="visited-airport-list" class="mt-5 d-none"></ul>
+                        <div class="clearfix"></div>
 
-                </form>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+
             </div>
-            <div class="clearfix"></div>
         </div>
+
 
         <!-- hidden infographic and form displayed after the user enters their residency info -->
-        <div class="p-5 row" id="emission-data" style="display:none">
+        <div class="p-5 row col-12 mx-auto" id="emission-data" style="display:none">
             <!-- Infographic -->
-            <div class="col col-lg-6 p-5 mx-auto text-white text-center rounded" id="infographic">
+            <div class="col col-lg-8 p-5 mx-auto text-white text-center rounded" id="infographic">
 
                 <h1>Total Emission Calculations</h1>
                 <h8>Source: Estimates based on economy class seats </h8>
@@ -155,7 +174,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-5">
-                            <div class="textStyle textBox textLeft" style="margin-top:75px"> of the <span class="callout">average yearly </span> American Emission per person</div>
+                            <div class="text-white" style="margin-top:75px"> of the <span class="text-danger">average yearly </span> American Emission per person</div>
                         </div>
                     </div>
                     <svg class="hidden">
@@ -164,7 +183,7 @@
 
                     <div class="row">
                         <div class="col-12">
-                            <h5>The <span class="callout"> carbon emissions </span> of your trip compared to emission reduction by lifestyle changes for <span class="callout">1 year </span></h5>
+                            <h5>The <span class="text-danger"> carbon emissions </span> of your trip compared to emission reduction by lifestyle changes for <span class="text-danger">1 year </span></h5>
                         </div>
 
                         <section>
@@ -246,14 +265,14 @@
                 <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
                 <!-- Custom styled form -->
-                <form class="needs-validation" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/formResponse" method="POST" target="dummyframe">
+                <form class="needs-validation border border-3 border-dark p-3 rounded" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/formResponse" method="POST" target="dummyframe">
                     <div class="mb-3">
-                        <span class="text-danger">* Required Question</span>
+                        <span class="text-primary">* Required Question</span>
                     </div>
 
                     <div class="mb-3">
                         <!-- Which year they interviewed -->
-                        <h4>I interviewed during the:<span class="text-danger">*</span></h4>
+                        <h4>I interviewed during the:<span class="text-primary">*</span></h4>
                         <div class="form-check">
                             <input class="form-check-input" name="entry.619680505" type="radio" value="2021-2022 application cycle" id="select-1644994922881-0" required>
                             <label class="form-check-label" for="select-1644994922881-0">
@@ -270,7 +289,7 @@
 
                     <!-- Med school, residency, or fellowship -->
                     <div class="mb-3">
-                        <h4>I interviewed for:<span class="text-danger">*</span></h4>
+                        <h4>I interviewed for:<span class="text-primary">*</span></h4>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="entry.29944464" value="Medical School" selected="true" id="select-1644994963652-0" required>
                             <label class="form-check-label" for="select-1644994963652-0">
@@ -294,7 +313,32 @@
                     <!-- Residency specialties -->
                     <div class="mb-3">
                         <h4>If applicable, which residency specialty did you interview for?</h4>
-                        <div class="form-check">
+                        <select class="form-select" name="entry.842876269" aria-label="which residency specialty did you interview for">
+                            <option selected>Select a Residency Interview</option>
+                            <option value="Anesthesiology">Anesthesiology</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Diagnostic Radiology">Diagnostic Radiology</option>
+                            <option value="Emergency Medicine">Emergency Medicine</option>
+                            <option value="Family Medicine">Family Medicine</option>
+                            <option value="Internal Medicine">Internal Medicine</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Neurosurgery">Neurosurgery</option>
+                            <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
+                            <option value="Ophthalmology">Ophthalmology</option>
+                            <option value="Orthopedic Surgery">Orthopedic Surgery</option>
+                            <option value="Otolaryngology">Otolaryngology</option>
+                            <option value="Pathology">Pathology</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="Physical Medicine and Rehabilitation">Physical Medicine and Rehabilitation</option>
+                            <option value="Plastic Surgery">Plastic Surgery</option>
+                            <option value="Psychiatry">Psychiatry</option>
+                            <option value="Radiation Oncology">Radiation Oncology</option>
+                            <option value="Surgery">Surgery</option>
+                            <option value="Thoracic Surgery">Thoracic Surgery</option>
+                            <option value="Urology">Urology</option>
+                        </select>
+
+                        <!-- <div class="form-check">
                             <input type="radio" class="form-check-input" name="entry.842876269" value="Anesthesiology" selected="true" id="select-1644994998869-0">
                             <label class="form-check-label" for="select-1644994998869-0">
                                 Anesthesiology
@@ -419,7 +463,7 @@
                             <label class="form-check-label" for="select-1644994998869-20">
                                 Urology
                             </label>
-                        </div>
+                        </div> -->
                     </div>
 
                     <!-- Fellowship specialties -->
@@ -438,7 +482,7 @@
 
                     <!-- Interview format preference -->
                     <div class="mb-3">
-                        <h4>In the future, I prefer interviews to be:<span class="text-danger">*</span></h4>
+                        <h4>In the future, I prefer interviews to be:<span class="text-primary">*</span></h4>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="entry.625532030" value="Virtual" selected="true" id="select-1644995132081-0" required></input>
                             <label class="form-check-label" for="select-1644995132081-0">
@@ -595,7 +639,6 @@
 
     <!-- to-do list js -->
     <script src="src/results.js"></script>
-    <script src="src/airportList.js"></script>
     <script src="src/emissions.js"></script>
     <script src="src/map.js"></script>
     <!--form js -->

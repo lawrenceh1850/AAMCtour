@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</head>
+
+<body>
+    <!-- load navbar -->
+    <div id="nav-placeholder"></div>
+    <script>
+        let title = "Advocate For Change"
+        $.get("templates/navigation.html", function(data) {
+            $("#nav-placeholder").replaceWith(data);
+            $("#navbarTitle").text(title);
+        });
+        $.get("templates/head.html", (data) => {
+            $("head").append(data)
+        })
+        document.title = title;
+    </script>
+    <div class="mx-auto col-5 container-fluid text-center pt-3">
+        <ul class="list-group">
+            <li class="list-group-item"> Read our medical school interview petition
+            </li>
+            <li class="list-group-item">Read our residency interview petition
+            </li>
+            <li class="list-group-item"> Read our fellowship interview petition
+            </li>
+            <li class="list-group-item"> Sign the petitions here
+            </li>
+            <li class="list-group-item"> Organizational signatories include
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

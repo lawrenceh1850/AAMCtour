@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</head>
+
+<body>
+    <!-- load navbar -->
+    <div id="nav-placeholder"></div>
+    <script>
+        let title = "Learn More"
+        $.get("templates/navigation.html", function(data) {
+            $("#nav-placeholder").replaceWith(data);
+            $("#navbarTitle").text(title);
+        });
+        $.get("templates/head.html", (data) => {
+            $("head").append(data)
+        })
+        document.title = title;
+    </script>
+    <div class="mx-auto col-5 container-fluid text-center pt-3">
+        <ul class="list-group">
+            <li class="list-group-item"> Why virtual medical school interviews?
+            </li>
+            <li class="list-group-item"> Why virtual residency interviews?
+            </li>
+            <li class="list-group-item"> Why virtual fellowship interviews?
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -19,9 +19,9 @@
 - [x] add in residency specialties
 
 - [x] consent popup
-- [ ] header with different sections
+- [x] header with different sections
 - [ ] CO2 calculation
-- [ ] individualized carbon emissions display
+- [ ] individualized carbon emissions infographic
 - [ ] references
 - [ ] deleting a destination and then recalculating emissions breaks the infographic
 - [ ] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
@@ -30,7 +30,7 @@
 - [ ] *Website adapted from mycarmsfooptrint.com* footer
 
 ## Backlog
-- [ ] style google form
+- [x] style google form
 - [ ] add required warning for certain questions not an alert dialog - https://getbootstrap.com/docs/5.0/forms/validation/
 - [ ] basic mobile friendly cleanup - most people using it on desktop
 - add vue-cloak

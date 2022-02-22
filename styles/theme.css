@@ -35,11 +35,6 @@ body {
     /* margin-top: 5vh; */
 }
 
-#user-input {
-    width: 100%;
-    position: relative;
-}
-
 #app {
     height: auto;
     width: 100%;
@@ -165,7 +160,7 @@ li>.delete:hover {
 }
 
 .autocomplete-results {
-    position: absolute;
+    /* position: absolute; */
     background: white;
     z-index: 1;
     top: 39px;
@@ -373,7 +368,7 @@ li>.delete:hover {
 #visited-airport-list {
     position: absolute;
     left: 25px;
-    top: 0;
+    top: 50px;
     padding: 0;
     max-height: 80vh;
     overflow-y: auto;

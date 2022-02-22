@@ -766,3 +766,30 @@ for i in range(30):
     z = z.replace("\"city\"", f"\"city{i}\"", 1)
 z=z.replace(r'value="[\d]+"', "")
 print(z)
+
+# residency specialties
+z='''Anesthesiology
+Dermatology
+Diagnostic Radiology
+Emergency Medicine
+Family Medicine
+Internal Medicine
+Neurology
+Neurosurgery
+Obstetrics and Gynecology
+Ophthalmology
+Orthopedic Surgery
+Otolaryngology
+Pathology
+Pediatrics
+Physical Medicine and Rehabilitation
+Plastic Surgery
+Psychiatry
+Radiation Oncology
+Surgery
+Thoracic Surgery
+Urology
+'''
+
+for l in z.split("\n"):
+    print(f'<option value="{l}">{l}</option>')

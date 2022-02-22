@@ -18,7 +18,7 @@
                     event.preventDefault()
                     event.stopPropagation()
                 } else {
-                    alert('Thank you for completing the form')
+                    alert('Thank you for completing the form. Your response has been recorded.')
                 }
             }, false)
     })

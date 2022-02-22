@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</head>
+
+<body>
+    <!-- load navbar -->
+    <div id="nav-placeholder"></div>
+    <script>
+        let title = "About Us"
+        $.get("templates/navigation.html", function(data) {
+            $("#nav-placeholder").replaceWith(data);
+            $("#navbarTitle").text(title);
+        });
+        $.get("templates/head.html", (data) => {
+            $("head").append(data)
+        })
+        document.title = title;
+    </script>
+    <div class="mx-auto col-5 container-fluid text-left pt-3">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <p>
+                    The Interview without Harm Coalition represents a group of passionate medical students, residents, and faculty who envision a more sustainable, equitable, and efficient process of interviewing medical trainees. Organizational partners include the University
+                    of California Center for Climate, Health and Equity, Medical Students for a Sustainable Future, and the Planetary Health Report Card Initiative. This campaign is modeled off of the similar Keep CARMS Virtual campaign in Canada; we
+                    thank the Canadian Federation for Medical Students Health and Environment Adaptive Response Task Force (CFMS HEART) for allowing us to adapt their petition and website.
+                </p>
+                <p>
+                    Please contact us at <a href="mailto:interviewwithoutharm@gmail.com">interviewwithoutharm@gmail.com</a> with questions, concerns, or suggestions. We also have internal presentation materials we can share if you are interested in helping
+                    spread the word at your institution and beyond.
+                </p>
+            </li>
+
+    </div>
+</body>
+
+</html>
