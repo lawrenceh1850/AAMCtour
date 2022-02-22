@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="styles/results.css">
     <link rel="stylesheet" type="text/css" href="styles/comparison.css">
     <link rel="stylesheet" type="text/css" href="styles/circlegraph.css">
+    <link rel="stylesheet" type="text/css" href="styles/infographicText.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- jquery ui for dragging locations -->
@@ -95,7 +96,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="col-lg-5 px-0">
+            <div class="row align-items-center col-lg-5 px-0">
                 <p class="mx-auto col-10 text-center pt-3">
                     Interactive Map: Please enter the estimated flight itinerary of your interview schedule, had interviews been in-person. Remember to include flights back to your home city in-between interviews when applicable. Please do not include places you would have
                     driven or used public transportation to reach.
@@ -141,115 +142,104 @@
                 <h1>Total Emission Calculations</h1>
                 <h8>Source: Estimates based on economy class seats </h8>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <h1 class="mileage__calculations mt-5" id="numberofcities">
-                                <span id="totalCities" data-city=""></span><small style="font-size:20px"> Cities Visited</small>
-                            </h1>
-                        </div>
-                        <div class="col-sm">
-                            <h1 class="mileage__calculations mt-5" id="distancebetween">
-                                <span id="totalDistance" data-distance=""></span>
-                                <small style="font-size:20px"> Miles Travelled</small>
-                            </h1>
-                        </div>
-                        <div class="col-sm">
-                            <h1 class="mileage__calculations mt-5" id="co2emission">
-                                <span id="totalEmission" data-emission=""></span>
-                                <small style="font-size:20px"> Kg CO2 Emitted</small>
-                            </h1>
-                        </div>
+                <div id="infographic-container" class="container position-relative col-8 my-3" style="height:70vh">
+                    <img id="infographic-bg-img" class="centered" src="images/Infographic background.png" alt="infographic-background" style="width:auto;height:70vh">
+                    <div id="infographic-text" class="centered pt-3" style="width: 80%">
+                        <span>
+                            Because residency interviews were virtual this year, I avoided
+                        </span>
+                        <span class="mileage__calculations" id="distancebetween">
+                            <span id="totalDistance" data-distance=""></span> miles of flights
+                        </span>
+                        <span>to</span>
+                        <br>
+                        <span class="mileage__calculations" id="numberofcities">
+                            <span id="totalCities" data-city=""></span> cities
+                        </span>
+                        <span>and saved</span>
+                        <br>
+                        <span class="mileage__calculations" id="co2emission">
+                                <span id="totalEmission" data-emission=""></span> Kg of CO2
+                        </span>
+                        <span>which is equivalent to</span>
+                        <span class="mileage__calculations" id="co2emission">
+                                <span id="percentageAmerican" data-emission=""></span> of the average American's yearly carbon footprint.
+                        </span>
                     </div>
                 </div>
-                <div id="container">
-                    <div class="row" id="circulargraph">
-                        <div class="col-md-12 col-lg-7">
-                            <div class="graph">
-                                <div class="percent-circle pc1" data-percent="0">
-                                    <svg>
-                                        <use class="percent-circle-inner" xlink:href="#percent-circle-svg"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-5">
-                            <div class="text-white" style="margin-top:75px"> of the <span class="text-danger">average yearly </span> American Emission per person</div>
-                        </div>
+
+                <div class="row">
+                    <h5>Spread the word! Take a screenshot of this image and share on social media with the hashtag #interviewwithoutharm.</h5>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h5>In order to offset these theoretical emissions, you would need to make the following lifestyle changes for 1 year (click the checkboxes)</h5>
                     </div>
-                    <svg class="hidden">
-                        <circle id="percent-circle-svg" cx="50%" cy="50%" r="50%" stroke-alignment="inner"></circle>
-                    </svg>
 
-                    <div class="row">
-                        <div class="col-12">
-                            <h5>The <span class="text-danger"> carbon emissions </span> of your trip compared to emission reduction by lifestyle changes for <span class="text-danger">1 year </span></h5>
-                        </div>
-
-                        <section>
-                            <div class="row">
-                                <div class="col col-4" id="legend-graph">
-                                    <div class="column">
-                                        <div class="form-group">
-                                            <input id="opt1" type="checkbox" value="0.9">
-                                            <label for="opt1"><span></span>Go vegetarian</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <input id="opt2" type="checkbox" value="0.21">
-                                            <label for="opt2"><span></span>Recycle</label>
-                                        </div>
-                                        <!--<div class="checkbox">
+                    <section>
+                        <div class="row">
+                            <div class="col col-4" id="legend-graph">
+                                <div class="column">
+                                    <div class="form-group">
+                                        <input id="opt1" type="checkbox" value="0.9">
+                                        <label for="opt1"><span></span>Go vegetarian</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="opt2" type="checkbox" value="0.21">
+                                        <label for="opt2"><span></span>Recycle</label>
+                                    </div>
+                                    <!--<div class="checkbox">
                                             <input id="opt3" type="checkbox" value="0.06">
                                             <label for="opt3"><span></span>Only use LED light bulbs</label>
                                         </div> -->
-                                        <div class="form-group zero">
-                                            <input id="opt5" type="checkbox" value="0.37">
-                                            <label for="opt5"><span></span>Reduce your food waste to 0</label>
-                                        </div>
-                                        <!--<div class="checkbox">
+                                    <div class="form-group zero">
+                                        <input id="opt5" type="checkbox" value="0.37">
+                                        <label for="opt5"><span></span>Reduce your food waste to 0</label>
+                                    </div>
+                                    <!--<div class="checkbox">
                                             <input id="opt6" type="checkbox" value="0.005">
                                             <label for="opt6"><span></span>Use a reusable shopping bag</label>
                                         </div> -->
-                                        <div class="form-group">
-                                            <input id="opt7" type="checkbox" value="0.36">
-                                            <label for="opt7"><span></span>Eat local food only</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <input id="opt4" type="checkbox" value="1.33">
-                                            <label for="opt4"><span></span>Live car free (30km/day)</label>
-                                        </div>
+                                    <div class="form-group">
+                                        <input id="opt7" type="checkbox" value="0.36">
+                                        <label for="opt7"><span></span>Eat local food only</label>
                                     </div>
-                                </div>
-                                <div class="big-bars">
-                                    <div class="comp-bar">
-                                        <div class="opt-bar" id="opt1-bar" class="">
-                                            <div>- 0.9 tCO₂e</div>
-                                        </div>
-                                        <div class="opt-bar" id="opt2-bar" class="">
-                                            <div>- 0.21 tCO₂e</div>
-                                        </div>
-                                        <!--<div class="opt-bar" id="opt3-bar" class="">
-                                            <div>- 0.06</div>
-                                        </div> -->
-                                        <div class="opt-bar" id="opt5-bar" class="">
-                                            <div>- 0.37 tCO₂e</div>
-                                        </div>
-                                        <!-- <div class="opt-bar" id="opt6-bar" class="">
-                                            <div>-0.005</div>
-                                        </div> -->
-                                        <div class="opt-bar" id="opt7-bar" class="">
-                                            <div>- 0.36 tCO₂e</div>
-                                        </div>
-                                        <div class="opt-bar" id="opt4-bar" class="">
-                                            <div>- 1.33 tCO₂e</div>
-                                        </div>
-                                    </div>
-                                    <div id="coBarThree" class="plane-bar color-white">
-                                        <div>+ <span class="co"></span> tCO₂e</div>
+                                    <div class="form-group">
+                                        <input id="opt4" type="checkbox" value="1.33">
+                                        <label for="opt4"><span></span>Live car free (30km/day)</label>
                                     </div>
                                 </div>
                             </div>
-                    </div>
+                            <div class="big-bars">
+                                <div class="comp-bar">
+                                    <div class="opt-bar" id="opt1-bar" class="">
+                                        <div>- 0.9 tCO₂e</div>
+                                    </div>
+                                    <div class="opt-bar" id="opt2-bar" class="">
+                                        <div>- 0.21 tCO₂e</div>
+                                    </div>
+                                    <!--<div class="opt-bar" id="opt3-bar" class="">
+                                            <div>- 0.06</div>
+                                        </div> -->
+                                    <div class="opt-bar" id="opt5-bar" class="">
+                                        <div>- 0.37 tCO₂e</div>
+                                    </div>
+                                    <!-- <div class="opt-bar" id="opt6-bar" class="">
+                                            <div>-0.005</div>
+                                        </div> -->
+                                    <div class="opt-bar" id="opt7-bar" class="">
+                                        <div>- 0.36 tCO₂e</div>
+                                    </div>
+                                    <div class="opt-bar" id="opt4-bar" class="">
+                                        <div>- 1.33 tCO₂e</div>
+                                    </div>
+                                </div>
+                                <div id="coBarThree" class="plane-bar color-white">
+                                    <div>+ <span class="co"></span> tCO₂e</div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
 
@@ -314,7 +304,7 @@
                     <div class="mb-3">
                         <h4>If applicable, which residency specialty did you interview for?</h4>
                         <select class="form-select" name="entry.842876269" aria-label="which residency specialty did you interview for">
-                            <option selected>Select a Residency Interview</option>
+                            <option value="N/A" selected>N/A</option>
                             <option value="Anesthesiology">Anesthesiology</option>
                             <option value="Dermatology">Dermatology</option>
                             <option value="Diagnostic Radiology">Diagnostic Radiology</option>

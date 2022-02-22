@@ -230,12 +230,10 @@ li>.delete:hover {
 
 {
     margin: 0;
-    font-size: 3rem;
     font-weight: inherit;
 }
 
-.mileage__calculations small {
-    font-size: 0.6em;
+.mileage__calculations {
     color: #ffa93a;
 }
 
