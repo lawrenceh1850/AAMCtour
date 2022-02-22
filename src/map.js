@@ -189,11 +189,11 @@ map = new Vue({
             dist = dist * 60 * 1.1515;
             if (unit == "K") {
                 dist = dist * 1.609344;
-            }
-            if (unit == "N") {
+            } else if (unit == "N") {
                 dist = dist * 0.8684;
+            } else {
+                return null;
             }
-            dist = dist * 1.60934;
             return dist;
 
         },
@@ -214,7 +214,7 @@ map = new Vue({
                 var marker2 = this.markers[(i + 1)];
                 var latLng2 = this.projection.invert([marker2.x, marker2.y]).reverse();
 
-                this.distance += Math.round(this.calcDistance(latLng1[0], latLng1[1], latLng2[0], latLng2[1]));
+                this.distance += Math.round(this.calcDistance(latLng1[0], latLng1[1], latLng2[0], latLng2[1], 'K'));
             }
 
             this.airplaneAnimate();
@@ -297,15 +297,16 @@ map = new Vue({
                     }
                 }
                 if (marker1 && marker2) {
-                    distance = Math.round(this.calcDistance(latLng1[0], latLng1[1], latLng2[0], latLng2[1]));
+                    distance = Math.round(this.calcDistance(latLng1[0], latLng1[1], latLng2[0], latLng2[1], 'K'));
 
+                    // CO2 Emission Calculation Multipliers
                     emission = distance;
                     if (emission < 463) {
-                        emission = emission * 0.25493;
+                        emission = emission * 0.24587;
                     } else if (emission > 463 && emission < 3700) {
-                        emission = emission * 0.15573;
+                        emission = emission * 0.15102;
                     } else {
-                        emission = emission * 0.14981;
+                        emission = emission * 0.14787;
                     }
                     totalEmission += emission;
 

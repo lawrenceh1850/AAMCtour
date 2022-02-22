@@ -20,7 +20,7 @@
 
 - [x] consent popup
 - [x] header with different sections
-- [ ] CO2 calculation
+- [x] CO2 calculation
 - [ ] individualized carbon emissions infographic
 - [ ] references
 - [ ] deleting a destination and then recalculating emissions breaks the infographic
