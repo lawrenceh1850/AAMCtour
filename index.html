@@ -58,7 +58,7 @@
     <div id="nav-placeholder"></div>
     <script>
         let title = "What were the emissions savings of completing your interviews virtually?"
-        $.get("templates/navigation.html", function(data) {
+        $.get("./templates/navigation.html", function(data) {
             $("#nav-placeholder").replaceWith(data);
             $("#navbarTitle").text(title);
         });

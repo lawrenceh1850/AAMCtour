@@ -10,11 +10,11 @@
     <div id="nav-placeholder"></div>
     <script>
         let title = "Learn More"
-        $.get("templates/navigation.html", function(data) {
+        $.get("./templates/navigation.html", function(data) {
             $("#nav-placeholder").replaceWith(data);
             $("#navbarTitle").text(title);
         });
-        $.get("templates/head.html", (data) => {
+        $.get("./templates/head.html", (data) => {
             $("head").append(data)
         })
         document.title = title;
