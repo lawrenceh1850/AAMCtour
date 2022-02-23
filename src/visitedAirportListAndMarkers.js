@@ -148,7 +148,7 @@ function updateEmissionData() {
     //    document.querySelector("#totalEmission").innerHTML = 0;
 
     document.querySelector("#totalCities").innerHTML = document.querySelector("#visited-airport-list").childElementCount;
-    $("#emission-data").show();
+    $("#emission-data").removeClass("d-none");
 }
 
 //update search label text
@@ -165,7 +165,7 @@ function updateLabelText() {
         $("#calculate").show();
     } else {
         $("#calculate").hide();
-        $("#emission-data").hide();
+        $("#emission-data").addClass("d-none");
     }
     if ($("#emission-data").is(":visible")) {
         updateEmissionData();

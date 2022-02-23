@@ -135,11 +135,10 @@
 
 
         <!-- hidden infographic and form displayed after the user enters their residency info -->
-        <div class="p-5 row col-12 mx-auto" id="emission-data" style="display:none">
+        <div class="d-none p-5 d-flex col-12 mx-auto" id="emission-data">
             <!-- Infographic -->
-            <div class="col col-lg-8 p-5 mx-auto text-white text-center rounded" id="infographic">
-
-                <h1>Total Emission Calculations</h1>
+            <div class="col col-lg-6 mx-auto text-white text-center rounded" id="infographic">
+                <h3>Total Emission Calculations</h3>
                 <h8>Source: Estimates based on economy class seats </h8>
 
                 <div id="infographic-container" class="container position-relative col-8 my-3" style="height:70vh">
@@ -242,19 +241,14 @@
             </div>
 
             <!-- New response data form -->
-            <div class="mt-5 d-flex flex-column align-items-center">
-                <hr>
-                <h3 class="col-7 text-dark text-center">Please help us understand the cost of the entire AAMC tour by filling out this short questionnaire</h3>
-
-                <!-- TODO: remove, hidden g form -->
-                <!-- <iframe class="d-none" src="https://docs.google.com/forms/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/viewform?embedded=true" width="640" height="823" frameborder="0" marginheight="0" marginwidth="0" class="p-3 rounded col-7">Loading…</iframe> -->
-
+            <div class="mx-auto col-lg-5 d-flex flex-column align-items-center">
                 <!-- dummy frame for form to submit without redirect -->
                 <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
                 <!-- Custom styled form -->
-                <form class="needs-validation border border-3 border-dark p-3 rounded text-white" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/formResponse" method="POST" target="dummyframe" style="background: #4D4D4D">
-                    <div class="mb-3">
+                <form class="needs-validation p-3 rounded text-white" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/formResponse" method="POST" target="dummyframe" style="background: #4D4D4D">
+                    <div class="mb-3 justify-content-center">
+                        <h3 class="container col-11 text-white justify-content-center">Please help us understand the cost of the entire AAMC tour by filling out this short questionnaire</h3>
                         <span class="text-danger">* Required Question</span>
                     </div>
 
