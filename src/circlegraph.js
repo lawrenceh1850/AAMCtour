@@ -1,9 +1,10 @@
 function drawCharts() {
     var circles = document.querySelectorAll(".percent-circle");
+    let avgUSEmissionsPerPerson2019 = 15300;
     circles.forEach(function(el) {
         //pull the percentage and turn it into a fraction
-        var percent = map.emission / 22000;
-        var percentage = percent * 100
+        let percent = map.emission / avgUSEmissionsPerPerson2019;
+        let percentage = percent * 100
         $(".percent-circle").attr("data-percent", percentage.toFixed(1).toString());
         //work out the circumference from the width
         var diameter = el.offsetWidth;
@@ -23,5 +24,5 @@ function drawCharts() {
 
     // setting the percentage of emissions of average american
     let percentageAmerican = $("#percentageAmerican");
-    percentageAmerican.text(parseFloat(map.emission / 22000 * 100).toFixed(2) + "%");
+    percentageAmerican.text(parseFloat(map.emission / avgUSEmissionsPerPerson2019 * 100).toFixed(2) + "%");
 }

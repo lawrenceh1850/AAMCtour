@@ -142,9 +142,9 @@ function updateFormData() {
 Updates the emission data in the infographic section
 */
 function updateEmissionData() {
-    $("#distancebetween [data-distance]").text(map.distance);
+    $("#distancebetween [data-distance]").text(map.distanceInMiles());
     map.calculateEmission();
-    $("#totalEmission[data-emission]").text(parseInt(map.emission));
+    $("#totalEmission[data-emission]").text(map.emissionsInKg());
     //    document.querySelector("#totalEmission").innerHTML = 0;
 
     document.querySelector("#totalCities").innerHTML = document.querySelector("#visited-airport-list").childElementCount;
@@ -158,7 +158,7 @@ function updateLabelText() {
         $("#sort-it [for='autocomplete']").text("I'm starting my AAMC interview from");
         $("#journeytype").hide();
     } else {
-        $("#sort-it [for='autocomplete']").text("I then travelled to");
+        $("#sort-it [for='autocomplete']").text("I then traveled to");
         // $("#journeytype").show();
     }
     if (map.markers.length > 1) {

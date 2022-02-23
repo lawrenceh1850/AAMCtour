@@ -22,6 +22,8 @@
 - [x] header with different sections
 - [x] CO2 calculation
 - [x] individualized carbon emissions infographic
+- [x] double check the distances
+- [ ] move the form to be right next to the infographic
 - [ ] references
 - [ ] deleting a destination and then recalculating emissions breaks the infographic
 - [ ] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button

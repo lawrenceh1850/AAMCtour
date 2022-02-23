@@ -25,7 +25,7 @@ function setInfographicFontSize() {
     let bgHeightPx = infoBg.height();
     let bgWidthPx = infoBg.width();
     $("#infographic-text").css({
-        'font-size': `${bgHeightPx / 20}px`,
-        'width': `${bgWidthPx*.9}px`,
+        'font-size': `${bgHeightPx / 18}px`,
+        'width': `${bgWidthPx*.85}px`,
     });
 }

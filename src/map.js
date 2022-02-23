@@ -90,6 +90,15 @@ map = new Vue({
         });
     },
     methods: {
+        distanceInMiles() {
+            return Math.round(this.distance / 1.609344);
+        },
+        emissionsInKg() {
+            return Math.round(parseInt(this.emission));
+        },
+        emissionsInMetricTons() {
+            return Math.round(parseInt(this.emission / 1000));
+        },
         randomAirport() {
             return this.airports[Math.floor(Math.random() * this.airports.length)];
         },
@@ -281,7 +290,7 @@ map = new Vue({
             this.emission = 0;
             var emission = 0;
             var totalEmission = 0;
-            var distance;
+            let distance;
             var marker1 = null,
                 latLng1 = null,
                 marker2 = null,
