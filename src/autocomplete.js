@@ -60,6 +60,8 @@ fetch('data/usaairport.json').then(response => response.json()).then(airports =>
             ac.val(output).focus();
             clearResults();
             $(".autocomplete-results").hide();
+            let addAirportButton = document.getElementById("addbutton");
+            addAirportButton.click();
         }
     }
 

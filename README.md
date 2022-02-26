@@ -23,16 +23,18 @@
 - [x] CO2 calculation
 - [x] individualized carbon emissions infographic
 - [x] double check the distances
-- [ ] move the form to be right next to the infographic
-- [ ] references
-- [ ] deleting a destination and then recalculating emissions breaks the infographic
-- [ ] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
-- [ ] fix github pages build
+- [x] move the form to be right next to the infographic
+- [x] make the questions on the form not all required
+- [x] references
+- [x] deleting a destination and then recalculating emissions breaks the infographic
+- [x] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
+- [x] fix github pages build
 - [ ] you have to click calculate emissions again for the google form to include the newly included airports
 - [ ] *Website adapted from mycarmsfooptrint.com* footer
 
 ## Backlog
 - [x] style google form
+- [ ] convert infographic to use background-image
 - [ ] add required warning for certain questions not an alert dialog - https://getbootstrap.com/docs/5.0/forms/validation/
 - [ ] basic mobile friendly cleanup - most people using it on desktop
 - add vue-cloak

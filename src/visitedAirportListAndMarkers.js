@@ -41,16 +41,18 @@ function createNewAirportElement(taskString, flyingStatus) {
 
 function addAirport(flyingStatus) {
     console.log(`Adding airport with flyingStatus ${flyingStatus}`);
-    //Create a new list item with the text from the #new-task:
-    let airportItem = createNewAirportElement(airportUserInput.value, flyingStatus);
-    visitedAirportsHolder.appendChild(airportItem);
+    let airportData = JSON.parse(airportUserInput.getAttribute("data-airport"));
+    if (airportData && airportData.City && airportData.LocationID) {
+        let airportItem = createNewAirportElement(`${airportData.City} - ${airportData.LocationID}`, flyingStatus);
+        visitedAirportsHolder.appendChild(airportItem);
 
-    // bind deletion button
-    bindDeleteAirport(airportItem);
+        // bind deletion button
+        bindDeleteAirport(airportItem);
 
-    // clear the user input
-    airportUserInput.value = "";
-    addMarker($(airportItem));
+        // clear the user input
+        airportUserInput.value = "";
+        addMarker($(airportItem));
+    }
 };
 
 function bindDeleteAirport(airportListItem) {
@@ -83,7 +85,7 @@ function deleteAirport(e) {
 //Set the click handler to the addAiport function.
 addAirportButton.addEventListener("click", function() {
     // TODO: check that the value is one of the ones in the airport list
-    if (airportUserInput.value != "") {
+    if (airportUserInput.getAttribute("data-airport") != "") {
         // selects which transportation method is checked
         let flyingStatus = $("#journeytype [name='journeytype']:checked").val();
         addAirport(flyingStatus);
@@ -120,12 +122,9 @@ function addMarker($li) {
 // on calculate emission button click
 calculateButton.addEventListener("click", function() {
     updateEmissionData();
+    // drawCharts();
     updateFormData();
-    $("html, body").stop().animate({
-        scrollTop: $("#emission-data").position().top
-    }, 500);
     runInfographic();
-    drawCharts();
     updateComparison();
 });
 
@@ -145,10 +144,15 @@ function updateEmissionData() {
     $("#distancebetween [data-distance]").text(map.distanceInMiles());
     map.calculateEmission();
     $("#totalEmission[data-emission]").text(map.emissionsInKg());
-    //    document.querySelector("#totalEmission").innerHTML = 0;
 
     document.querySelector("#totalCities").innerHTML = document.querySelector("#visited-airport-list").childElementCount;
     $("#emission-data").removeClass("d-none");
+
+    // average person calculation
+    let avgUSEmissionsPerPerson2019 = 15300;
+    // setting the percentage of emissions of average american
+    let percentageAmerican = $("#percentageAmerican");
+    percentageAmerican.text(parseFloat(map.emission / avgUSEmissionsPerPerson2019 * 100).toFixed(2) + "%");
 }
 
 //update search label text
@@ -166,11 +170,6 @@ function updateLabelText() {
     } else {
         $("#calculate").hide();
         $("#emission-data").addClass("d-none");
-    }
-    if ($("#emission-data").is(":visible")) {
-        updateEmissionData();
-        runInfographic();
-        drawCharts();
     }
 }
 
