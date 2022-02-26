@@ -269,9 +269,9 @@ li>.delete:hover {
 
 .marker text {
     stroke: none;
-    fill: #FFF;
+    fill: black;
     font-family: inherit;
-    font-weight: 200;
+    font-weight: 1000;
 }
 
 .marker-fade-leave-active,
@@ -285,7 +285,7 @@ li>.delete:hover {
 }
 
 .marker--current {
-    opacity: 0.8;
+    /* opacity: 0.8; */
     pointer-events: none;
 }
 
