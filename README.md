@@ -29,6 +29,7 @@
 - [x] deleting a destination and then recalculating emissions breaks the infographic
 - [x] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
 - [x] fix github pages build
+- [x] double check form submit
 - [ ] you have to click calculate emissions again for the google form to include the newly included airports
 - [ ] *Website adapted from mycarmsfooptrint.com* footer
 

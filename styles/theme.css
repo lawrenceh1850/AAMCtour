@@ -316,7 +316,6 @@ li>.delete:hover {
 
 .airport__range {
     fill: transparent;
-    cursor: pointer;
 }
 
 .marker-connector {
