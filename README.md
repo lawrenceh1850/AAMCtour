@@ -33,7 +33,7 @@
 
 - [ ] check through all the text
 - [x] link all of the petition links
-- [ ] change font
+- [x] change font
 - [x] change about us
 - [x] update email in consent popup
 - [x] move references to only appear after entering travel info

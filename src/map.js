@@ -97,7 +97,7 @@ map = new Vue({
             return Math.round(parseInt(this.emission));
         },
         emissionsInMetricTons() {
-            return Math.round(parseInt(this.emission / 1000));
+            return parseFloat(this.emission / 1000).toFixed(2);
         },
         randomAirport() {
             return this.airports[Math.floor(Math.random() * this.airports.length)];

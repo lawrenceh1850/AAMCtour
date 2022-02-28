@@ -143,7 +143,7 @@ Updates the emission data in the infographic section
 function updateEmissionData() {
     $("#distancebetween [data-distance]").text(map.distanceInMiles());
     map.calculateEmission();
-    $("#totalEmission[data-emission]").text(map.emissionsInKg());
+    $("#totalEmission[data-emission]").text(map.emissionsInMetricTons());
 
     document.querySelector("#totalCities").innerHTML = document.querySelector("#visited-airport-list").childElementCount;
     $("#emission-data").removeClass("d-none");
