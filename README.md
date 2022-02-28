@@ -32,10 +32,10 @@
 - [x] update for new questions
 
 - [ ] check through all the text
-- [ ] link all of the petition links
+- [x] link all of the petition links
 - [ ] change font
-- [ ] change about us
-- [ ] update email in consent popup
+- [x] change about us
+- [x] update email in consent popup
 - [x] move references to only appear after entering travel info
 
 ## Backlog
