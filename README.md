@@ -13,11 +13,6 @@
 - [x] import airport list
 - [x] airport markers messed up
 - [x] add in the airports selected to the google form
-
-### Google form to do
-- [x] make google form questions required
-- [x] add in residency specialties
-
 - [x] consent popup
 - [x] header with different sections
 - [x] CO2 calculation
@@ -30,11 +25,23 @@
 - [x] you can add arbitrary names that are not in the airport and this breaks the calculate emissions button
 - [x] fix github pages build
 - [x] double check form submit
-- [ ] you have to click calculate emissions again for the google form to include the newly included airports
-- [ ] *Website adapted from mycarmsfooptrint.com* footer
+
+### Google form to do
+- [x] make google form questions required
+- [x] add in residency specialties
+- [ ] update for new questions
+
+- [ ] check through all the text
+- [ ] link all of the petition links
+- [ ] change font
+- [ ] change about us
+- [ ] update email in consent popup
+- [x] move references to only appear after entering travel info
 
 ## Backlog
 - [x] style google form
+- [ ] you have to click calculate emissions again for the google form to include the newly included airports
+- [ ] *Website adapted from mycarmsfooptrint.com* footer
 - [ ] convert infographic to use background-image
 - [ ] add required warning for certain questions not an alert dialog - https://getbootstrap.com/docs/5.0/forms/validation/
 - [ ] basic mobile friendly cleanup - most people using it on desktop

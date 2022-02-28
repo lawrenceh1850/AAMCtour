@@ -142,366 +142,303 @@
         </div>
 
         <!-- hidden infographic and form displayed after the user enters their residency info -->
-        <div class="d-none p-5 d-flex col-12 mx-auto" id="emission-data">
-            <!-- Infographic -->
-            <div class="col col-lg-6 mx-auto text-white text-center">
-                <div class="rounded mb-3" id="infographic">
-                    <h3>Total Emission Calculations</h3>
-                    <h8>Source: Estimates based on economy class seats </h8>
+        <div class="d-none p-5 col-12 mx-auto" id="emission-data">
+            <div class="row">
+                <!-- Infographic -->
+                <div class="col col-lg-6 mx-auto text-white text-center">
+                    <div class="rounded mb-3" id="infographic">
+                        <h3>Total Emission Calculations</h3>
+                        <h8>Source: Estimates based on economy class seats </h8>
 
-                    <div id="infographic-container" class="position-relative my-3" style="height:70vh;background-clip: content-box;">
-                        <img id="infographic-bg-img" class="centered" src="images/Infographic background.png" alt="infographic-background" style="width:auto;height:70vh">
-                        <div id="infographic-text" class="centered pt-3" style="width: 80%;color:#212527">
-                            <span>
-                                Because interviews were virtual, I avoided
-                            </span>
-                            <span class="mileage__calculations" id="distancebetween">
-                                <span id="totalDistance" data-distance=""></span> miles of flights
-                            </span>
-                            <span>between</span>
-                            <span class="mileage__calculations" id="numberofcities">
-                                <span id="totalCities" data-city=""></span> cities
-                            </span>
-                            <span>and saved</span>
-                            <span class="mileage__calculations" id="co2emission">
-                                    <span id="totalEmission" data-emission=""></span> kg of CO&#8322;
-                            </span>
-                            <span>which is equivalent to</span>
-                            <span class="mileage__calculations" id="co2emission">
-                                    <span id="percentageAmerican"></span> of the average American's annual carbon footprint.
-                            </span>
+                        <div id="infographic-container" class="position-relative my-3" style="height:70vh;background-clip: content-box;">
+                            <img id="infographic-bg-img" class="centered" src="images/Infographic background.png" alt="infographic-background" style="width:auto;height:70vh">
+                            <div id="infographic-text" class="centered pt-3" style="width: 80%;color:#212527">
+                                <span>
+                    Because interviews were virtual, I avoided
+                </span>
+                                <span class="mileage__calculations" id="distancebetween">
+                    <span id="totalDistance" data-distance=""></span> miles of flights
+                                </span>
+                                <span>between</span>
+                                <span class="mileage__calculations" id="numberofcities">
+                    <span id="totalCities" data-city=""></span> cities
+                                </span>
+                                <span>and saved</span>
+                                <span class="mileage__calculations" id="co2emission">
+                        <span id="totalEmission" data-emission=""></span> kg of CO&#8322;
+                                </span>
+                                <span>which is equivalent to</span>
+                                <span class="mileage__calculations" id="co2emission">
+                        <span id="percentageAmerican"></span> of the average American's annual carbon footprint.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <h5 style="max-width:80%">Spread the word! Copy, screenshot, or save this image and share on social media with the hashtag #interviewwithoutharm.</h5>
                         </div>
                     </div>
 
-                    <div class="row justify-content-center">
-                        <h5 style="max-width:80%">Spread the word! Copy, screenshot, or save this image and share on social media with the hashtag #interviewwithoutharm.</h5>
-                    </div>
-                </div>
+                    <div class="row rounded" id="comparisonGraph">
+                        <div class="col-12">
+                            <h5>In order to offset these theoretical emissions, you would need to make the following lifestyle changes for 1 year (click the checkboxes)</h5>
+                        </div>
 
-                <div class="row rounded" id="comparisonGraph">
-                    <div class="col-12">
-                        <h5>In order to offset these theoretical emissions, you would need to make the following lifestyle changes for 1 year (click the checkboxes)</h5>
-                    </div>
-
-                    <section>
-                        <div class="row">
-                            <div class="col col-4" id="legend-graph">
-                                <div class="column">
-                                    <div class="form-group">
-                                        <input id="opt1" type="checkbox" value="0.9">
-                                        <label for="opt1"><span></span>Go vegetarian</label>
+                        <section>
+                            <div class="row">
+                                <div class="col col-4" id="legend-graph">
+                                    <div class="column">
+                                        <div class="form-group">
+                                            <input id="opt1" type="checkbox" value="0.9">
+                                            <label for="opt1"><span></span>Go vegetarian</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="opt2" type="checkbox" value="0.21">
+                                            <label for="opt2"><span></span>Recycle</label>
+                                        </div>
+                                        <!--<div class="checkbox">
+                                <input id="opt3" type="checkbox" value="0.06">
+                                <label for="opt3"><span></span>Only use LED light bulbs</label>
+                            </div> -->
+                                        <div class="form-group zero">
+                                            <input id="opt5" type="checkbox" value="0.37">
+                                            <label for="opt5"><span></span>Reduce your food waste to 0</label>
+                                        </div>
+                                        <!--<div class="checkbox">
+                                <input id="opt6" type="checkbox" value="0.005">
+                                <label for="opt6"><span></span>Use a reusable shopping bag</label>
+                            </div> -->
+                                        <div class="form-group">
+                                            <input id="opt7" type="checkbox" value="0.36">
+                                            <label for="opt7"><span></span>Eat local food only</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="opt4" type="checkbox" value="1.33">
+                                            <label for="opt4"><span></span>Live car free (30km/day)</label>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <input id="opt2" type="checkbox" value="0.21">
-                                        <label for="opt2"><span></span>Recycle</label>
+                                </div>
+                                <div class="big-bars">
+                                    <div class="comp-bar">
+                                        <div class="opt-bar" id="opt1-bar" class="">
+                                            <div>- 0.9 tCO₂e</div>
+                                        </div>
+                                        <div class="opt-bar" id="opt2-bar" class="">
+                                            <div>- 0.21 tCO₂e</div>
+                                        </div>
+                                        <!--<div class="opt-bar" id="opt3-bar" class="">
+                                <div>- 0.06</div>
+                            </div> -->
+                                        <div class="opt-bar" id="opt5-bar" class="">
+                                            <div>- 0.37 tCO₂e</div>
+                                        </div>
+                                        <!-- <div class="opt-bar" id="opt6-bar" class="">
+                                <div>-0.005</div>
+                            </div> -->
+                                        <div class="opt-bar" id="opt7-bar" class="">
+                                            <div>- 0.36 tCO₂e</div>
+                                        </div>
+                                        <div class="opt-bar" id="opt4-bar" class="">
+                                            <div>- 1.33 tCO₂e</div>
+                                        </div>
                                     </div>
-                                    <!--<div class="checkbox">
-                                            <input id="opt3" type="checkbox" value="0.06">
-                                            <label for="opt3"><span></span>Only use LED light bulbs</label>
-                                        </div> -->
-                                    <div class="form-group zero">
-                                        <input id="opt5" type="checkbox" value="0.37">
-                                        <label for="opt5"><span></span>Reduce your food waste to 0</label>
-                                    </div>
-                                    <!--<div class="checkbox">
-                                            <input id="opt6" type="checkbox" value="0.005">
-                                            <label for="opt6"><span></span>Use a reusable shopping bag</label>
-                                        </div> -->
-                                    <div class="form-group">
-                                        <input id="opt7" type="checkbox" value="0.36">
-                                        <label for="opt7"><span></span>Eat local food only</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <input id="opt4" type="checkbox" value="1.33">
-                                        <label for="opt4"><span></span>Live car free (30km/day)</label>
+                                    <div id="coBarThree" class="plane-bar color-white">
+                                        <div>+ <span class="co"></span> tCO₂e</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="big-bars">
-                                <div class="comp-bar">
-                                    <div class="opt-bar" id="opt1-bar" class="">
-                                        <div>- 0.9 tCO₂e</div>
-                                    </div>
-                                    <div class="opt-bar" id="opt2-bar" class="">
-                                        <div>- 0.21 tCO₂e</div>
-                                    </div>
-                                    <!--<div class="opt-bar" id="opt3-bar" class="">
-                                            <div>- 0.06</div>
-                                        </div> -->
-                                    <div class="opt-bar" id="opt5-bar" class="">
-                                        <div>- 0.37 tCO₂e</div>
-                                    </div>
-                                    <!-- <div class="opt-bar" id="opt6-bar" class="">
-                                            <div>-0.005</div>
-                                        </div> -->
-                                    <div class="opt-bar" id="opt7-bar" class="">
-                                        <div>- 0.36 tCO₂e</div>
-                                    </div>
-                                    <div class="opt-bar" id="opt4-bar" class="">
-                                        <div>- 1.33 tCO₂e</div>
-                                    </div>
-                                </div>
-                                <div id="coBarThree" class="plane-bar color-white">
-                                    <div>+ <span class="co"></span> tCO₂e</div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- New response data form -->
-            <div class="mx-auto col-lg-5 d-flex flex-column align-items-center">
-                <!-- dummy frame for form to submit without redirect -->
-                <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+                <!-- New response data form -->
+                <div class="mx-auto col-lg-5 d-flex flex-column align-items-center">
+                    <!-- dummy frame for form to submit without redirect -->
+                    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
-                <!-- Custom styled form -->
-                <form id="questionnaireForm" class="needs-validation p-4 px-5 rounded text-white" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/formResponse" method="POST" target="dummyframe" style="background: #4D4D4D">
-                    <div class="mb-3 justify-content-center">
-                        <h3 class="container col-11 text-white justify-content-center">Please help us understand the cost of the entire AAMC tour by filling out this short questionnaire</h3>
-                    </div>
-
-                    <div class="mb-3">
-                        <!-- Which year they interviewed -->
-                        <h4>I interviewed during the:</h4>
-                        <div class="form-check">
-                            <input class="form-check-input" name="entry.619680505" type="radio" value="2021-2022 application cycle" id="select-1644994922881-0">
-                            <label class="form-check-label" for="select-1644994922881-0">
-                                2021-2022 application cycle
-                            </label>
+                    <!-- Custom styled form -->
+                    <form id="questionnaireForm" class="needs-validation p-4 px-5 rounded text-white" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfEP4W_FfnwwJk1DNvbgvlVCqRtxJtUBPobzv6JTCnEodvvFw/formResponse" method="POST" target="dummyframe" style="background: #4D4D4D">
+                        <div class="mb-3 justify-content-center">
+                            <h3 class="container col-11 text-white justify-content-center">Please help us understand the cost of the entire AAMC tour by filling out this short questionnaire</h3>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" name="entry.619680505" type="radio" value="2020-2021 application cycle" id="select-1644994922881-1"></input>
-                            <label class="form-check-label" for="select-1644994922881-1">
-                                2020-2021 application cycle
-                            </label>
-                        </div>
-                    </div>
 
-                    <!-- Med school, residency, or fellowship -->
-                    <div class="mb-3">
-                        <h4>I interviewed for:</h4>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="entry.29944464" value="Medical School" selected="true" id="select-1644994963652-0">
-                            <label class="form-check-label" for="select-1644994963652-0">
-                                Medical School
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="entry.29944464" value="Residency" id="select-1644994963652-1"></input>
-                            <label class="form-check-label" for="select-1644994963652-1">
-                                Residency
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="entry.29944464" value="Fellowship" id="select-1644994963652-2"></input>
-                            <label class="form-check-label" for="select-1644994963652-2">
-                                Fellowship
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Residency specialties -->
-                    <div class="mb-3">
-                        <h4>If applicable, which residency specialty did you interview for?</h4>
-                        <select class="form-select" name="entry.842876269" aria-label="which residency specialty did you interview for">
-                            <option value="N/A" selected>N/A</option>
-                            <option value="Anesthesiology">Anesthesiology</option>
-                            <option value="Dermatology">Dermatology</option>
-                            <option value="Diagnostic Radiology">Diagnostic Radiology</option>
-                            <option value="Emergency Medicine">Emergency Medicine</option>
-                            <option value="Family Medicine">Family Medicine</option>
-                            <option value="Internal Medicine">Internal Medicine</option>
-                            <option value="Neurology">Neurology</option>
-                            <option value="Neurosurgery">Neurosurgery</option>
-                            <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
-                            <option value="Ophthalmology">Ophthalmology</option>
-                            <option value="Orthopedic Surgery">Orthopedic Surgery</option>
-                            <option value="Otolaryngology">Otolaryngology</option>
-                            <option value="Pathology">Pathology</option>
-                            <option value="Pediatrics">Pediatrics</option>
-                            <option value="Physical Medicine and Rehabilitation">Physical Medicine and Rehabilitation</option>
-                            <option value="Plastic Surgery">Plastic Surgery</option>
-                            <option value="Psychiatry">Psychiatry</option>
-                            <option value="Radiation Oncology">Radiation Oncology</option>
-                            <option value="Surgery">Surgery</option>
-                            <option value="Thoracic Surgery">Thoracic Surgery</option>
-                            <option value="Urology">Urology</option>
-                        </select>
-                    </div>
-
-                    <!-- Fellowship specialties -->
-                    <div class="mb-3">
-                        <label for="entry.675876217" class="form-label h4">If applicable, which fellowship specialty did you interview for?</label>
-                        <input type="text" class="form-control" name="entry.675876217" access="false" id="text-1644995051365">
-                    </div>
-
-                    <!-- Institution -->
-                    <div class="mb-3">
-                        <label for="textarea-1644995090519" class="form-label h4">
-                            <div>(Optional) At which institution are you currently studying?</div>
-                        </label>
-                        <input type="text" class="form-control" name="entry.1914427345" access="false" id="textarea-1644995090519"></input>
-                    </div>
-
-                    <!-- Interview format preference -->
-                    <div class="mb-3">
-                        <h4>In the future, I prefer interviews to be:</h4>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="entry.625532030" value="Virtual" selected="true" id="select-1644995132081-0"></input>
-                            <label class="form-check-label" for="select-1644995132081-0">
-                                Virtual
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="entry.625532030" value="In–person" id="select-1644995132081-1"></input>
-                            <label class="form-check-label" for="select-1644995132081-1">
-                                In–person
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="entry.625532030" value="Hybrid (virtual interview with in-person second look)" id="select-1644995132081-2"></input>
-                            <label class="form-check-label" for="select-1644995132081-2">
-                                Hybrid (virtual interview with in-person second look)
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="entry.625532030" value="Unsure" id="select-1644995132081-3"></input>
-                            <label class="form-check-label" for="select-1644995132081-3">
-                                Unsure
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Additional comments -->
-                    <div class="mb-3">
-                        <div class="formbuilder-textarea form-group field-textarea-1644995190804">
-                            <label for="textarea-1644995190804" class="form-label h4">Any comments?</label>
-                            <input type="text" class="form-control" name="entry.909335272" access="false" id="textarea-1644995190804"></input>
-                        </div>
-                    </div>
-
-                    <!-- Submit and reset btn -->
-                    <div class="formbuilder-button form-group field-button-1644997402759">
-                        <button type="submit" class="btn-primary btn" name="button-1644997402759" access="false" id="button-1644997402759">Submit</button>
-                        <button class="btn-warning btn" onclick="document.getElementById('questionnaireForm').reset();">Reset Answers</button>
-                    </div>
-
-                    <!-- hidden fields for cities -->
-                    <input id="city0" type="hidden" name="entry.240743650">
-                    <input id="city1" type="hidden" name="entry.1080544932">
-                    <input id="city2" type="hidden" name="entry.2129984577">
-                    <input id="city3" type="hidden" name="entry.852807689">
-                    <input id="city4" type="hidden" name="entry.490061391">
-                    <input id="city5" type="hidden" name="entry.1391009792">
-                    <input id="city6" type="hidden" name="entry.330088883">
-                    <input id="city7" type="hidden" name="entry.1689930028">
-                    <input id="city8" type="hidden" name="entry.674972753">
-                    <input id="city9" type="hidden" name="entry.764509498">
-                    <input id="city10" type="hidden" name="entry.192463826">
-                    <input id="city11" type="hidden" name="entry.1419527768">
-                    <input id="city12" type="hidden" name="entry.1846688567">
-                    <input id="city13" type="hidden" name="entry.537106193">
-                    <input id="city14" type="hidden" name="entry.1909908486">
-                    <input id="city15" type="hidden" name="entry.350534770">
-                    <input id="city16" type="hidden" name="entry.976267829">
-                    <input id="city17" type="hidden" name="entry.1082496322">
-                    <input id="city18" type="hidden" name="entry.753377230">
-                    <input id="city19" type="hidden" name="entry.1164989284">
-                    <input id="city20" type="hidden" name="entry.874213606">
-                    <input id="city21" type="hidden" name="entry.1361638981">
-                    <input id="city22" type="hidden" name="entry.1103784937">
-                    <input id="city23" type="hidden" name="entry.1513787133">
-                    <input id="city24" type="hidden" name="entry.1617584960">
-                    <input id="city25" type="hidden" name="entry.1085779929">
-                    <input id="city26" type="hidden" name="entry.1803802730">
-                    <input id="city27" type="hidden" name="entry.432052311">
-                    <input id="city28" type="hidden" name="entry.1877378464">
-                    <input id="city29" type="hidden" name="entry.1853404945">
-                </form>
-            </div>
-
-            <!-- Hidden old questionnaire Form -->
-            <!-- TODO: remove -->
-            <div class="d-none bg-light p-3">
-                <div class="p-1" style="background-color:#D9DCD6">
-                    <!-- TODO: uncomment the real google form response -->
-                    <!-- <form class="form mt-5" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSejY5ykx9XWxh_UxnaaAFWOpVQJP2Q2bwVNcnINXDnpMMKXRg/formResponse" target="hidden_iframe" onsubmit="animateThankYouMessage"> -->
-                    <form class="form mt-5" action="." onsubmit="return animateThankYouMessage()">
-                        <h4 class="text-dark">Please help us understand the cost of the entire AAMC tour</h4>
-
-                        <!-- Med School of Origin -->
-                        <div class="form-group mb-3">
-                            <label class="text-dark" for="entry.735375071">I study at:</label>
-                            <input class="form-control" id="schooloforigin" name="entry.735375071" size="70" type="text" placeholder="Please enter name of medical school" />
+                        <div class="mb-3">
+                            <!-- Which year they interviewed -->
+                            <h4>I interviewed during the:</h4>
                             <div class="form-check">
-                                <input class="form-check-input" name="schooloforigin-decline" id="schooloforigin-decline" type="checkbox">
-                                <label class="form-check-label" for="schooloforigin-decline">Decline to Answer</label>
+                                <input class="form-check-input" name="entry.619680505" type="radio" value="2021-2022 application cycle" id="select-1644994922881-0">
+                                <label class="form-check-label" for="select-1644994922881-0">
+                    2021-2022 application cycle
+                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="entry.619680505" type="radio" value="2020-2021 application cycle" id="select-1644994922881-1"></input>
+                                <label class="form-check-label" for="select-1644994922881-1">
+                    2020-2021 application cycle
+                </label>
                             </div>
                         </div>
 
-                        <!-- Specialties -->
-                        <label class="text-dark">I am applying to:</label>
-                        <input class="form-control" id="specialties" name="entry.1179383716" size="70" placeholder="Please enter the specialty(ies) you applied to" type="text" />
-                        <input class="text-dark" name="specialties-decline" type="checkbox">
-                        <label class="text-dark" for="specialties-decline">Decline to Answer</label>
+                        <!-- Med school, residency, or fellowship -->
+                        <div class="mb-3">
+                            <h4>I interviewed for:</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="entry.29944464" value="Medical School" selected="true" id="select-1644994963652-0">
+                                <label class="form-check-label" for="select-1644994963652-0">
+                    Medical School
+                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="entry.29944464" value="Residency" id="select-1644994963652-1"></input>
+                                <label class="form-check-label" for="select-1644994963652-1">
+                    Residency
+                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="entry.29944464" value="Fellowship" id="select-1644994963652-2"></input>
+                                <label class="form-check-label" for="select-1644994963652-2">
+                    Fellowship
+                </label>
+                            </div>
+                        </div>
 
-                        <!-- <input id="city0" name="entry.599602472" style="display:none" type="text" />
-                        <input id="city1" name="entry.589350821" style="display:none" type="text" />
-                        <input id="city2" name="entry.1150841774" style="display:none" type="text" />
-                        <input id="city3" name="entry.1124877950" style="display:none" type="text" />
-                        <input id="city4" name="entry.122035344" style="display:none" type="text" />
-                        <input id="city5" name="entry.550683007" style="display:none" type="text" />
-                        <input id="city6" name="entry.1732348661" style="display:none" type="text" />
-                        <input id="city7" name="entry.710850222" style="display:none" type="text" />
-                        <input id="city8" name="entry.1715087234" style="display:none" type="text" />
-                        <input id="city9" name="entry.1946291462" style="display:none" type="text" />
-                        <input id="city10" name="entry.386767754" style="display:none" type="text" />
-                        <input id="city11" name="entry.251875721" style="display:none" type="text" />
-                        <input id="city12" name="entry.757240061" style="display:none" type="text" />
-                        <input id="city13" name="entry.1337219740" style="display:none" type="text" />
-                        <input id="city14" name="entry.417269170" style="display:none" type="text" />
-                        <input id="city15" name="entry.852167020" style="display:none" type="text" />
-                        <input id="city16" name="entry.493625509" style="display:none" type="text" />
-                        <input id="city17" name="entry.1446717457" style="display:none" type="text" />
-                        <input id="city18" name="entry.802516056" style="display:none" type="text" />
-                        <input id="city19" name="entry.1117702907" style="display:none" type="text" />
-                        <input id="city20" name="entry.103858432" style="display:none" type="text" />
-                        <input id="city21" name="entry.469194213" style="display:none" type="text" />
-                        <input id="city22" name="entry.806626741" style="display:none" type="text" />
-                        <input id="city23" name="entry.741291110" style="display:none" type="text" />
-                        <input id="city24" name="entry.333075389" style="display:none" type="text" />
-                        <input id="city25" name="entry.1248216763" style="display:none" type="text" />
-                        <input id="city26" name="entry.1305126104" style="display:none" type="text" />
-                        <input id="city27" name="entry.330434047" style="display:none" type="text" />
-                        <input id="city28" name="entry.518662113" style="display:none" type="text" />
-                        <input id="city29" name="entry.324442649" style="display:none" type="text" /> -->
-                        <h6 class="text-dark p-3"> <strong>Please note</strong>, because the survey is anonymous, once you click the submit button at the end of the survey the researchers will not be able to determine which survey answers belong to you, so your information cannot
-                            be withdrawn after that point. Your information only will only be collected if you selected the “I agree” button at the consent cover letter. </h6>
-                        <input class="btn btn-primary" type="submit" value="Submit" />
+                        <!-- Residency specialties -->
+                        <div class="mb-3">
+                            <h4>If applicable, which residency specialty did you interview for?</h4>
+                            <select class="form-select" name="entry.842876269" aria-label="which residency specialty did you interview for">
+                <option value="N/A" selected>N/A</option>
+                <option value="Anesthesiology">Anesthesiology</option>
+                <option value="Dermatology">Dermatology</option>
+                <option value="Diagnostic Radiology">Diagnostic Radiology</option>
+                <option value="Emergency Medicine">Emergency Medicine</option>
+                <option value="Family Medicine">Family Medicine</option>
+                <option value="Internal Medicine">Internal Medicine</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Neurosurgery">Neurosurgery</option>
+                <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
+                <option value="Ophthalmology">Ophthalmology</option>
+                <option value="Orthopedic Surgery">Orthopedic Surgery</option>
+                <option value="Otolaryngology">Otolaryngology</option>
+                <option value="Pathology">Pathology</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <option value="Physical Medicine and Rehabilitation">Physical Medicine and Rehabilitation</option>
+                <option value="Plastic Surgery">Plastic Surgery</option>
+                <option value="Psychiatry">Psychiatry</option>
+                <option value="Radiation Oncology">Radiation Oncology</option>
+                <option value="Surgery">Surgery</option>
+                <option value="Thoracic Surgery">Thoracic Surgery</option>
+                <option value="Urology">Urology</option>
+            </select>
+                        </div>
+
+                        <!-- Fellowship specialties -->
+                        <div class="mb-3">
+                            <label for="entry.675876217" class="form-label h4">If applicable, which fellowship specialty did you interview for?</label>
+                            <input type="text" class="form-control" name="entry.675876217" access="false" id="text-1644995051365">
+                        </div>
+
+                        <!-- Institution -->
+                        <div class="mb-3">
+                            <label for="textarea-1644995090519" class="form-label h4">
+                <div>(Optional) At which institution are you currently studying?</div>
+            </label>
+                            <input type="text" class="form-control" name="entry.1914427345" access="false" id="textarea-1644995090519"></input>
+                        </div>
+
+                        <!-- Interview format preference -->
+                        <div class="mb-3">
+                            <h4>In the future, I prefer interviews to be:</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="entry.625532030" value="Virtual" selected="true" id="select-1644995132081-0"></input>
+                                <label class="form-check-label" for="select-1644995132081-0">
+                    Virtual
+                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="entry.625532030" value="In–person" id="select-1644995132081-1"></input>
+                                <label class="form-check-label" for="select-1644995132081-1">
+                    In–person
+                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="entry.625532030" value="Hybrid (virtual interview with in-person second look)" id="select-1644995132081-2"></input>
+                                <label class="form-check-label" for="select-1644995132081-2">
+                    Hybrid (virtual interview with in-person second look)
+                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="entry.625532030" value="Unsure" id="select-1644995132081-3"></input>
+                                <label class="form-check-label" for="select-1644995132081-3">
+                    Unsure
+                </label>
+                            </div>
+                        </div>
+
+                        <!-- Additional comments -->
+                        <div class="mb-3">
+                            <div class="formbuilder-textarea form-group field-textarea-1644995190804">
+                                <label for="textarea-1644995190804" class="form-label h4">Any comments?</label>
+                                <input type="text" class="form-control" name="entry.909335272" access="false" id="textarea-1644995190804"></input>
+                            </div>
+                        </div>
+
+                        <!-- Submit and reset btn -->
+                        <div class="formbuilder-button form-group field-button-1644997402759">
+                            <button type="submit" class="btn-primary btn" name="button-1644997402759" access="false" id="button-1644997402759">Submit</button>
+                            <button class="btn-warning btn" onclick="document.getElementById('questionnaireForm').reset();">Reset Answers</button>
+                        </div>
+
+                        <!-- hidden fields for cities -->
+                        <input id="city0" type="hidden" name="entry.240743650">
+                        <input id="city1" type="hidden" name="entry.1080544932">
+                        <input id="city2" type="hidden" name="entry.2129984577">
+                        <input id="city3" type="hidden" name="entry.852807689">
+                        <input id="city4" type="hidden" name="entry.490061391">
+                        <input id="city5" type="hidden" name="entry.1391009792">
+                        <input id="city6" type="hidden" name="entry.330088883">
+                        <input id="city7" type="hidden" name="entry.1689930028">
+                        <input id="city8" type="hidden" name="entry.674972753">
+                        <input id="city9" type="hidden" name="entry.764509498">
+                        <input id="city10" type="hidden" name="entry.192463826">
+                        <input id="city11" type="hidden" name="entry.1419527768">
+                        <input id="city12" type="hidden" name="entry.1846688567">
+                        <input id="city13" type="hidden" name="entry.537106193">
+                        <input id="city14" type="hidden" name="entry.1909908486">
+                        <input id="city15" type="hidden" name="entry.350534770">
+                        <input id="city16" type="hidden" name="entry.976267829">
+                        <input id="city17" type="hidden" name="entry.1082496322">
+                        <input id="city18" type="hidden" name="entry.753377230">
+                        <input id="city19" type="hidden" name="entry.1164989284">
+                        <input id="city20" type="hidden" name="entry.874213606">
+                        <input id="city21" type="hidden" name="entry.1361638981">
+                        <input id="city22" type="hidden" name="entry.1103784937">
+                        <input id="city23" type="hidden" name="entry.1513787133">
+                        <input id="city24" type="hidden" name="entry.1617584960">
+                        <input id="city25" type="hidden" name="entry.1085779929">
+                        <input id="city26" type="hidden" name="entry.1803802730">
+                        <input id="city27" type="hidden" name="entry.432052311">
+                        <input id="city28" type="hidden" name="entry.1877378464">
+                        <input id="city29" type="hidden" name="entry.1853404945">
                     </form>
                 </div>
-                <div id="thankyou" style="display:none; background-color:green; margin-bottom:10px">
-                    <h1>Thank you!</h1>
-                </div>
             </div>
-        </div>
 
-        <div class="row p-5 d-flex col-12 mx-auto">
-            <div>
-                <h3>References</h3>
-            </div>
-            <div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        1. UK Government Department for Business, Energy, and Industrial Strategy. Greenhouse gas reporting: conversion factors 2021. https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2021
-                    </li>
-                    <li class="list-group-item">
-                        2. Statista. Carbon dioxide emissions from energy consumption in the United States from 1975 to 2020. https://www.statista.com/statistics/183943/us-carbon-dioxide-emissions-from-1999/
-                    </li>
-                    <li class="list-group-item">
-                        3. Wynes, Seth, and Kimberly A Nicholas. “The Climate Mitigation Gap: Education and Government Recommendations Miss the Most Effective Individual Actions.” Environmental Research Letters, vol. 12, no. 7, 2017, p. 074024., doi:10.1088/1748-9326/aa7541.
-                    </li>
-                </ul>
+            <div class="row p-5 d-flex col-12 mx-auto">
+                <div>
+                    <h3>References</h3>
+                </div>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            1. UK Government Department for Business, Energy, and Industrial Strategy. Greenhouse gas reporting: conversion factors 2021. https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2021
+                        </li>
+                        <li class="list-group-item">
+                            2. Statista. Carbon dioxide emissions from energy consumption in the United States from 1975 to 2020. https://www.statista.com/statistics/183943/us-carbon-dioxide-emissions-from-1999/
+                        </li>
+                        <li class="list-group-item">
+                            3. Wynes, Seth, and Kimberly A Nicholas. “The Climate Mitigation Gap: Education and Government Recommendations Miss the Most Effective Individual Actions.” Environmental Research Letters, vol. 12, no. 7, 2017, p. 074024., doi:10.1088/1748-9326/aa7541.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
