@@ -182,20 +182,11 @@ function animateThankYouMessage() {
 
 // update comparisons between different lifestyle changes
 function updateComparison() {
-    document.getElementById("opt1").checked = false;
-    document.getElementById("opt2").checked = false;
-    //document.getElementById("opt3").checked=false;
     document.getElementById("opt4").checked = false;
     document.getElementById("opt5").checked = false;
-    //document.getElementById("opt6").checked=false;
-    document.getElementById("opt7").checked = false;
+    document.getElementById("opt6").checked = false;
 
-    document.getElementById("opt1-bar").classList.remove("on");
-    document.getElementById("opt2-bar").classList.remove("on");
-    //document.getElementById("opt3-bar").classList.remove("on");
     document.getElementById("opt4-bar").classList.remove("on");
     document.getElementById("opt5-bar").classList.remove("on");
-    //document.getElementById("opt6-bar").classList.remove("on");
-    document.getElementById("opt7-bar").classList.remove("on");
-
+    document.getElementById("opt6-bar").classList.remove("on");
 }

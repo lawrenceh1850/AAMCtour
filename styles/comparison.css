@@ -94,9 +94,9 @@
 }
 
 .opt-bar div {
-    opacity: 0;
-    transition: .2s ease all;
-    transition-delay: .1s;
+    /* opacity: 0; */
+    /* transition: .2s ease all;
+    transition-delay: .1s; */
     z-index: 1;
     padding: 0 .5rem;
     transform: translateX(0);
@@ -143,20 +143,16 @@
     background-color: var(--color-3);
 }
 
-#opt4-bar.on {
-    height: calc(1.33rem * 10);
+#opt4-bar {
     background-color: var(--color-1);
 }
 
-#opt5-bar.on {
-    height: calc(.37rem * 10);
-    background-color: var(--color-5);
+#opt5-bar {
+    background-color: var(--color-11);
 }
 
-#opt6-bar.on {
-    height: calc(.005rem * 10);
-    min-height: 1px;
-    background-color: var(--color-10);
+#opt6-bar {
+    background-color: var(--color-9);
 }
 
 #opt7-bar.on {
