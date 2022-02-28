@@ -29,7 +29,7 @@
 ### Google form to do
 - [x] make google form questions required
 - [x] add in residency specialties
-- [ ] update for new questions
+- [x] update for new questions
 
 - [ ] check through all the text
 - [ ] link all of the petition links
