@@ -80,7 +80,7 @@
             <div class="col-lg-5" id="user-input">
                 <!-- map of US -->
                 <div id="app" class="mileage">
-                    <svg class="mileage-map p-2" ref="map" width="1200" height="780" viewBox="-120 -100 1200 780">
+                    <svg id="usMap" class="mileage-map p-2" ref="map" width="1200" height="780" viewBox="-120 -100 1200 780">
                         <g class="mileage-map__states" ref="provinces"></g>
                         <g ref="airports">
                             <g class="airport" :class="{ 'airport--current' : airport.current }" v-for="airport in airports">
@@ -192,12 +192,28 @@
                                 <div class="col" id="legend-graph">
                                     <div class="column">
                                         <div class="form-group">
+                                            <input id="opt0" type="checkbox" value="0.9">
+                                            <label for="opt0"><span></span>Go vegetarian</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="opt1" type="checkbox" value="0.21">
+                                            <label for="opt1"><span></span>Recycle</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="opt2" type="checkbox" value="0.37">
+                                            <label for="opt2"><span></span>Reduce your food waste to zero</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="opt3" type="checkbox" value="0.36">
+                                            <label for="opt3"><span></span>Eat local food only</label>
+                                        </div>
+                                        <div class="form-group">
                                             <input id="opt4" type="checkbox" value="3.08">
                                             <label for="opt4"><span></span>Live car free</label>
                                         </div>
-                                        <div class="form-group zero">
+                                        <div class="form-group">
                                             <input id="opt5" type="checkbox" value="1.4">
-                                            <label for="opt5"><span></span>Sourcing household energy from renewables</label>
+                                            <label for="opt5"><span></span>Source household energy from renewables</label>
                                         </div>
                                         <div class="form-group">
                                             <input id="opt6" type="checkbox" value="0.21">
@@ -207,6 +223,18 @@
                                 </div>
                                 <div class="big-bars">
                                     <div class="comp-bar">
+                                        <div class="opt-bar" id="opt0-bar">
+                                            <div>- 0.90 tCO₂e</div>
+                                        </div>
+                                        <div class="opt-bar" id="opt1-bar">
+                                            <div>- 0.21 tCO₂e</div>
+                                        </div>
+                                        <div class="opt-bar" id="opt2-bar">
+                                            <div>- 0.37 tCO₂e</div>
+                                        </div>
+                                        <div class="opt-bar" id="opt3-bar">
+                                            <div>- 0.36 tCO₂e</div>
+                                        </div>
                                         <div class="opt-bar" id="opt4-bar">
                                             <div>- 3.08 tCO₂e</div>
                                         </div>

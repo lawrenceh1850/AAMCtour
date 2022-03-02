@@ -88,6 +88,14 @@ map = new Vue({
             });
             this.markerDistance();
         });
+
+
+        function resizeMap() {
+            let browserWidth = $(window).width();
+            $("#usMap").width(browserWidth * 5.0 / 12.0)
+        }
+        resizeMap()
+        $(window).resize(resizeMap);
     },
     methods: {
         distanceInMiles() {

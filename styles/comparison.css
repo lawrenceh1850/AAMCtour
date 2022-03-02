@@ -114,6 +114,7 @@
     }
 }
 
+#opt0-bar,
 #opt1-bar,
 #opt2-bar,
 #opt3-bar,
@@ -128,19 +129,20 @@
     transition: .2s ease height;
 }
 
-#opt1-bar.on {
-    height: calc(.9rem * 10);
+#opt0-bar {
+    background-color: var(--color-5);
+}
+
+#opt1-bar {
     background-color: var(--color-6);
 }
 
-#opt2-bar.on {
-    height: calc(.21rem * 10);
-    background-color: var(--color-9);
+#opt2-bar {
+    background-color: var(--color-8);
 }
 
-#opt3-bar.on {
-    height: calc(.06rem * 10);
-    background-color: var(--color-3);
+#opt3-bar {
+    background-color: var(--color-2);
 }
 
 #opt4-bar {

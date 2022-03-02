@@ -1,8 +1,12 @@
+function getBarHeight(emissiontonnes) {
+    return `calc(${emissiontonnes}rem * 5)`
+}
+
 function runComparison() {
     let coBarThreeEl = document.getElementById("coBarThree");
-    let emissiontonnes = map.emission / 1000
+    let emissiontonnes = map.emissionsInKg() / 1000
     setClassValue("co", emissiontonnes.toFixed(2))
-    coBarThreeEl.style = "height: calc(" + emissiontonnes + "rem * 10)"
+    coBarThreeEl.style = `height: ${getBarHeight(emissiontonnes)}`
 }
 
 function setClassValue(className, value) {
@@ -19,7 +23,7 @@ function changeOPT(e) {
     const emissionOffset = document.getElementById(e.currentTarget.id).value;
     $(curBarQuerySelector + " div").toggle();
     if (bar.height() === 0) {
-        bar.height("calc(" + emissionOffset + "rem * 10)");
+        bar.height(`${getBarHeight(emissionOffset)}`);
     } else {
         bar.height(0);
     }
@@ -27,11 +31,17 @@ function changeOPT(e) {
 
 
 $(".opt-bar div").toggle();
-const opt4 = document.getElementById("opt4");
-opt4.addEventListener("change", changeOPT);
 
-const opt5 = document.getElementById("opt5");
-opt5.addEventListener("change", changeOPT);
+for (let i = 0; i < 7; i++) {
+    let opt = document.getElementById(`opt${i}`);
+    opt.addEventListener("change", changeOPT);
+}
 
-const opt6 = document.getElementById("opt6")
-opt6.addEventListener("change", changeOPT);
+// const opt4 = document.getElementById("opt4");
+// opt4.addEventListener("change", changeOPT);
+
+// const opt5 = document.getElementById("opt5");
+// opt5.addEventListener("change", changeOPT);
+
+// const opt6 = document.getElementById("opt6")
+// opt6.addEventListener("change", changeOPT);
