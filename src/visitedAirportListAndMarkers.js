@@ -39,11 +39,10 @@ function createNewAirportElement(taskString, flyingStatus) {
     return airportListItem;
 };
 
-function addAirport(flyingStatus) {
+function addAirport(airportDataJSON, flyingStatus) {
     console.log(`Adding airport with flyingStatus ${flyingStatus}`);
-    let airportData = JSON.parse(airportUserInput.getAttribute("data-airport"));
-    if (airportData && airportData.City && airportData.LocationID) {
-        let airportItem = createNewAirportElement(`${airportData.City} - ${airportData.LocationID}`, flyingStatus);
+    if (airportDataJSON && airportDataJSON.City && airportDataJSON.LocationID) {
+        let airportItem = createNewAirportElement(`${airportDataJSON.City} - ${airportDataJSON.LocationID}`, flyingStatus);
         visitedAirportsHolder.appendChild(airportItem);
 
         // bind deletion button
@@ -51,7 +50,7 @@ function addAirport(flyingStatus) {
 
         // clear the user input
         airportUserInput.value = "";
-        addMarker($(airportItem));
+        addMarker($(airportItem), airportDataJSON);
     }
 };
 
@@ -85,34 +84,55 @@ function deleteAirport(e) {
 //Set the click handler to the addAiport function.
 addAirportButton.addEventListener("click", function() {
     // TODO: check that the value is one of the ones in the airport list
-    if (airportUserInput.getAttribute("data-airport") != "") {
+    let curAirportData = airportUserInput.getAttribute("data-airport");
+    if (curAirportData != "") {
         // selects which transportation method is checked
         let flyingStatus = $("#journeytype [name='journeytype']:checked").val();
-        addAirport(flyingStatus);
+        let airportDataJSON = JSON.parse(airportUserInput.getAttribute("data-airport"));
+        addAirport(airportDataJSON, flyingStatus);
         $("#visited-airport-list").removeClass("d-none");
         document.getElementById("autocomplete").focus();
+
+        if (!getHomeAirport()) {
+            setHomeAirport(curAirportData);
+        } else {
+            addHomeAirport();
+        }
     }
 });
 
+function setHomeAirport(curAirportData) {
+    airportUserInput.setAttribute("data-home-airport", curAirportData);
+}
+
+function getHomeAirport() {
+    return airportUserInput.getAttribute("data-home-airport");
+}
+
+function addHomeAirport() {
+    let homeAirportJSON = JSON.parse(getHomeAirport());
+    // TODO: really need to remove that flyingStatus parameter that's not being used, leaving for now because it might be breaking something and don't have time to fix it yet
+    addAirport(homeAirportJSON, 1);
+}
+
 //add marker
-function addMarker($li) {
-    let airport = JSON.parse($('#autocomplete').attr("data-airport")) || {};
+function addMarker($li, airportDataJSON) {
     $('#autocomplete').attr("data-airport", "");
     var marker = {
-        airport: airport,
-        x: airport.x,
-        y: airport.y,
-        startX: airport.x,
-        startY: airport.y,
+        airport: airportDataJSON,
+        x: airportDataJSON.x,
+        y: airportDataJSON.y,
+        startX: airportDataJSON.x,
+        startY: airportDataJSON.y,
         fill: '#f47825',
         flying: $("#journeytype [name='journeytype']:checked").val() == 1,
         current: true,
         index: map.markers.length
     };
-    $li.attr("data-location", airport.LocationID);
+    $li.attr("data-location", airportDataJSON.LocationID);
 
     map.markers.push(marker);
-    map.currentAirport = airport;
+    map.currentAirport = airportDataJSON;
     map.currentMarker = marker;
 
     map.markerDistance();
@@ -162,8 +182,10 @@ function updateLabelText() {
         $("#sort-it [for='autocomplete']").text("I'm starting my AAMC interview from");
         $("#journeytype").hide();
     } else {
-        $("#sort-it [for='autocomplete']").text("I then traveled to");
-        // $("#journeytype").show();
+        let instructionsElt = $("#sort-it [for='autocomplete']");
+        instructionsElt.text("Next, please enter all of the cities to which you would have traveled, had interviews been in-person. Your home city will be inserted automatically between the cities you enter, assuming that you took round trip flights. However, if this is not accurate, you can delete cities from the itinerary on the left.");
+        instructionsElt.removeClass("h4");
+        instructionsElt.addClass("h5");
     }
     if (map.markers.length > 1) {
         $("#calculate").show();
