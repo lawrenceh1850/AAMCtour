@@ -61,7 +61,7 @@
     <!-- load navbar -->
     <div id="nav-placeholder"></div>
     <script>
-        let title = "What were the emissions savings of completing your interviews virtually?"
+        let title = "Interview Without Harm"
         $.get("./templates/navigation.html", function(data) {
             $("#nav-placeholder").replaceWith(data);
             $("#navbarTitle").text(title);
@@ -114,8 +114,11 @@
                 <!-- user enters their airport info -->
                 <div class="mx-auto d-flex justify-content-center col-10">
                     <form method="post" action="" id="sort-it" onsubmit="return false;">
-                        <p class="control-label text-dark text-center h4" for="autocomplete">
-                            Please enter your home city (the city you would have flown out of, had interviews been in-person)
+                        <p class="h3 text-center">
+                            What were the emissions savings of completing your interviews virtually?
+                        </p>
+                        <p class="control-label text-dark text-center h5" for="autocomplete">
+                            Please enter your home city (your air travel departure city, had interviews been in-person)
                         </p>
                         <div class="input-group justify-content-center mt-2">
                             <input id="autocomplete" class="form-control" type="text" name="dep-city" placeholder="City or Airport Name ..." autocomplete="off" />
@@ -345,10 +348,16 @@
                             <input type="text" class="form-control" name="entry.1970835514" access="false" id="text-164499505675">
                         </div>
 
+                        <!-- Number of programs outside of air travel -->
+                        <div class="question-group">
+                            <label for="entry.424656168" class="form-label h4">Had interviews been in-person, approximately how many programs would you have reached via a means of transport other than air travel (e.g. train, bus, car)?</label>
+                            <input type="text" class="form-control" name="entry.424656168" access="false" id="text-164499578625">
+                        </div>
+
                         <!-- Institution -->
                         <div class="question-group">
                             <label for="textarea-1644995090519" class="form-label h4">
-                                <div>At which institution are you currently studying?</div>
+                                <div>At which institution are you currently studying or working?</div>
                             </label>
                             <input type="text" class="form-control" name="entry.1914427345" access="false" id="textarea-1644995090519"></input>
                         </div>

@@ -183,7 +183,7 @@ function updateLabelText() {
         $("#journeytype").hide();
     } else {
         let instructionsElt = $("#sort-it [for='autocomplete']");
-        instructionsElt.text("Next, please enter all of the cities to which you would have traveled, had interviews been in-person. Your home city will be inserted automatically between the cities you enter, assuming that you took round trip flights. However, if this is not accurate, you can delete cities from the itinerary on the left.");
+        instructionsElt.text("Next, please enter all of the cities to which you would have traveled via plane, had interviews been in-person). Your home city will be inserted automatically between the cities you enter, assuming roundtrip flights.");
         instructionsElt.removeClass("h4");
         instructionsElt.addClass("h5");
     }
