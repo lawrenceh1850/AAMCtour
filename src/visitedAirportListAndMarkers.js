@@ -151,10 +151,10 @@ calculateButton.addEventListener("click", function() {
 // appends the selected cities to the google form response
 function updateFormData() {
     var lengthOfResponse = document.querySelector("#visited-airport-list").childElementCount;
-    for (let i = 0; i < lengthOfResponse; i++) {
+    // TODO: support more than 40 cities
+    for (let i = 0; i < lengthOfResponse && i < 40; i++) {
         document.querySelector("#city" + i).value = document.querySelector("#visited-airport-list").children[i].children[0].id;
     }
-
 }
 
 /*
