@@ -183,7 +183,7 @@ function updateLabelText() {
         $("#journeytype").hide();
     } else {
         let instructionsElt = $("#sort-it [for='autocomplete']");
-        instructionsElt.text("Next, please enter all of the cities to which you would have traveled <strong>via plane </strong>, had interviews been in-person. Your home city will be inserted automatically between the cities you enter, assuming roundtrip flights. If you interviewed at multiple programs in the same city, please only enter the city once.");
+        instructionsElt.text("Next, please enter all of the cities to which you would have traveled via plane, had interviews been in-person. Your home city will be inserted automatically between the cities you enter, assuming roundtrip flights. If you interviewed at multiple programs in the same city, please only enter the city once.");
         instructionsElt.removeClass("h4");
         instructionsElt.addClass("h5");
     }
