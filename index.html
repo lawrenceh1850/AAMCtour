@@ -58,6 +58,25 @@
         </div>
     </div>
 
+    <!-- post survey response modal -->
+    <div class="modal" id="postResponseModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog">
+        <div class="modal-dialog" style="max-width:60vw" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>
+                        Thank you for completing the survey. To read and sign our petition advocating for the continuation of virtual interviews, please visit the "Sign our Petition" tab. Note that if you choose to sign the petition, you will have the option to include your
+                        mitigated emissions after your name. If you would like to include that value, please copy the calculated emissions (<strong><span id="modalEmissions"></span></strong>) before leaving this page.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" onclick='navigator.clipboard.writeText($("#modalEmissions").text());alert(`\"${$("#modalEmissions").text()}\" copied to keyboard!`);'>Copy emissions to keyboard</button>
+                    <a href="./advocate.html"><button type="button" class="btn btn-primary">Sign the Petition</button></a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- load navbar -->
     <div id="nav-placeholder"></div>
     <script>
@@ -83,7 +102,7 @@
                     <svg id="usMap" class="mileage-map p-2" ref="map" width="1200" height="780" viewBox="-120 -100 1200 780">
                         <g class="mileage-map__states" ref="provinces"></g>
                         <g ref="airports">
-                            <g class="airport" :class="{ 'airport--current' : airport.current }" v-for="airport in airports">
+                            <g class="airport" :class="{ ' airport--current ' : airport.current }" v-for="airport in airports">
                                 <circle r="3" :cx="airport.x" :cy="airport.y" class="airport__marker" />
                                 <circle r="16" :cx="airport.x" :cy="airport.y" class="airport__range" />
                                 <circle r="16" :cx="airport.x" :cy="airport.y" class="airport__range" />
