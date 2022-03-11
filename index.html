@@ -69,7 +69,7 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-warning" onclick='navigator.clipboard.writeText($("#modalEmissions").text());alert(`\"${$("#modalEmissions").text()}\" copied to keyboard!`);'>Copy emissions to keyboard</button>
+                    <button type="button" class="btn btn-warning" onclick='navigator.clipboard.writeText($("#modalEmissions").text());alert(`\"${$("#modalEmissions").text()}\" copied to clipboard!`);'>Copy emissions to clipboard</button>
                     <a href="./advocate.html"><button type="button" class="btn btn-primary">Sign the Petition</button></a>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
@@ -102,7 +102,7 @@
                     <svg id="usMap" class="mileage-map p-2" ref="map" width="1200" height="780" viewBox="-120 -100 1200 780">
                         <g class="mileage-map__states" ref="provinces"></g>
                         <g ref="airports">
-                            <g class="airport" :class="{ ' airport--current ' : airport.current }" v-for="airport in airports">
+                            <g class="airport" :class="{ 'airport--current' : airport.current }" v-for="airport in airports">
                                 <circle r="3" :cx="airport.x" :cy="airport.y" class="airport__marker" />
                                 <circle r="16" :cx="airport.x" :cy="airport.y" class="airport__range" />
                                 <circle r="16" :cx="airport.x" :cy="airport.y" class="airport__range" />
