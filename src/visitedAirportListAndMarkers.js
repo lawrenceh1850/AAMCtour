@@ -165,7 +165,7 @@ function updateEmissionData() {
     map.calculateEmission();
     $("#totalEmission[data-emission]").text(map.emissionsInMetricTons());
 
-    document.querySelector("#totalCities").innerHTML = document.querySelector("#visited-airport-list").childElementCount;
+    // document.querySelector("#totalCities").innerHTML = document.querySelector("#visited-airport-list").childElementCount;
     $("#emission-data").removeClass("d-none");
 
     // average person calculation

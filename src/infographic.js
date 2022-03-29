@@ -2,7 +2,6 @@
 function runInfographic() {
     let objectEmission = document.querySelector("#totalEmission");
     let objectDistance = document.querySelector("#totalDistance");
-    let objectCity = document.querySelector("#totalCities");
 
     console.log(objectEmission.innerText);
     console.log(map.emission);
