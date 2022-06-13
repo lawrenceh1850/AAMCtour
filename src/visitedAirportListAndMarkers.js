@@ -143,7 +143,7 @@ function addMarker($li, airportDataJSON) {
 calculateButton.addEventListener("click", function() {
     updateEmissionData();
     // drawCharts();
-    updateFormData();
+    // updateFormData();
     runInfographic();
     updateComparison();
 });
